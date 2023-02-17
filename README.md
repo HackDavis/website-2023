@@ -1,15 +1,46 @@
+# DEVELOPER GUIDELINES
+Before getting started with development, please read through everything!
+
+## Folder Structure
+### Pages
+Every component file in `src/pages` maps to a URL
+E.g. src/aboutus.tsx -> https://hackdavis.io/aboutus
+### Components
+Components will all be located in `/src/components`
+### Stylesheets 
+Stylesheets will be located in `/src/styles`
+
+## Naming Conventions
+### Files
+camelCase.tsx || camelCase.module.scss
+### SCSS Classes
+camelCase only.
+### Variables
+camelCase only.
+### Images
+camelCase.svg || camelCase.png
+
+## Git
+### Branches
+Branch names should be in the following format: `group[1|2]-feature`
+### Pull Requests
+Post your PRs to the `technical-work` channel on Slack and try to get at least 2 code reviews before merging the code.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
 First, run the development server:
 
+If you don't have `yarn`:
+
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npm install --global yarn
+```
+
+```bash
+Install packages: yarn add
+Run the dev server: yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
