@@ -1,0 +1,16 @@
+.navbarCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+// .navLogo {
+    
+// }
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+}
