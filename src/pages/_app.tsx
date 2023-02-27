@@ -1,10 +1,9 @@
 /* eslint-disable react/no-unknown-property */
 import '@/styles/globals.scss';
 import type { AppProps } from 'next/app';
-import { Inter, DM_Sans, DM_Mono } from '@next/font/google';
+import { DM_Sans, DM_Mono } from '@next/font/google';
 import localFont from '@next/font/local';
 
-const inter = Inter({ subsets: ['latin'] });
 const dmSans = DM_Sans({
   weight: ['400', '700'],
   style: ['normal'],
