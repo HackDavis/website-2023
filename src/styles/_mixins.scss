@@ -1,14 +1,3 @@
-$color-cow: #9ee7e5;
-$color-ducky: #ffc53d;
-$color-bunny: #ffc5ab;
-$color-froggy: #afd157;
-$color-teal-1: #005271;
-$color-teal-2: #173a52;
-$color-teal-3: #123041;
-$color-turquoise-1: #1fbbc0;
-$grey-1: #ededed;
-$grey-2: #777777;
-
 @mixin fontFactory($fontName, $fontSize, $fontWeight, $fontColor, $letterSpacing, $lineHeight) {
   font-family: $fontName, sans-serif;
   font-size: $fontSize;
