@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-// body {
-//     font-family: 'DM Sans', sans-serif;
-// }
 
-.mainSection{
+
+.landing{
     margin: 0;
     padding-right: 125px;
 
@@ -16,6 +14,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
 .tagline{
     font-weight: 700;
     font-size: 40px;
@@ -64,6 +63,8 @@
         border: 0;
         margin: 0;
         padding: 15px 40px;
+        // padding: 5% 3%;
+        // width:150px;
 
         background: #FFC53D;
         border-radius: 100px;
@@ -78,6 +79,7 @@
     .heartButton{
         padding: 15px 15px 11px 15px;
         margin-left: 15px;
+        background: #FFC53D;
         
     }
 }
@@ -88,20 +90,51 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;    
+}
 
-    > a{
-        color: #FFFFFF;
-        text-decoration: none;
-       
+.calendar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 12px;
+}
 
-        &:hover {
-            border-bottom-color: white;
-            transition: border-bottom ease-in-out;
-            padding-bottom: 7px;
-            border-bottom: 2px solid #FFFFFF;
+.starterPack a, .calendar a{
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.starterPack a, .calendar a:hover {
+    border-bottom-color: white;
+    transition: border-bottom ease-in-out;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+@media screen and (max-width: 800px) {
+    .mainSection {
+        font-size: 18px;
+        // padding: 0;
+    }
+    .event {
+        font-size: 16px;
+
+        .hackdavis {
+            font-size: 20px;
+        }
+    }
+    .tagline {
+        text-align: left;
+        font-size: 30px;
+
+        .socialGood {
+            font-size: 45px;
         }
     }
 
-    
+    .mainButton {
+        font-size: 18px;
+    }
 }
