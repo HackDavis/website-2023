@@ -1,0 +1,8 @@
+@mixin fontFactory($fontName, $fontSize, $fontWeight, $fontColor, $letterSpacing, $lineHeight) {
+  font-family: $fontName, sans-serif;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $fontColor;
+  letter-spacing: $letterSpacing;
+  line-height: $lineHeight;
+}

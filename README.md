@@ -1,6 +1,25 @@
 # DEVELOPER GUIDELINES
 Before getting started with development, please read through everything!
 
+## Prerequisites
+
+If you don't have `yarn`:
+
+```bash
+npm install --global yarn
+```
+
+ESLint allows us to keep our code consistent and adherent to a certain code style. It can also format our code on save in VSCode. To enable this (and please do), open the command palette in VSCode and open **Preferences: Open Workspace Settings (JSON)**. Now add the following settings into the JSON file:
+
+```json
+"editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+},
+"eslint.validate": ["javascript"]
+```
+
+Now when you save a file, VSCode will format it to adhere to our ESLint configuration.
+
 ## Folder Structure
 ### Pages
 Every component file in `src/pages` maps to a URL
@@ -30,13 +49,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
-
-If you don't have `yarn`:
-
-```bash
-npm install --global yarn
-```
+Run the development server:
 
 ```bash
 Install packages: yarn add

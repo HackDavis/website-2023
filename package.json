@@ -13,12 +13,25 @@
     "@types/node": "18.13.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
-    "eslint": "8.34.0",
+    "eslint": "^8.0.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.58.3",
     "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint-config-react-tc": "10.0.1",
+    "eslint-config-tc": "22.2.0",
+    "eslint-config-typescript-tc": "6.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-jest": "^27.0.0",
+    "eslint-plugin-jsx-a11y": "^6.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-unicorn": ">=37.0.0",
+    "prettier": "^2.0.0"
   }
 }
