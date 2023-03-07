@@ -11,6 +11,13 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'max-lines-per-function': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
+    'react/require-default-props': 'off',
+    'unicorn/filename-case': [
+      'error',
+      {
+        case: 'camelCase',
+      },
+    ],
     'prettier/prettier': [
       'error',
       {
