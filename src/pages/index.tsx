@@ -1,7 +1,7 @@
 import { Inter } from '@next/font/google'
 import Navbar from '@/components/navbar'
 import MainSection from '@/components/mainSection'
-import styles from '@/styles/landingPage.module.scss'
+import Faq from '@/components/faq'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -9,10 +9,9 @@ import styles from '@/styles/landingPage.module.scss'
 export default function Home() {
   return (
     <>
-    <div>
       <Navbar />
       <MainSection />
-    </div>
+      <Faq />
     </>
-  );
+  )
 }

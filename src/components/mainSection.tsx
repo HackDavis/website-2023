@@ -27,9 +27,24 @@ const MainSection = () => {
                     <button>
                         Register Now
                     </button>
-                    <button className={styles.heartButton}>
+                    {/* <button className={styles.heartButton}>
                         <Image src={heart} alt='' /> 
-                    </button> Sponsor
+                    </button> Sponsor */}
+                    {/* <div className="toggle-switch">
+                        <input
+                        type="checkbox"
+                        className="toggle-switch-checkbox"
+                        name="toggleSwitch"
+                        id="toggleSwitch"
+                        />
+                        <label className="toggle-switch-label" htmlFor="toggleSwitch">
+                            <span className="toggle-switch-inner" />
+                            <span className="toggle-switch-switch" />
+                        </label>
+                    </div> */}
+                    <div>
+
+                    </div>
                 </div>
                 <div className={styles.starterPack}>
                     Get started with our <a href="https://google.com"><b>Starter Pack  </b>  

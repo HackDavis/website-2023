@@ -12,11 +12,6 @@
   padding-top: 4%;
 }
 
-// .mlhBadge {
-//     width: 100px;
-//     height: 100px;
-// }
-
 .navLinks {
   font-family: "Proxima Nova", sans-serif;
   font-size: 16px;
@@ -43,7 +38,6 @@
   font-weight: 700;
 }
 
-// Toggle dark/light mode
 .lightPill {
   display: flex;
   align-items: center;
@@ -64,6 +58,9 @@
   background-color: #123041;
   transition: 0.4s;
   cursor: pointer;
+
+  // for test; delete later
+  
 }
 
 .darkCircle {
@@ -94,38 +91,71 @@
   cursor: pointer;
 }
 
-.hamburger {
-    display: none;
-}
-
-// .hamburgerIcon {
-
+// /* toggle in label designing */
+// .toggle {
+//   position: relative;
+//   display: inline-block;
+//   width: 3.063em;
+//   height: 1.702em;
+//   background-color: #9ee7e5;
+//   border-radius: 30px;
+//   // border: 2px solid gray;
 // }
 
+// /* After slide changes */
+// .toggle:after {
+//   content: "";
+//   position: absolute;
+//   width: 1.25em;
+//   height: 1.25em;
+//   border-radius: 50%;
+//   background-color: #123041;
+//   // background-color: red;
+//   top: 4px;
+//   left: 4px;
+//   transition: all 0.5s;
+// }
 
+// /* Checkbox checked effect */
+// .checkbox:checked + .toggle::after {
+//   left: 1.563em;
+//   background-color: #9ee7e5;
+// }
 
-// Mobile view
-@media screen and (max-width: 800px) {
-    .navLogo {
-        display: none;
-    }
+// /* Checkbox checked toggle label bg color */
+// .checkbox:checked + .toggle {
+//   background-color: #123041;
+// }
 
-    .mlhBadge {
-        margin-left: 2.5em;
-    }
+// /* Checkbox checked changes moon */
+// .checkbox:checked + label .moonIcon {
+//   display: none;
+// }
 
-    // Hamburger navbar
-    // .navLinks div {
-        // display: ${hamburgerOpen ? 'inline' : 'none'};
-    // }
+// .checkbox:checked + label .sunIcon {
+//   display: block;
+//   position: relative;
+//   right: -55%;
+//   top: 25%;
+//   // background: white;
+//   z-index: 1;
+// }
 
-    // .navbarCont {
-    //     display: none;
-    // }
+// /* Checkbox vanished */
+// .checkbox {
+//   display: none;
+// }
 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
+// .moonIcon {
+//   position: relative;
+//   z-index: 1;
+//   top: 24%;
+//   right: -18%;
+//   // left: 18.36%;
+//   // right: 57.15%;
+//   // bottom: 55%;
+// }
 
-}
+// .sunIcon {
+//   display: none;
+// }
