@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   const [isLight, setLight] = useState(false);
-  function toggleLight() {
+  const toggleLight = () => {
     setLight(!isLight);
   }
   return (
@@ -19,10 +19,7 @@ const Navbar = () => {
         <div className={styles.navLinkHome}> Home </div>
         <div className={styles.navLinkAboutUs}> About Us </div>
 
-        <div
-          className={isLight ? styles.lightPill : styles.darkPill}
-          onClick={toggleLight}
-        >
+        <div className={isLight ? styles.lightPill : styles.darkPill} onClick={toggleLight}>
           <div className={isLight ? styles.darkCircle : styles.lightCircle}>
             <Image
               className={isLight ? styles.moonIcon : styles.sunIcon}

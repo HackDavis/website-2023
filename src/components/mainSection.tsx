@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '@/styles/mainSection.module.scss'
 import Image from 'next/image'
 import arrowUp from '@/images/arrowUp.svg'
@@ -6,11 +6,16 @@ import heart from '@/images/heart.svg'
 import calendar from '@/images/calendar.svg'
 
 const MainSection = () => {
+    const [sponsor, setSponsor] = useState(false);
+
+    const toggleSponsor = () => {
+        setSponsor(!sponsor);
+    }
     return(
         <div className={styles.landing}>
-            <div>
+            {/* <div>
                 cow on icecream img
-            </div>
+            </div> */}
             <div className={styles.mainSection}>
                 <div className={styles.event}>
                     <div className={styles.hackdavis}>HACK<b>DAVIS</b> </div>
@@ -24,28 +29,20 @@ const MainSection = () => {
                     create for <br /> <div className={styles.socialGood}> social good </div> 
                 </div>
                 <div className={styles.mainButton}>
-                    <button>
+                    <button className={styles.yellowButton}>
                         Register Now
                     </button>
                     {/* <button className={styles.heartButton}>
                         <Image src={heart} alt='' /> 
                     </button> Sponsor */}
-                    {/* <div className="toggle-switch">
-                        <input
-                        type="checkbox"
-                        className="toggle-switch-checkbox"
-                        name="toggleSwitch"
-                        id="toggleSwitch"
-                        />
-                        <label className="toggle-switch-label" htmlFor="toggleSwitch">
-                            <span className="toggle-switch-inner" />
-                            <span className="toggle-switch-switch" />
-                        </label>
-                    </div> */}
-                    <div>
-
+                    <div onClick={toggleSponsor} className={sponsor ? styles.sponsorButton : styles.fadedButton}>
+                        <div className={styles.heartButton}>
+                            <Image src={heart} alt='' /> 
+                        </div> 
+                        Sponsor
                     </div>
                 </div>
+
                 <div className={styles.starterPack}>
                     Get started with our <a href="https://google.com"><b>Starter Pack  </b>  
                     <Image src={arrowUp} alt='' /> </a>
