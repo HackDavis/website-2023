@@ -22,6 +22,7 @@
   margin-bottom: 196px;
 }
 
+
 .question {
   width: 900px;
   color: #ffffff;
@@ -47,6 +48,19 @@
 //   transition: display 2s;
 }
 
+.arrowImgOpen {
+  position: relative;
+  float: right;
+  transform: rotate(180deg);
+  transition: 500ms ease-out;
+}
+
+.arrowImgClosed {
+  position: relative;
+  float: right;
+  transition: 500ms ease-out;
+}
+
 .answerHidden {
 //   display: none;
   max-height: 0;
@@ -62,6 +76,4 @@
 }
 
 .arrowImg {
-  position: relative;
-  float: right;
 }

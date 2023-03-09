@@ -56,18 +56,34 @@ const Faq = () => {
     "answer 10",
   ];
 
+  const [isOpen, setOpen] = useState(false);
+  function toggleOpen() {
+    setOpen(!isOpen);
+  }
+  // const Toggle = ({ question, answer }: { question: string; answer: string }) => {
+//   const [toggleItem, setToggleItem] = useState(false);
+
+
   const generateList = (questions: string[], answers: string[]) => {
     const list = questions.map((question: string, index) => (
-    //   <React.Fragment key={index}>
-    //     <Toggle question={question} answer={answers[index]} />
-    //    </React.Fragment>
+      //   <React.Fragment key={index}>
+      //     <Toggle question={question} answer={answers[index]} />
+      //    </React.Fragment>
 
-        <Collapsible trigger={question}>
-            {answers[index]}
-        </Collapsible>
-
+      <Collapsible
+        // className={styles.question}
+        trigger={
+          <div className={styles.question} onClick={() => toggleOpen()}>
+            {question}
+            <Image src={arrow} alt=""
+            className={isOpen ? styles.arrowImgOpen : styles.arrowImgClosed} />
+          </div>
+        }
+      >
+        <div className={styles.answer}>{answers[index]}</div>
+      </Collapsible>
     ));
-    return <ul className={styles.question}>{list}</ul>;
+    return <div>{list}</div>;
   };
 
   generateList(questions, answers);
@@ -76,17 +92,21 @@ const Faq = () => {
     <div className={styles.faqCont}>
       <h1>FAQ</h1>
       <div className={styles.questionList}>
-        <div className={styles.questionCont} id="questionCont">
+        {/* <div className={styles.questionCont}>
             question 1
             <Image src={arrow} alt="" className={styles.arrowImg}/>
-        </div>
-        <Collapsible triggerTagName="questionCont"
-        trigger="this is question 1"  
-        >
+        </div> */}
+        {/* <Collapsible triggerTagName="questionCont"
+        trigger={
+            <div>
+                question 1
+                <Image src={arrow} alt="" className={styles.arrowImg}/>
+            </div>
+          }>
             "answer 1"
             "description 1"
-        </Collapsible>
-        {/* {generateList(questions, answers)} */}
+        </Collapsible> */}
+        {generateList(questions, answers)}
       </div>
     </div>
   );

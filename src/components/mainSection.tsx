@@ -17,17 +17,23 @@ const MainSection = () => {
                 cow on icecream img
             </div> */}
             <div className={styles.mainSection}>
-                <div className={styles.event}>
-                    <div className={styles.hackdavis}>HACK<b>DAVIS</b> </div>
-                        <br />
-                    <div className={styles.calendar}>
-                        <Image  src={calendar} alt='' /> 
-                        <a href ="https://google.com" >May 20, 2023 @ UCenter </a> 
+                {/* <div className={styles.mainSectionText}> */}
+
+                    <div className={styles.event}>
+                        <div className={styles.hackdavis}>HACK<b>DAVIS</b> </div>
+                            <br />
+                        <div className={styles.calendar}>
+                            <Image  src={calendar} alt='' className={styles.calendarIcon}/> 
+                            <a href ="https://google.com" >May 20, 2023 @ UCenter </a> 
+                        </div>
                     </div>
-                </div>
-                <div className={styles.tagline}>
-                    create for <br /> <div className={styles.socialGood}> social good </div> 
-                </div>
+
+                    <div className={styles.tagline}>
+                        create for <br /> <div className={styles.socialGood}> social good </div> 
+                    </div>
+
+                {/* </div> */}
+            </div>
                 <div className={styles.mainButton}>
                     <button className={styles.yellowButton}>
                         Register Now
@@ -44,10 +50,9 @@ const MainSection = () => {
                 </div>
 
                 <div className={styles.starterPack}>
-                    Get started with our <a href="https://google.com"><b>Starter Pack  </b>  
+                New Hacker? Get started with our <a href="https://google.com"><b>Starter Pack  </b>  
                     <Image src={arrowUp} alt='' /> </a>
                 </div>
-            </div>
         </div>
     )
 }

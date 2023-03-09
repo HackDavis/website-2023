@@ -3,17 +3,22 @@
 
 .landing{
     margin: 0;
-    padding-right: 125px;
+    padding: 0px 125px;
     width: 100vw;
 
     background: #123041;
     color: #FFFFFF;
     text-align: right;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
 
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .tagline{
@@ -27,6 +32,10 @@
         font-size: 90px;
         
     }
+
+    // .for {
+    //     color: rgba(255, 255, 255, 0.50);
+    // }
 }
 
 .event{
@@ -42,10 +51,16 @@
         font-weight: 300;
         font-size: 30px;
         letter-spacing: 0.05em;
+        margin-bottom: 15px;
+    }
+
+    b {
+        font-weight: 700;
     }
 }
 
 .mainButton{
+    // margin: 0;
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -53,13 +68,12 @@
     align-items: center;
     text-align: center;
 
-    width: max-content;
 
     padding-top: 60px;
     
     font-weight: 700;
     font-size: 18px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
     color: #123041;
 
 }
@@ -81,7 +95,7 @@
     color: #123041;
     font-weight: 700;
     font-size: 18px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
 }
 
 .fadedButton {
@@ -119,7 +133,7 @@
 }
 
 .heartButton{
-    padding: 15px 15px 11px 15px;
+    padding: 15px 15px 8px 15px;
     // margin-left: 15px;
     background: #FFC53D;
     opacity: 1;
@@ -138,7 +152,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    font-family: 'DM Sans', sans-serif;    
+    font-family: 'Proxima Nova', sans-serif;    
 }
 
 .calendar {
@@ -146,6 +160,12 @@
     flex-direction: row;
     justify-content: flex-end;
     column-gap: 12px;
+    align-items: flex-end;
+}
+
+.calendarIcon {
+    height: 15px;
+    width: 15px
 }
 
 .starterPack a, .calendar a{
@@ -162,14 +182,21 @@
 }
 
 @media screen and (max-width: 800px) {
+    .landing {
+        padding: 0 40px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
     .mainSection {
+        flex-direction: column;
         font-size: 18px;
-        // padding: 0;
     }
     .event {
         font-size: 16px;
-
+        
         .hackdavis {
+            margin-bottom: 0px;
             font-size: 20px;
         }
     }
@@ -183,7 +210,29 @@
     }
 
     .mainButton {
-        font-size: 18px;
-        flex-direction: column;
+        font-size: 17px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .yellowButton  {
+        padding: 12px 20px;
+        font-size: 17px;
+        min-width: fit-content;
+    }
+
+    .fadedButton {
+        gap: 10px;
+        font-size: 17px;
+    }
+
+    .sponsorButton {
+        gap: 10px;
+        font-size: 17px;
+    }
+
+    .heartButton {
+        padding: 13px 13px 6px 13px;
+        // padding: 15px 15px 11px 15px;
     }
 }
