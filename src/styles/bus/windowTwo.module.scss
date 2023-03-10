@@ -1,0 +1,47 @@
+@use "/src/styles/mixins" as *;
+
+.container {
+  h2 {
+    @include fontFactory(var(--dm-mono), 24px, 500, var(--color-teal-2), 0.02rem, 1);
+    margin-bottom: 12px;
+
+    > span {
+      display: block;
+      font-size: 38px;
+      color: var(--color-teal-3);
+    }
+  }
+
+  p {
+    @include fontFactory(var(--proxima-nova), 16px, 400, var(--color-grey-2), 0.02rem, 1.25);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: stretch;
+  }
+}
+
+.fake {
+  border: 1.6px solid var(--color-grey-1);
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  margin-bottom: 20px;
+  background-color: var(--color-teal-3);
+  height: 340px;
+  width: 100%;
+}
+
+.info {
+  padding: 30px;
+  border: 1.6px solid var(--color-grey-1);
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
