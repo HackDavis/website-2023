@@ -4,30 +4,38 @@ import styles from "@/styles/faq.module.scss";
 import arrow from "../images/faqArrow.svg";
 import Image from "next/image";
 
-// const Toggle = ({ question, answer }: { question: string; answer: string }) => {
-//   const [toggleItem, setToggleItem] = useState(false);
+const AccordionItem = ({
+  question,
+  answer,
+}: {
+  question: string;
+  answer: string;
+}) => {
+  const [open, setOpen] = useState(false);
 
-//   const expandList = () => {
-//     setToggleItem((prev) => !prev);
-//   };
-
-//   return (
-//     <>
-//       <li className={styles.question} onClick={() => expandList()}>
-//         {question}
-//         <Image src={arrow} alt="" className={styles.arrowImg}/>
-//       </li>
-//       {/* No animation */}
-//       {/* {toggleItem && <li className={`${styles.answer} ${toggleItem ? styles.answer : styles.answerHidden}`}> {answer}</li>} */}
-//       {/* Smooth animation but css bugged */}
-//       {toggleItem ? (
-//         <li className={styles.answer}>{answer}</li>
-//       ) : (
-//         <li className={styles.answerHidden}>{answer}</li>
-//       )}
-//     </>
-//   );
-// };
+  return (
+    <>
+      <Collapsible
+        onOpening={() => setOpen(true)}
+        onClosing={() => setOpen(false)}
+        // This doesn't change the speed of the arrow :(
+        // transitionTime={200}
+        trigger={
+          <div className={styles.question}>
+            {question}
+            <Image
+              src={arrow}
+              alt=""
+              className={open ? styles.arrowImgOpen : styles.arrowImgClosed}
+            />
+          </div>
+        }
+      >
+        <div className={styles.answer}>{answer}</div>
+      </Collapsible>
+    </>
+  );
+};
 
 const Faq = () => {
   const questions = [
@@ -60,53 +68,13 @@ const Faq = () => {
   function toggleOpen() {
     setOpen(!isOpen);
   }
-  // const Toggle = ({ question, answer }: { question: string; answer: string }) => {
-//   const [toggleItem, setToggleItem] = useState(false);
-
-
-  const generateList = (questions: string[], answers: string[]) => {
-    const list = questions.map((question: string, index) => (
-      //   <React.Fragment key={index}>
-      //     <Toggle question={question} answer={answers[index]} />
-      //    </React.Fragment>
-
-      <Collapsible
-        // className={styles.question}
-        trigger={
-          <div className={styles.question} onClick={() => toggleOpen()}>
-            {question}
-            <Image src={arrow} alt=""
-            className={isOpen ? styles.arrowImgOpen : styles.arrowImgClosed} />
-          </div>
-        }
-      >
-        <div className={styles.answer}>{answers[index]}</div>
-      </Collapsible>
-    ));
-    return <div>{list}</div>;
-  };
-
-  generateList(questions, answers);
-
   return (
     <div className={styles.faqCont}>
       <h1>FAQ</h1>
       <div className={styles.questionList}>
-        {/* <div className={styles.questionCont}>
-            question 1
-            <Image src={arrow} alt="" className={styles.arrowImg}/>
-        </div> */}
-        {/* <Collapsible triggerTagName="questionCont"
-        trigger={
-            <div>
-                question 1
-                <Image src={arrow} alt="" className={styles.arrowImg}/>
-            </div>
-          }>
-            "answer 1"
-            "description 1"
-        </Collapsible> */}
-        {generateList(questions, answers)}
+        {questions.map((question, index) => (
+          <AccordionItem question={question} answer={answers[index]} />
+        ))}
       </div>
     </div>
   );
