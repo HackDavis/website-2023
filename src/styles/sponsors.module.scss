@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+
+.busContainer {
+    background-color: #1f4e6a;
+    margin: 0;
+    padding: 0 0 20px 0;
+    font-family: 'Proxima Nova';
+}
+
+.bus {
+    background-color: #ffffff;
+    margin: 0 160px;
+    height: 80vw;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.window {
+    background-color: #1f4e6a;
+    // position: absolute;
+    // height: 20%;
+    min-height: 30%;
+    border-radius: 25px;
+    padding-top: 50px;
+    margin: 5%;
+    margin-top: 0;
+
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #9EE7E5;
+    
+}
+
+.back {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 0 20px 30px 20px;
+    min-height: 65%;
+}
+
+.backLights {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.circleLight {
+    background: #FFC53D;
+    border: 4px solid #D9A733;
+    border-radius: 50%;
+
+    height: 35px;
+    width: 35px;
+}
+
+.elipseLight {
+    background: #FFC5AB;
+    border-radius: 100px;
+
+    width: 40px;
+    height: 18px;
+}
+
+.sponsorsContainer {
+    border: 5px solid #EDEDED;
+    border-radius: 25px;
+
+    // position: absolute;
+    width: 80%;
+    height: inherit;
+}
+
+.bottom {
+    background-color: #1AABAF;
+    border-radius: 20px;
+    // height: 110px;
+    margin: 0 145px;
+    padding: 15px 0 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.plate {
+    background: #FFFFFF;
+    margin: auto;
+    // margin-top: 20px;
+    // margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 4px solid #049296;
+    border-radius: 10px;
+    vertical-align: center;
+    color: #049296;
+    width: max-content;
+
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.wheels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 200px;
+}
+
+.wheel {
+    background: #000000;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 9vw;
+    height: 5vw;
+}
