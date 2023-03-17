@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #043142;
+  padding-top: 16px;
+
+  .banner {
+    display: none;
+    position: sticky;
+    top: 0;
+    padding-top: 92px;
+    margin-right: 48px;
+    margin-bottom: 48px;
+    width: 96px;
+    
+    @media screen and (min-width: 992px) {
+      display: block;
+    }
+  }
+}
+
+.container {
+  background-color: white;
+  margin-right: 7.6%;
+  border-radius: 0 20px 20px 0;
+  padding: 20px 20px 0 0;
+  max-width: 1376px;
+  
+  @media screen and (min-width: 992px) {
+    border-radius: 20px;
+    padding: 60px;
+    margin-right: 0;
+  }
+}
+
+

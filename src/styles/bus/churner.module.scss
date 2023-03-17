@@ -1,0 +1,43 @@
+.container {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 535px;
+  margin-bottom: -260px;
+  
+  > img {
+    position: absolute;
+  }
+  
+  // liquid
+  > img:nth-of-type(2) {
+    top: 10px;
+    left: 16.5px;
+  }
+
+  // glass reflection
+  > img:nth-of-type(3) {
+    top: 5px;
+  }
+  
+  // Pipe group 1
+  > img:nth-of-type(4) {
+    bottom: 60px;
+    left: 20px;
+  }
+  // Pipe group 2
+  > img:nth-of-type(5) {
+    bottom: 50px;
+    left: 84px;
+  }
+
+  // Propellor
+  > img:nth-of-type(6) {
+    top: 125px;
+    left: 23.5px;
+  }
+
+  @media screen and (min-width: 992px) {
+    display: block;
+  }
+}

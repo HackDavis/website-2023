@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from '@/styles/bus/bus.module.scss';
-import { DesktopView, DefaultView, TabletView } from '@/lib/breakpoints';
+import Image from 'next/image';
+import banner from '@/images/banner.svg';
 import WindowOne from './windowOne';
 import WindowTwo from './windowTwo';
 import WindowThree from './windowThree';
@@ -16,28 +17,19 @@ const Bus = () => {
   }, [mounted]);
 
   return (
-    <div
-      style={{
-        backgroundColor: '#043142',
-        paddingTop: 16,
-      }}
-    >
-      <div
-        style={{
-          backgroundColor: 'white',
-          // marginRight: 30,
-          marginRight: '7.6%',
-          // marginRight: 'min(7.6%, 30px)',
-          borderRadius: '0 20px 20px 0',
-          padding: '20px 20px 0 0',
-        }}
-      >
-        <WindowOne />
-        <WindowTwo />
-        <WindowThree />
-        <WindowFour />
+    <>
+      <div style={{ height: 900 }} />
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          <WindowOne />
+          <WindowTwo />
+          <WindowThree />
+          <WindowFour />
+        </div>
+        <Image src={banner} alt="banner" className={styles.banner} />
       </div>
-    </div>
+      <div style={{ height: 900 }} />
+    </>
   );
 };
 
