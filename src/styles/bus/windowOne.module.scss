@@ -9,7 +9,7 @@
   border-radius: 0 10px 10px 0;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 992px) {
+  @include lg {
     border: 1.6px solid var(--color-grey-1);
     border-width: 5px;
     border-radius: 50px;
@@ -21,7 +21,7 @@
   @include fontFactory(var(--proxima-nova), 20px, 700, var(--color-teal-3), 0.02rem, 1.25);
   max-width: 600px;
 
-  @media screen and (min-width: 992px) {
+  @include lg {
     font-size: 40px;
   }
 

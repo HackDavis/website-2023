@@ -6,3 +6,38 @@
   letter-spacing: $letterSpacing;
   line-height: $lineHeight;
 }
+
+// Small devices
+@mixin sm {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+  @media screen and (min-width: $screen) {
+    @content;
+  }
+}

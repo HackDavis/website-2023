@@ -1,3 +1,5 @@
+@use "/src/styles/mixins" as *;
+
 .container {
   display: none;
   position: relative;
@@ -13,6 +15,7 @@
   > img:nth-of-type(2) {
     top: 10px;
     left: 16.5px;
+    animation: spin 2.75s linear infinite;
   }
 
   // glass reflection
@@ -22,22 +25,79 @@
   
   // Pipe group 1
   > img:nth-of-type(4) {
-    bottom: 60px;
-    left: 20px;
+    bottom: 80px;
+    right: 139px;
+    animation: slide-down 1.25s ease-in-out infinite;
   }
+  
   // Pipe group 2
   > img:nth-of-type(5) {
     bottom: 50px;
     left: 84px;
+    opacity: 0;
+    animation: slide-up 1.25s ease-in-out 0.2s infinite;
+  }
+
+  // Pipe group 3
+  > img:nth-of-type(6) {
+    bottom: 135px;
+    left: 21px;
+    opacity: 0;
+    animation: slide-down 1.25s ease-in-out 0.4s infinite;
   }
 
   // Propellor
-  > img:nth-of-type(6) {
+  > img:nth-of-type(7) {
     top: 125px;
     left: 23.5px;
+    animation: spin 1.5s linear infinite;
   }
 
-  @media screen and (min-width: 992px) {
+  @include lg {
     display: block;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 0;
   }
 }

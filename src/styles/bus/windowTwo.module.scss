@@ -16,7 +16,7 @@
     @include fontFactory(var(--proxima-nova), 16px, 400, var(--color-grey-2), 0.02rem, 1.25);
   }
 
-  @media screen and (min-width: 768px) {
+  @include md {
     display: flex;
     align-items: stretch;
   }
@@ -39,7 +39,7 @@
   border-radius: 0 10px 10px 0;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @include md {
     display: flex;
     flex-direction: column;
     justify-content: center;

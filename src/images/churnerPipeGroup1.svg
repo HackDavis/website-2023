@@ -1,7 +1,5 @@
-<svg width="137" height="124" viewBox="0 0 137 124" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="3" height="31" rx="1.5" transform="matrix(1 0 0 -1 134 31)" fill="white"/>
-<rect width="3" height="11" rx="1.5" transform="matrix(1 0 0 -1 128 36)" fill="white"/>
-<rect width="3" height="32" rx="1.5" transform="matrix(1 0 0 -1 133 124)" fill="white"/>
-<rect x="3" y="53" width="3" height="31" rx="1.5" transform="rotate(180 3 53)" fill="white"/>
-<rect x="9" y="58" width="3" height="11" rx="1.5" transform="rotate(180 9 58)" fill="white"/>
+<svg width="9" height="124" viewBox="0 0 9 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="3" height="31" rx="1.5" transform="matrix(1 0 0 -1 6 31)" fill="white"/>
+<rect width="3" height="11" rx="1.5" transform="matrix(1 0 0 -1 0 36)" fill="white"/>
+<rect width="3" height="32" rx="1.5" transform="matrix(1 0 0 -1 5 124)" fill="white"/>
 </svg>

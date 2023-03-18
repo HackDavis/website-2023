@@ -1,3 +1,5 @@
+@use "/src/styles/mixins" as *;
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -13,7 +15,7 @@
     margin-bottom: 48px;
     width: 96px;
     
-    @media screen and (min-width: 992px) {
+    @include lg {
       display: block;
     }
   }
@@ -26,7 +28,7 @@
   padding: 20px 20px 0 0;
   max-width: 1376px;
   
-  @media screen and (min-width: 992px) {
+  @include lg {
     border-radius: 20px;
     padding: 60px;
     margin-right: 0;
