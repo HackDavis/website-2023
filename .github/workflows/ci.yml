@@ -30,29 +30,19 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --immutable --immutable-cache --check-cache
-      
-      - name: Lint code
-        run: yarn lint
-
-      - name: Build project
-        id: build-netlify
-        run: netlify build
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
       # Slightly different regexes and var names here
-      - name: Preview deployment
+      - name: Lint, build and preview deployment
         id: deploy-netlify
         run: |
-          COMMAND="netlify deploy -m ${{ github.head_ref }} --alias ${{ github.head_ref }}"
+          COMMAND="netlify deploy --build --context branch-deploy --alias ${{ github.head_ref }}"
           OUTPUT=$(sh -c "$COMMAND")
 
           NETLIFY_URL=$(echo "$OUTPUT" | grep -Eo '(http|https)://[a-zA-Z0-9./?=_-]*(--)[a-zA-Z0-9./?=_-]*') # Unique key: --
           NETLIFY_LOGS_URL=$(echo "$OUTPUT" | grep -Eo '(http|https)://app.netlify.com/[a-zA-Z0-9./?=_-]*') # Unique key: app.netlify.com
 
-          echo "::set-output name=netlify_preview_url::$NETLIFY_URL"
-          echo "::set-output name=netlify_logs_url::$NETLIFY_LOGS_URL"
+          echo "netlify_preview_url=$NETLIFY_URL" >> $GITHUB_OUTPUT
+          echo "netlify_logs_url=$NETLIFY_LOGS_URL" >> $GITHUB_OUTPUT
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
