@@ -7,31 +7,31 @@
   height: 535px;
   margin-bottom: -260px;
   
-  > img {
+  > svg {
     position: absolute;
   }
   
   // liquid
-  > img:nth-of-type(2) {
+  > svg:nth-child(2) {
     top: 10px;
     left: 16.5px;
     animation: spin 2.75s linear infinite;
   }
 
   // glass reflection
-  > img:nth-of-type(3) {
+  > svg:nth-child(3) {
     top: 5px;
   }
   
   // Pipe group 1
-  > img:nth-of-type(4) {
+  > svg:nth-child(4) {
     bottom: 80px;
     right: 139px;
     animation: slide-down 1.25s ease-in-out infinite;
   }
   
   // Pipe group 2
-  > img:nth-of-type(5) {
+  > svg:nth-child(5) {
     bottom: 50px;
     left: 84px;
     opacity: 0;
@@ -39,7 +39,7 @@
   }
 
   // Pipe group 3
-  > img:nth-of-type(6) {
+  > svg:nth-child(6) {
     bottom: 135px;
     left: 21px;
     opacity: 0;
@@ -47,7 +47,7 @@
   }
 
   // Propellor
-  > img:nth-of-type(7) {
+  > svg:nth-child(7) {
     top: 125px;
     left: 23.5px;
     animation: spin 1.5s linear infinite;
