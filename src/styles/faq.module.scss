@@ -24,7 +24,7 @@
 
 
 .question {
-  width: 900px;
+  width: 40em;
   color: #ffffff;
   list-style: none;
   border-bottom: 3px solid #ade5e4;
@@ -34,12 +34,16 @@
   cursor: pointer;
 }
 
+.question span {
+  padding-right: 5px;
+}
+
 .answer {
     // display: block;
   border-bottom: 3px solid #ade5e4;
   transition: max-height 1000ms ease-out;
   max-height: 1000px;
-  width: 900px;
+  width: 40em;
   color: #ffffff;
   list-style: none;
   font-size: 24px;
@@ -67,7 +71,7 @@
   overflow: hidden;
   transition: max-height 1000ms ease-out;
   opacity: 0;
-  width: 900px;
+  width: 40em;
   color: #ffffff;
   list-style: none;
   font-size: 24px;
@@ -75,5 +79,33 @@
   padding-bottom: 25px;
 }
 
-.arrowImg {
+@media screen and (max-width: 1160px) {
+  .question, .answer, .answerHidden {
+    width: 30em;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .question, .answer, .answerHidden {
+    width: 25em;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .question, .answer, .answerHidden {
+    width: 25em;
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .question, .answer, .answerHidden {
+    width: 20em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .question, .answer, .answerHidden {
+    width: 17em;
+  }
 }

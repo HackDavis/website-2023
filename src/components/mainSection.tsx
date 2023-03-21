@@ -1,21 +1,33 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '@/styles/mainSection.module.scss'
 import Image from 'next/image'
 import arrowUp from '@/images/arrowUp.svg'
 import heart from '@/images/heart.svg'
 import calendar from '@/images/calendar.svg'
+import cowCone from '@/images/cowCone.svg'
+import cloudBg from '@/images/cloudBg.svg'
 
 const MainSection = () => {
     const [sponsor, setSponsor] = useState(false);
 
+    const [showCow, setShowCow] = useState(false);
+
+    useEffect(() => {
+        setShowCow(true);
+    }, []);
+
     const toggleSponsor = () => {
         setSponsor(!sponsor);
     }
+    
     return(
         <div className={styles.landing}>
-            {/* <div>
-                cow on icecream img
-            </div> */}
+            <div className={styles.cloud}>
+                {/* <Image src={cloudBg} alt="" /> */}
+            </div>
+            <div className={showCow ? `${styles.cowConeAnimation}` : `${styles.cowCone}`}>
+                <Image  src={cowCone} alt='' className={styles.cowConeImg}/>
+            </div>
             <div className={styles.mainSection}>
                 {/* <div className={styles.mainSectionText}> */}
 
@@ -23,7 +35,7 @@ const MainSection = () => {
                         <div className={styles.hackdavis}>HACK<b>DAVIS</b> </div>
                             <br />
                         <div className={styles.calendar}>
-                            <Image  src={calendar} alt='' className={styles.calendarIcon}/> 
+                            {/* <Image  src={calendar} alt='' className={styles.calendarIcon}/>  */}
                             <a href ="https://google.com" >May 20, 2023 @ UCenter </a> 
                         </div>
                     </div>

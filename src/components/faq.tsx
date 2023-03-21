@@ -22,7 +22,7 @@ const AccordionItem = ({
         // transitionTime={200}
         trigger={
           <div className={styles.question}>
-            {question}
+            <span>{question}</span>
             <Image
               src={arrow}
               alt=""

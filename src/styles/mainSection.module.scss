@@ -14,12 +14,48 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    
+    // z-index: 1;
+   
+
+    position: relative;
+
+    .cloudBg {
+        position: absolute;
+        border: 2px solid red;
+        z-index: 0;
+    }
+
+    .cowCone, .cowConeAnimation {
+        position: absolute;
+        left: -15%;
+        top: 4%;
+        // right: 60%;
+        // bottom: 0%;
+        // top: 0%;
+        z-index: 0;
+        // animation: backAndForth 4s infinite ease-in-out;
+        // transform: translateX(-100%);
+        // transition: transform 0.8s;
+        &:hover {
+            transform: translateX(10%);
+            transition: transform 0.5s ease-out;
+            //transform: translate(20px, 20px);
+        }
+    }
+
+    .cowConeImg {
+        width: 75%;
+        
+    }
+
+    .mainSection {
+        display: flex;
+        flex-direction: column-reverse;
+        z-index: 1;
+    }
 }
 
-.mainSection {
-    display: flex;
-    flex-direction: column-reverse;
-}
 
 .tagline{
     font-weight: 700;
@@ -38,7 +74,7 @@
     // }
 }
 
-.event{
+.event {
     font-family: 'Proxima Nova' 'sans-serif';
     font-style: normal;
     font-weight: 400;
@@ -75,6 +111,8 @@
     font-size: 18px;
     font-family: 'Proxima Nova', sans-serif;
     color: #123041;
+
+    z-index: 1;
 
 }
 
@@ -152,7 +190,9 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    font-family: 'Proxima Nova', sans-serif;    
+    font-family: 'Proxima Nova', sans-serif; 
+    
+    z-index: inherit;
 }
 
 .calendar {
@@ -160,7 +200,7 @@
     flex-direction: row;
     justify-content: flex-end;
     column-gap: 12px;
-    align-items: flex-end;
+    align-items:baseline;
 }
 
 .calendarIcon {
@@ -174,7 +214,7 @@
 
 }
 
-.starterPack a, .calendar a:hover {
+.starterPack a:hover {
     border-bottom-color: white;
     transition: border-bottom ease-in-out;
     padding-bottom: 7px;
