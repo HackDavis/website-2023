@@ -11,7 +11,9 @@ import ChurnerPropeller from '@/assets/churnerPropeller';
 const Churner = () => (
   <div className={styles.container}>
     <ChurnerBackground />
-    <ChurnerLiquid />
+    <div>
+      <ChurnerLiquid />
+    </div>
     <ChurnerGlassReflection />
     <ChurnerPipeGroup1 />
     <ChurnerPipeGroup2 />
