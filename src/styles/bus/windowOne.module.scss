@@ -3,6 +3,7 @@
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 90px 30px 24px 40px;
   border: 1.6px solid var(--color-grey-1);
   border-left: none;

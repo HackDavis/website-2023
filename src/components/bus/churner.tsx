@@ -9,16 +9,14 @@ import ChurnerPipeGroup3 from '@/assets/churnerPipeGroup3';
 import ChurnerPropeller from '@/assets/churnerPropeller';
 
 const Churner = () => (
-  <div style={{ minWidth: 297 }}>
-    <div className={styles.container}>
-      <ChurnerBackground />
-      <ChurnerLiquid />
-      <ChurnerGlassReflection />
-      <ChurnerPipeGroup1 />
-      <ChurnerPipeGroup2 />
-      <ChurnerPipeGroup3 />
-      <ChurnerPropeller />
-    </div>
+  <div className={styles.container}>
+    <ChurnerBackground />
+    <ChurnerLiquid />
+    <ChurnerGlassReflection />
+    <ChurnerPipeGroup1 />
+    <ChurnerPipeGroup2 />
+    <ChurnerPipeGroup3 />
+    <ChurnerPropeller />
   </div>
 );
 

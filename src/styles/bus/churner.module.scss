@@ -3,54 +3,72 @@
 .container {
   display: none;
   position: relative;
-  width: 100%;
-  height: 535px;
-  margin-bottom: -260px;
-  
+  min-width: 30.7%;
+
   > svg {
     position: absolute;
   }
-  
+
+  // background
+  > svg:first-child {
+    display: block;
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+
   // liquid
   > svg:nth-child(2) {
-    top: 10px;
-    left: 16.5px;
+    width: 90.9%;
+    height: 50.5%;
+    top: 1.7%;
+    left: 5.7%;
     animation: spin 2.75s linear infinite;
   }
 
   // glass reflection
   > svg:nth-child(3) {
-    top: 5px;
+    width: 97.6%;
+    height: 54.2%;
+    top: 0%;
+    left: 2.3%;
   }
-  
+
   // Pipe group 1
   > svg:nth-child(4) {
-    bottom: 80px;
-    right: 139px;
-    animation: slide-down 1.25s ease-in-out infinite;
+    width: 3%;
+    height: 23.2%;
+    top: 60%;
+    left: 50%;
+    animation: slide-down 1s ease-in-out infinite;
   }
-  
+
   // Pipe group 2
   > svg:nth-child(5) {
-    bottom: 50px;
-    left: 84px;
-    opacity: 0;
-    animation: slide-up 1.25s ease-in-out 0.2s infinite;
+    width: 3.4%;
+    height: 12.5%;
+    top: 79%;
+    left: 28.3%;
+    // opacity: 0;
+    animation: slide-up 1s ease-in-out 0.2s infinite;
   }
 
   // Pipe group 3
   > svg:nth-child(6) {
-    bottom: 135px;
-    left: 21px;
-    opacity: 0;
-    animation: slide-down 1.25s ease-in-out 0.4s infinite;
+    width: 3%;
+    height: 6.7%;
+    top: 60.7%;
+    left: 7%;
+    animation: slide-down 1s ease-in-out 0.4s infinite;
   }
 
   // Propellor
   > svg:nth-child(7) {
-    top: 125px;
-    left: 23.5px;
-    animation: spin 1.5s linear infinite;
+    width: 86.2%;
+    height: 6.9%;
+    top: 24%;
+    left: 8%;
+    animation: spin 0.5s linear infinite;
   }
 
   @include lg {
@@ -72,32 +90,32 @@
 
 @keyframes slide-down {
   0% {
-    transform: translateY(-25px);
-    opacity: 0;
+    transform: translateY(0px);
+    // opacity: 0;
   }
   35% {
-    opacity: 1;
+    // opacity: 1;
   }
   75% {
-    transform: translateY(25px);
   }
   100% {
-    opacity: 0;
+    transform: translateY(50px);
+    // opacity: 0;
   }
 }
 
 @keyframes slide-up {
   0% {
     transform: translateY(0px);
-    opacity: 0;
+    // opacity: 0;
   }
   35% {
-    opacity: 1;
+    // opacity: 1;
   }
   75% {
-    transform: translateY(-50px);
   }
   100% {
-    opacity: 0;
+    transform: translateY(-50px);
+    // opacity: 0;
   }
 }
