@@ -8,6 +8,8 @@ import {
   ChurnerPipeGroup2,
   ChurnerPipeGroup3,
   ChurnerPropeller,
+  ChurnerPropellerMiddle,
+  ChurnerPropellerWings,
 } from '@/assets/churner';
 
 const Churner = () => (
@@ -20,7 +22,8 @@ const Churner = () => (
     <ChurnerPipeGroup1 />
     <ChurnerPipeGroup2 />
     <ChurnerPipeGroup3 />
-    <ChurnerPropeller />
+    <ChurnerPropellerWings />
+    <ChurnerPropellerMiddle />
   </div>
 );
 

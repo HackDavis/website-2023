@@ -23,7 +23,7 @@
     height: 50.5%;
     top: 1.7%;
     left: 5.7%;
-    animation: spin 2.75s linear infinite;
+    animation: spin 0.5s linear infinite;
     
     > svg {
       width: 100%;
@@ -68,13 +68,21 @@
     animation: slide-down 1s ease-in-out 0.4s infinite;
   }
 
-  // Propellor
+  // Propellor wings
   > svg:nth-child(7) {
     width: 86.2%;
     height: 6.9%;
     top: 24%;
     left: 8%;
     animation: spin 0.5s linear infinite;
+  }
+
+  // Propeller middle
+  > svg:nth-child(8) {
+    width: 12.8%;
+    height: 12.45%;
+    top: 21.2%;
+    left: 45%;
   }
 
   @include lg {

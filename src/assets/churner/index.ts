@@ -11,3 +11,7 @@ export { default as ChurnerPipeGroup2 } from './churnerPipeGroup2';
 export { default as ChurnerPipeGroup3 } from './churnerPipeGroup3';
 
 export { default as ChurnerPropeller } from './churnerPropeller';
+
+export { default as ChurnerPropellerMiddle } from './churnerPropellerMiddle';
+
+export { default as ChurnerPropellerWings } from './churnerPropellerWings';
