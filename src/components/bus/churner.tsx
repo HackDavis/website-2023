@@ -7,7 +7,6 @@ import {
   ChurnerPipeGroup1,
   ChurnerPipeGroup2,
   ChurnerPipeGroup3,
-  ChurnerPropeller,
   ChurnerPropellerMiddle,
   ChurnerPropellerWings,
 } from '@/assets/churner';
