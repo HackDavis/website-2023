@@ -1,4 +1,4 @@
-const ChurnerLiquid = () => (
+export const ChurnerLiquid = () => (
   <svg
     width="270"
     height="270"
@@ -33,5 +33,3 @@ const ChurnerLiquid = () => (
     </g>
   </svg>
 );
-
-export default ChurnerLiquid;

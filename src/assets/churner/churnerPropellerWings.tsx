@@ -1,4 +1,4 @@
-const ChurnerPropellerWings = () => (
+export const ChurnerPropellerWings = () => (
   <svg
     width="256"
     height="19"
@@ -15,5 +15,3 @@ const ChurnerPropellerWings = () => (
     />
   </svg>
 );
-
-export default ChurnerPropellerWings;

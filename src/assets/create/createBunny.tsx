@@ -1,4 +1,4 @@
-const CreateBunny = () => (
+export const CreateBunny = () => (
   <svg
     width="316"
     height="329"
@@ -88,5 +88,3 @@ const CreateBunny = () => (
     />
   </svg>
 );
-
-export default CreateBunny;

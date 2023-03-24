@@ -1,4 +1,4 @@
-const FlairDuckyAndCherry = () => (
+export const FlairDuckyAndCherry = () => (
   <svg
     width="393"
     height="307"
@@ -90,5 +90,3 @@ const FlairDuckyAndCherry = () => (
     />
   </svg>
 );
-
-export default FlairDuckyAndCherry;

@@ -1,4 +1,4 @@
-const ChurnerPipeGroup1 = () => (
+export const ChurnerPipeGroup1 = () => (
   <svg
     width="9"
     height="124"
@@ -29,5 +29,3 @@ const ChurnerPipeGroup1 = () => (
     />
   </svg>
 );
-
-export default ChurnerPipeGroup1;

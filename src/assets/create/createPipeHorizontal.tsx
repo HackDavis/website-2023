@@ -1,4 +1,4 @@
-const CreatePipeHorizontal = () => (
+export const CreatePipeHorizontal = () => (
   <svg
     width="36"
     height="9"
@@ -25,5 +25,3 @@ const CreatePipeHorizontal = () => (
     />
   </svg>
 );
-
-export default CreatePipeHorizontal;

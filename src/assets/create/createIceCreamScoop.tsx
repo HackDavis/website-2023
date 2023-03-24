@@ -1,4 +1,4 @@
-const CreateIceCreamScoop = () => (
+export const CreateIceCreamScoop = () => (
   <svg
     width="249"
     height="231"
@@ -28,5 +28,3 @@ const CreateIceCreamScoop = () => (
     />
   </svg>
 );
-
-export default CreateIceCreamScoop;

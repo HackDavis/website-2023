@@ -1,4 +1,4 @@
-const ChurnerGlassReflection = () => (
+export const ChurnerGlassReflection = () => (
   <svg
     width="290"
     height="290"
@@ -35,5 +35,3 @@ const ChurnerGlassReflection = () => (
     </g>
   </svg>
 );
-
-export default ChurnerGlassReflection;

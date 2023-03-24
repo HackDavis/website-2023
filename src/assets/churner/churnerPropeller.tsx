@@ -1,4 +1,4 @@
-const ChurnerPropeller = () => (
+export const ChurnerPropeller = () => (
   <svg
     width="256"
     height="37"
@@ -17,5 +17,3 @@ const ChurnerPropeller = () => (
     <circle cx="126.891" cy="18.5" r="12.5" fill="white" />
   </svg>
 );
-
-export default ChurnerPropeller;

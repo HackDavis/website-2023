@@ -1,4 +1,4 @@
-const ChurnerBackground = () => (
+export const ChurnerBackground = () => (
   <svg
     width="297"
     height="535"
@@ -17,5 +17,3 @@ const ChurnerBackground = () => (
     <circle cx="151.575" cy="144.577" r="144.577" fill="#123041" />
   </svg>
 );
-
-export default ChurnerBackground;

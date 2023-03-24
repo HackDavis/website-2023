@@ -1,17 +1,17 @@
-export { default as ChurnerBackground } from './churnerBackground';
+export { ChurnerBackground } from './churnerBackground';
 
-export { default as ChurnerGlassReflection } from './churnerGlassReflection';
+export { ChurnerGlassReflection } from './churnerGlassReflection';
 
-export { default as ChurnerLiquid } from './churnerLiquid';
+export { ChurnerLiquid } from './churnerLiquid';
 
-export { default as ChurnerPipeGroup1 } from './churnerPipeGroup1';
+export { ChurnerPipeGroup1 } from './churnerPipeGroup1';
 
-export { default as ChurnerPipeGroup2 } from './churnerPipeGroup2';
+export { ChurnerPipeGroup2 } from './churnerPipeGroup2';
 
-export { default as ChurnerPipeGroup3 } from './churnerPipeGroup3';
+export { ChurnerPipeGroup3 } from './churnerPipeGroup3';
 
-export { default as ChurnerPropeller } from './churnerPropeller';
+export { ChurnerPropeller } from './churnerPropeller';
 
-export { default as ChurnerPropellerMiddle } from './churnerPropellerMiddle';
+export { ChurnerPropellerMiddle } from './churnerPropellerMiddle';
 
-export { default as ChurnerPropellerWings } from './churnerPropellerWings';
+export { ChurnerPropellerWings } from './churnerPropellerWings';

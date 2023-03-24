@@ -1,4 +1,4 @@
-const CreateSnow = () => (
+export const CreateSnow = () => (
   <svg
     width="627"
     height="424"
@@ -25,5 +25,3 @@ const CreateSnow = () => (
     <circle cx="546" cy="35" r="5" fill="white" />
   </svg>
 );
-
-export default CreateSnow;

@@ -1,4 +1,4 @@
-const ChurnerPropellerMiddle = () => (
+export const ChurnerPropellerMiddle = () => (
   <svg
     width="38"
     height="37"
@@ -10,5 +10,3 @@ const ChurnerPropellerMiddle = () => (
     <circle cx="18.8909" cy="18.5" r="12.5" fill="white" />
   </svg>
 );
-
-export default ChurnerPropellerMiddle;

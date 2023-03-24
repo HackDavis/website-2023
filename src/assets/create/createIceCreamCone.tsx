@@ -1,4 +1,4 @@
-const CreateIceCreamCone = () => (
+export const CreateIceCreamCone = () => (
   <svg
     width="192"
     height="354"
@@ -33,5 +33,3 @@ const CreateIceCreamCone = () => (
     </g>
   </svg>
 );
-
-export default CreateIceCreamCone;

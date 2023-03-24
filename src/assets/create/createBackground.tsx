@@ -1,4 +1,4 @@
-const CreateBackground = () => (
+export const CreateBackground = () => (
   <svg
     width="672"
     height="460"
@@ -759,5 +759,3 @@ const CreateBackground = () => (
     </defs>
   </svg>
 );
-
-export default CreateBackground;

@@ -1,4 +1,4 @@
-const FlairBackground = () => (
+export const FlairBackground = () => (
   <svg
     width="662"
     height="460"
@@ -271,5 +271,3 @@ const FlairBackground = () => (
     </defs>
   </svg>
 );
-
-export default FlairBackground;
