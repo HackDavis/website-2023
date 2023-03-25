@@ -4,8 +4,9 @@ import Image from 'next/image'
 import arrowUp from '@/images/arrowUp.svg'
 import heart from '@/images/heart.svg'
 import calendar from '@/images/calendar.svg'
-import cowCone from '@/images/cowCone.svg'
 import cloudBg from '@/images/cloudBg.svg'
+import cowCone from '@/images/cowCone.svg'
+import cowHand from '@/images/cowHand.svg'
 
 const MainSection = () => {
     const [sponsor, setSponsor] = useState(false);
@@ -30,7 +31,7 @@ const MainSection = () => {
                 <Image src={cloudBg} alt="" className={styles.cloudBg}/>
             </div>
             <div className={styles.cowCone} onAnimationEnd={onAnimationEnd}>
-                {/* <Image src={cowHandWave} alt="" className={styles.cowHandAnimate} /> */}
+                <Image src={cowHand} alt="" className={styles.cowHandAnimate} />
                 <Image  src={cowCone} alt='' className={styles.cowConeImg}/>
             </div>
 
