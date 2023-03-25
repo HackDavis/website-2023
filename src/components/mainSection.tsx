@@ -16,6 +16,10 @@ const MainSection = () => {
         setShowCow(true);
     }, []);
 
+    const onAnimationEnd = () => {
+        setShowCow(false);
+    };
+
     const toggleSponsor = () => {
         setSponsor(!sponsor);
     }
@@ -23,11 +27,13 @@ const MainSection = () => {
     return(
         <div className={styles.landing}>
             <div className={styles.cloud}>
-                {/* <Image src={cloudBg} alt="" /> */}
+                <Image src={cloudBg} alt="" className={styles.cloudBg}/>
             </div>
-            <div className={showCow ? `${styles.cowConeAnimation}` : `${styles.cowCone}`}>
+            <div className={styles.cowCone} onAnimationEnd={onAnimationEnd}>
+                {/* <Image src={cowHandWave} alt="" className={styles.cowHandAnimate} /> */}
                 <Image  src={cowCone} alt='' className={styles.cowConeImg}/>
             </div>
+
             <div className={styles.mainSection}>
                 {/* <div className={styles.mainSectionText}> */}
 
