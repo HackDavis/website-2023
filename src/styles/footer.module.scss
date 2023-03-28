@@ -1,11 +1,3 @@
-.fa,
-.fas,
-.far,
-.fal,
-.fab {
-  font-family: "Font Awesome 5 Free";
-}
-
 .footerstyle {
   font-family: "Proxima Nova", sans-serif;
   position: relative;
@@ -67,7 +59,7 @@ div#copyright {
   width: 25px;
 }
 
-.logo {
+.logoCont {
   display: inline-block;
   text-align: center;
   width: 60px;
@@ -75,8 +67,10 @@ div#copyright {
   margin-bottom: 20px;
 }
 
-.logo svg {
+.logo {
   display: inline-block;
+  width: 60px;
+  height: 60px;
 }
 
 @media (min-width: 768px) {
@@ -84,8 +78,14 @@ div#copyright {
     font-size: 30px;
     width: 40px;
   }
+
+  .logoCont {
+    width: 80px;
+  }
+
   .logo {
     width: 80px;
+    height: 80px;
   }
   #copyright span {
     font-size: 0.9em;

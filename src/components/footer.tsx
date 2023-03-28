@@ -1,24 +1,27 @@
 import React from "react";
-import styles from "@/styles/faq.module.scss";
+import styles from "@/styles/footer.module.scss";
 // import "../../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 import LogoIcon from "../images/HDLogoWhite.svg";
-// import Fade from "react-reveal/Fade";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faMedium, faFacebookF, faTwitter, faInstagram, faDiscord } from "@fortawesome/free-brands-svg-icons";
+
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    // <Fade>
-    <div>
+    <div className={styles.footerCont}>
       <footer className={styles.footerstyle}>
         <div id={styles["footer-content"]}>
-          <div className={styles.logo}>
-            <img src={LogoIcon}></img>
+          <div className={styles.logoCont}>
+            <Image className={styles.logo} src={LogoIcon} alt=""/>
           </div>
           <br></br>
           <a className={styles.smallbutton1} href="mailto:team@hackdavis.io">
-            <i
-              className={`fa fa-envelope ${styles.icon}`}
-              aria-hidden="true"
-            ></i>
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              style={{color: "#ffffff",}}
+            />
           </a>
           <a
             className={styles.smallbutton1}
@@ -26,10 +29,10 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i
-              className={`fab fa-medium ${styles.icon}`}
-              aria-hidden="true"
-            ></i>
+            <FontAwesomeIcon 
+              icon={faMedium} 
+              style={{ color: "#ffffff" }} 
+            />
           </a>
           <a
             className={styles.smallbutton1}
@@ -37,10 +40,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i
-              className={`fab fa-facebook-f ${styles.icon}`}
-              aria-hidden="true"
-            ></i>
+            <FontAwesomeIcon icon={faFacebookF} style={{color: "#ffffff",}} />
+
           </a>
           <a
             className={styles.smallbutton1}
@@ -48,10 +49,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i
-              className={`fab fa-twitter ${styles.icon}`}
-              aria-hidden="true"
-            ></i>
+            <FontAwesomeIcon icon={faTwitter} style={{color: "#ffffff",}} />
           </a>
           <a
             className={styles.smallbutton1}
@@ -59,10 +57,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i
-              className={`fab fa-instagram ${styles.icon}`}
-              aria-hidden="true"
-            ></i>
+            <FontAwesomeIcon icon={faInstagram} style={{color: "#ffffff",}} />
           </a>
           <a
             className={styles.smallbutton1}
@@ -70,18 +65,14 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i
-              className={`fab fa-discord ${styles.icon}`}
-              aria-hidden="true"
-            ></i>
+            <FontAwesomeIcon icon={faDiscord} style={{color: "#ffffff",}} />
           </a>
         </div>
         <div id={styles.copyright}>
           <span>&copy; 2022 HackDavis • Made with ☕️ & 💛 in Davis</span>
         </div>
       </footer>
-    {/* </Fade> */}
-      </div>
+    </div>
   );
 };
 
