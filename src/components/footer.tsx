@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/styles/footer.module.scss";
 // import "../../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 import LogoIcon from "../images/HDLogoWhite.svg";
+import iceCreamSprinkles from "../images/iceCreamFooter.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faMedium, faFacebookF, faTwitter, faInstagram, faDiscord } from "@fortawesome/free-brands-svg-icons";
@@ -11,6 +12,17 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className={styles.footerCont}>
+      <div className={styles.iceCreamCont}>
+
+        <Image className={styles.iceCreamImg} src={iceCreamSprinkles} alt=""/>
+
+        <div className={styles.iceCreamText}>
+          <p>SPRINKLE IN YOUR FLAIR</p>
+          <a href="https://www.google.com/">Register Now</a>
+        </div>
+
+      </div>
+      
       <footer className={styles.footerstyle}>
         <div id={styles["footer-content"]}>
           <div className={styles.logoCont}>
