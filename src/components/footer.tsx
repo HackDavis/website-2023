@@ -81,7 +81,7 @@ const Footer = () => {
           </a>
         </div>
         <div id={styles.copyright}>
-          <span>&copy; 2022 HackDavis • Made with ☕️ & 💛 in Davis</span>
+          <span>&copy; 2023 HackDavis • Made with ☕️ & 💛 in Davis</span>
         </div>
       </footer>
     </div>
