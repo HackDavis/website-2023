@@ -1,0 +1,1 @@
+export { ShareBackground } from './shareBackground';
