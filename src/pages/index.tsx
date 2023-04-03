@@ -4,6 +4,7 @@ import MainSection from '@/components/mainSection'
 import Faq from '@/components/faq'
 import Sponsors from '@/components/sponsors'
 import Footer from '@/components/footer'
+import Sponsors2 from '@/components/sponsors2'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <MainSection />
       <Faq />
+      <Sponsors2 />
       <Sponsors />
       <Footer />
     </>

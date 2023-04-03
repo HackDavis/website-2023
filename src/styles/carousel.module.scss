@@ -1,0 +1,112 @@
+
+.container {
+  position: relative;
+  height: 50px;
+  max-height: 20px;
+  width: 200px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.word {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  transform: translateY(10%);
+  transition: transform 0.5s ease-out;
+  opacity: 0;
+}
+
+.word.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.word.previous {
+  transform: translateY(-400%);
+  opacity: 0;
+}
+
+.current {
+  opacity: 1;
+}
+
+
+.container2 {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.word2 {
+  animation-name: vertical-replace;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes vertical-replace {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  80% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  90% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  // 80% {
+  //   opacity: 1;
+  //   transform: translateY(0);
+  // }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  // 20% {
+  //   opacity: 0;
+  //   transform: translateY(-20px);
+  // }
+  // 25% {
+  //   opacity: 0;
+  //   transform: translateY(20px);
+  // }
+  // 45% {
+  //   opacity: 1;
+  //   transform: translateY(0);
+  //   content: "World";
+  // }
+  // 65% {
+  //   opacity: 0;
+  //   transform: translateY(-20px);
+  // }
+  // 70% {
+  //   opacity: 0;
+  //   transform: translateY(20px);
+  // }
+  // 90% {
+  //   opacity: 1;
+  //   transform: translateY(0);
+  //   content: "Universe";
+  // }
+}
+
