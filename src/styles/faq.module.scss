@@ -84,33 +84,34 @@
 
 
 // media queries
-// @media screen and (max-width: 1160px) {
-//   .question, .answer, .answerHidden {
-//     width: 30em;
-//   }
-// }
+// TODO: remove these after changing widths above
+@media screen and (max-width: 1160px) {
+  .question, .answer, .answerHidden {
+    width: 30em;
+  }
+}
 
-// @media screen and (max-width: 930px) {
-//   .question, .answer, .answerHidden {
-//     width: 25em;
-//   }
-// }
+@media screen and (max-width: 930px) {
+  .question, .answer, .answerHidden {
+    width: 25em;
+  }
+}
 
-// @media screen and (max-width: 780px) {
-//   .question, .answer, .answerHidden {
-//     width: 25em;
-//     font-size: 1.25em;
-//   }
-// }
+@media screen and (max-width: 780px) {
+  .question, .answer, .answerHidden {
+    width: 25em;
+    font-size: 1.25em;
+  }
+}
 
-// @media screen and (max-width: 640px) {
-//   .question, .answer, .answerHidden {
-//     width: 20em;
-//   }
-// }
+@media screen and (max-width: 640px) {
+  .question, .answer, .answerHidden {
+    width: 20em;
+  }
+}
 
-// @media screen and (max-width: 500px) {
-//   .question, .answer, .answerHidden {
-//     width: 17em;
-//   }
-// }
+@media screen and (max-width: 500px) {
+  .question, .answer, .answerHidden {
+    width: 17em;
+  }
+}
