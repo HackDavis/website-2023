@@ -40,9 +40,34 @@
 
 .right {
   display: flex;
+  flex-grow: 1;
+  padding: 30px;
   border: 1.6px solid var(--color-grey-1);
   border-left: none;
   border-radius: 0 10px 10px 0;
+  margin-bottom: 20px;
+
+  @include min {
+    border: 1.6px solid var(--color-grey-1);
+    border-radius: 10px;
+  }
+
+  @include lg {
+    align-items: center;
+    padding: 24px 24px 24px 16px;
+    margin-bottom: 0;
+    border-radius: 0 50px 50px 0;
+    border-width: 5px;
+    border-left: none;
+  }
+  
+  @include xl {
+    padding: 44px 44px 44px 16px;
+  }
+}
+
+.info {
+  max-width: 440px;
 
   h2 {
     @include fontFactory(var(--dm-mono), 24px, 500, var(--color-teal-2), 0.02rem, 1);
@@ -59,43 +84,41 @@
     @include fontFactory(var(--proxima-nova), 16px, 400, var(--color-teal-3), 0.02rem, 1.25);
   }
 
-  @include min {
-    border: 1.6px solid var(--color-grey-1);
-    border-radius: 10px;
-  }
-
   @include lg {
-    align-items: center;
-    padding: 46px 46px 46px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
     margin-bottom: 0;
-    border-radius: 0 50px 50px 0;
-    border-width: 5px;
-    border-left: none;
 
     h2 {
-      font-size: min(40px, 200%);
+      font-size: 2.6vw;
       line-height: 1.15;
+      margin-bottom: 6%;
+      
+      > span {
+        font-size: 3.04vw;
+      }
+    }
+    
+    p {
+      font-size: 1.4vw;
+      font-size: min(18px, 1.5vw);
+    }
+  }
+  
+  @include rwd(1348px) {
+    h2 {
+      font-size: 40px;
+      margin-bottom: 24px;
 
       > span {
-        font-size: min(50px, 100%);
+        font-size: 50px;
       }
     }
 
     p {
       font-size: 18px;
     }
-  }
-}
-
-.info {
-  padding: 30px;
-  margin-bottom: 20px;
-  max-width: 440px;
-
-  @include lg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
   }
 }

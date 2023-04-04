@@ -8,33 +8,29 @@
   border-left: none;
   border-radius: 0 10px 10px 0;
   overflow: hidden;
-
+  
   @include min {
     border: 1.6px solid var(--color-grey-1);
     border-radius: 10px;
   }
+  
   @include lg {
+    width: 52%;
     border-radius: 0 50px 50px 0;
     border-width: 5px;
+    border-left: none;
   }
+  
   > * {
     position: absolute;
   }
 
   // background
   > :first-child {
-    border-radius: 0 10px 10px 0;
     display: block;
     position: static;
     width: 100%;
     height: 100%;
-
-    @include min {
-      border-radius: 10px;
-    }
-    @include lg {
-      border-radius: 0 50px 50px 0;
-    }
   }
 
   // ducky and cherry

@@ -1,24 +1,36 @@
 @use "/src/styles/mixins" as *;
 
+.background {
+  background-color: #043142;
+  // overflow-x: hidden;
+}
+
 .wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
-  background-color: #043142;
   padding-top: 16px;
 
-  .banner {
-    display: none;
-    position: sticky;
-    top: 0;
-    padding-top: 92px;
-    margin-left: -115px;
-    margin-right: 40px;
-    margin-bottom: 48px;
-    width: 96px;
+  @include lg {
+    margin-left: -49px;
+    margin-right: -49px;
+    padding-right: 48px;
+    right: 49px;
+  }
+}
 
-    @include lg {
-      display: block;
-    }
+.banner {
+  display: none;
+  position: sticky;
+  top: 0;
+  padding-top: 92px;
+  margin-bottom: 48px;
+  width: 112px;
+  height: 753px;
+  // flex-basis: 112px;
+
+  @include lg {
+    display: block;
   }
 }
 
@@ -31,8 +43,9 @@
   max-width: 380px;
 
   @include lg {
-    right: 115px;
-    max-width: 1380px;
+    right: 0;
+    flex-basis: 1378px;
+    max-width: 1378px;
     border-radius: 20px;
     padding: 70px;
   }
