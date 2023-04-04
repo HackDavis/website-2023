@@ -1,4 +1,5 @@
 import { Inter } from '@next/font/google'
+// import Navbar from '@/components/navbarDesktop'
 import Navbar from '@/components/navbar'
 import MainSection from '@/components/mainSection'
 import Faq from '@/components/faq'
