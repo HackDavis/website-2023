@@ -3,6 +3,7 @@ import styles from "@/styles/navbar.module.scss";
 import HDLogo from "../images/HDLogo2.svg";
 import moon from "../images/moon.svg";
 import sun from "../images/sun.svg";
+import badge from "../images/MLHBadge.svg";
 import Image from "next/image";
 
 // import styles from "@/styles/navbar.module.css";
@@ -37,12 +38,17 @@ function Navbar() {
             />
           </div>
         </div>
+
+      </div>
+      {/* MLH badge */}
+      <div className={styles.navLinkBadge}>
+        <Image src={badge} alt="" />
       </div>
     </div>
   );
 }
 
-// export { Navbar };
+export { Navbar };
 
 
 // const Navbar = () => {
