@@ -30,7 +30,7 @@ jobs:
       - name: Lint and build code
         run: yarn build
 
-      - name: Publish to Netlify
+      - name: Lint and build code, then publish to Netlify
         run: netlify deploy --build --prod
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
