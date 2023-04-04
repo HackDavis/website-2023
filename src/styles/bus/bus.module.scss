@@ -2,7 +2,6 @@
 
 .background {
   background-color: #043142;
-  // overflow-x: hidden;
 }
 
 .wrapper {
@@ -25,12 +24,15 @@
   top: 0;
   padding-top: 92px;
   margin-bottom: 48px;
-  width: 112px;
-  height: 753px;
-  // flex-basis: 112px;
-
+  width: 96px;
+  
   @include lg {
     display: block;
+  }
+  
+  @include xl {
+    width: 112px;
+    height: 753px;
   }
 }
 

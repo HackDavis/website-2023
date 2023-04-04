@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from '@/styles/bus/bus.module.scss';
 import Image from 'next/image';
 import banner from '@/images/banner.svg';
-import Banner from '@/assets';
 import WindowOne from './windowOne';
 import WindowTwo from './windowTwo';
 import WindowThree from './windowThree';
@@ -20,7 +19,6 @@ const Bus = () => (
           <WindowFour />
         </div>
         <Image src={banner} alt="banner" className={styles.banner} />
-        {/* <Banner /> */}
       </div>
     </div>
     <div style={{ height: 900 }} />
