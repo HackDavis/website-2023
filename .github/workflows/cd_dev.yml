@@ -10,7 +10,8 @@ on:
     branches: [main]
 
 jobs:
-  deploy:
+  lint_build_deploy:
+    name: Lint and build code, then publish to Netlify
     environment:
       name: dev
       url: https://hd-2023-dev.netlify.app/
@@ -26,9 +27,6 @@ jobs:
       
       - name: Install dependencies
         run: yarn install --immutable --immutable-cache --check-cache
-        
-      - name: Lint and build code
-        run: yarn build
 
       - name: Publish to Netlify
         run: netlify deploy --build --prod
