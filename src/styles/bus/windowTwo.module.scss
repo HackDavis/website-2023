@@ -1,6 +1,49 @@
 @use "/src/styles/mixins" as *;
 
 .container {
+  display: flex;
+  flex-direction: column;
+
+  @include lg {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    margin-bottom: 162px;
+  }
+}
+
+.divider {
+  display: none;
+
+  @include lg {
+    display: block;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    background-color: var(--color-grey-1);
+    width: 15px;
+    border-radius: 50px;
+  }
+}
+
+.handle {
+  display: none;
+
+  @include lg {
+    display: block;
+    min-width: 5px;
+    height: 70px;
+    margin-right: min(52px, 10%);
+    background-color: #aeaeae;
+    border-radius: 50px;
+  }
+}
+
+.right {
+  display: flex;
+  border: 1.6px solid var(--color-grey-1);
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+
   h2 {
     @include fontFactory(var(--dm-mono), 24px, 500, var(--color-teal-2), 0.02rem, 1);
     margin-bottom: 12px;
@@ -13,35 +56,46 @@
   }
 
   p {
-    @include fontFactory(var(--proxima-nova), 16px, 400, var(--color-grey-2), 0.02rem, 1.25);
+    @include fontFactory(var(--proxima-nova), 16px, 400, var(--color-teal-3), 0.02rem, 1.25);
   }
 
-  @include md {
-    display: flex;
-    align-items: stretch;
+  @include min {
+    border: 1.6px solid var(--color-grey-1);
+    border-radius: 10px;
   }
-}
 
-.fake {
-  border: 1.6px solid var(--color-grey-1);
-  border-left: none;
-  border-radius: 0 10px 10px 0;
-  margin-bottom: 20px;
-  background-color: var(--color-teal-3);
-  height: 340px;
-  width: 100%;
+  @include lg {
+    align-items: center;
+    padding: 46px 46px 46px 16px;
+    margin-bottom: 0;
+    border-radius: 0 50px 50px 0;
+    border-width: 5px;
+    border-left: none;
+
+    h2 {
+      font-size: min(40px, 200%);
+      line-height: 1.15;
+
+      > span {
+        font-size: min(50px, 100%);
+      }
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
 }
 
 .info {
   padding: 30px;
-  border: 1.6px solid var(--color-grey-1);
-  border-left: none;
-  border-radius: 0 10px 10px 0;
   margin-bottom: 20px;
+  max-width: 440px;
 
-  @include md {
+  @include lg {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0;
   }
 }

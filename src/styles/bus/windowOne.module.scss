@@ -9,9 +9,13 @@
   border-left: none;
   border-radius: 0 10px 10px 0;
   margin-bottom: 20px;
+  
+  @include min {
+    border: 1.6px solid var(--color-grey-1);
+    border-radius: 10px;
+  }
 
   @include lg {
-    border: 1.6px solid var(--color-grey-1);
     border-width: 5px;
     border-radius: 50px;
     padding: 210px 70px 184px 144px;

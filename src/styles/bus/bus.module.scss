@@ -11,10 +11,11 @@
     position: sticky;
     top: 0;
     padding-top: 92px;
-    margin-right: 48px;
+    margin-left: -115px;
+    margin-right: 40px;
     margin-bottom: 48px;
     width: 96px;
-    
+
     @include lg {
       display: block;
     }
@@ -22,17 +23,17 @@
 }
 
 .container {
+  position: relative;
+  right: 25px;
   background-color: white;
-  margin-right: 7.6%;
-  border-radius: 0 20px 20px 0;
-  padding: 20px 20px 0 0;
-  max-width: 1376px;
-  
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 380px;
+
   @include lg {
+    right: 115px;
+    max-width: 1380px;
     border-radius: 20px;
-    padding: 60px;
-    margin-right: 0;
+    padding: 70px;
   }
 }
-
-

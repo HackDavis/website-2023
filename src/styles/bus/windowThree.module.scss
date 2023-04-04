@@ -1,20 +1,12 @@
 @use "/src/styles/mixins" as *;
 
 .container {
-  @include md {
+  @include lg {
     display: flex;
+    flex-direction: row-reverse;
     align-items: stretch;
+    margin-bottom: 162px;
   }
-}
-
-.fake {
-  border: 1.6px solid var(--color-grey-1);
-  border-left: none;
-  border-radius: 0 10px 10px 0;
-  margin-bottom: 20px;
-  background-color: var(--color-teal-3);
-  height: 340px;
-  width: 100%;
 }
 
 .info {
@@ -24,10 +16,25 @@
   border-radius: 0 10px 10px 0;
   margin-bottom: 20px;
 
+  @include min {
+    border: 1.6px solid var(--color-grey-1);
+    border-radius: 10px;
+    flex-grow: 1;
+  }
+  @include lg {
+    margin-bottom: 0;
+    border-radius: 50px 0 0 50px;
+    border-width: 5px;
+    border-right: none;
+    padding: 91px 58px 79px 125px;
+  }
   strong {
     display: block;
     @include fontFactory(var(--dm-mono), 30px, 500, var(--color-teal-3), 0, 39px);
-    
+    @include lg {
+      font-size: 40px;
+      line-height: 52.08px;
+    }
     > span {
       color: var(--color-teal-2);
 
@@ -47,5 +54,8 @@
     border-radius: 100px;
     background-color: var(--color-ducky);
     box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.15);
+  }
+  button:hover {
+    cursor: pointer;
   }
 }

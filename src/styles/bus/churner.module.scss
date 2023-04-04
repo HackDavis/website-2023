@@ -23,12 +23,12 @@
     height: 50.5%;
     top: 1.7%;
     left: 5.7%;
-    animation: spin 0.5s linear infinite;
+    // animation: spin 0.5s linear infinite;
     
     > svg {
       width: 100%;
       height: 100%;
-      animation: bob 1s ease-in-out infinite;
+      animation: bob 0.2s ease-in-out infinite;
     }
   }
 
@@ -125,7 +125,7 @@
   75% {
   }
   100% {
-    transform: translateY(50px);
+    transform: translateY(25px);
     // opacity: 0;
   }
 }
@@ -141,7 +141,7 @@
   75% {
   }
   100% {
-    transform: translateY(-50px);
+    transform: translateY(-25px);
     // opacity: 0;
   }
 }

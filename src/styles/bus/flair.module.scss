@@ -1,0 +1,47 @@
+@use "/src/styles/mixins" as *;
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 662px;
+  border: 1.6px solid var(--color-grey-1);
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+
+  @include min {
+    border: 1.6px solid var(--color-grey-1);
+    border-radius: 10px;
+  }
+  @include lg {
+    border-radius: 0 50px 50px 0;
+    border-width: 5px;
+  }
+  > * {
+    position: absolute;
+  }
+
+  // background
+  > :first-child {
+    border-radius: 0 10px 10px 0;
+    display: block;
+    position: static;
+    width: 100%;
+    height: 100%;
+
+    @include min {
+      border-radius: 10px;
+    }
+    @include lg {
+      border-radius: 0 50px 50px 0;
+    }
+  }
+
+  // ducky and cherry
+  > :nth-child(2) {
+    width: 59.4%;
+    height: 66.74%;
+    top: -20%;
+    left: 3.6%;
+  }
+}

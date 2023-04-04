@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from '@/styles/bus/windowThree.module.scss';
+import Flair from './flair';
 
 const WindowThree = () => (
   <div className={styles.container}>
-    <div className={styles.fake}></div>
+    <Flair />
     <div className={styles.info}>
       <strong>
         36<span className={styles.space}> </span>
@@ -21,7 +22,13 @@ const WindowThree = () => (
         $15,000+<span className={styles.space}> </span>
         <span>prizes</span>
       </strong>
-      <button type="button">View 2022 Winners</button>
+      <a
+        href="https://hackdavis2022.devpost.com/project-gallery"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button type="button">View 2022 Winners</button>
+      </a>
     </div>
   </div>
 );
