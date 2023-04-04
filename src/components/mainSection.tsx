@@ -58,9 +58,9 @@ const MainSection = () => {
             <div className={styles.mainAnimationSection}>
                 
                 <div className={styles.cowConeContainer}>
-                        <div className={styles.cowHandAnimate}>
                             <Image  src={cowCone} alt='' className={`${styles.cowCone}`} />
 
+                        <div className={styles.cowHandAnimate}>
                             <Image src={cowHand} alt=""  className={styles.cowHandImg}/>
                         </div>
                 </div>

@@ -47,7 +47,7 @@
     color: #FFFFFF;
     text-align: right;
     font-family: 'Proxima Nova', sans-serif;
-    // overflow-x:hidden;
+    // overflow-x: hidden;
     // overflow-y: visible;
     
 }
@@ -78,7 +78,7 @@
 
     margin-right: 8%;
     z-index: 2;
-    // overflow: visible;
+    overflow-y: visible;
 }
 
 .cowConeContainer {
@@ -89,41 +89,40 @@
     // align-self: baseline;
     width: 70%;
     align-self: flex-end;
-    margin: 0 0 -18% -9%;
+    // margin: 9% 0 -18% 0%;
+    margin-bottom: -13.5vh;
+
     position: relative;
     width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    animation: slideIn 2s forwards;
 }
 
-.cowHandAnimate {
-    position: relative;
-    // top: 27%;
-    // left: 53%;
-    .cowCone {
-        padding: 0;
-        margin: 0;
-        // margin-right: 500px;
-        // margin-left: -35vw;
-        // margin-bottom: -40%;
-        top: 0;
+.cowCone {
+    padding: 0;
+    margin: 0;
+    // margin-right: 500px;
+    // margin-left: -35vw;
+    // margin-bottom: -40%;
+    top: 0;
 
-        // border: 2px solid white;
-        position: relative;
-        height: min-content;
-        // max-width: 70%;
-        // left: -300px;
-        // top: 26.5%;
-        // width: 100%;
-        // height: 100%;
-        z-index: 2;
-        animation: slideIn 2s forwards;
-        // border: 2px solid red;
-        width: 100%;
-        z-index: 2;
-        
-    }
+    // border: 2px solid white;
+    position: relative;
+    height: min-content;
+    // max-width: 70%;
+    // left: -300px;
+    // top: 26.5%;
+    // width: 100%;
+    // height: 100%;
+    z-index: 2;
+    // border: 2px solid red;
+    width: 100%;
+    z-index: 2;
+    
+}
+.cowHandAnimate {
+    position: absolute;
+    top: 28%;
+    left: 54%;
 
     .cowHandImg {
         animation: wave 2s infinite ease-in-out;
@@ -134,8 +133,8 @@
         // animation-iteration-count: 1, infinite;
         // animation-timing-function: forwards, ease-in-out;
         z-index: 0;
-        top: 27%;
-        left: 53%;
+        // top: 20%;
+        // left: 53%;
         //margin: 0 30% 50% 0;
         // border: black 2px solid;
     }
@@ -164,14 +163,6 @@
     position: relative;
 
 }
-
-// .layout {
-//     display: flex;
-//     flex-direction: column;
-//     row-gap: 50px;
-// }
-
-
 
 
 .mainSection {
@@ -239,7 +230,7 @@
   
     100% {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(-20px);
     }
 }
 
@@ -449,14 +440,25 @@
     border-radius: 40px;
 }
 
-@media screen and (min-width: 1300px) {
-    .cowHandImg {
-        top: 28%;
-        left: 54%;
-    }
+// @media screen and (min-width: 1500px) {
+//     .cowHandImg {
+//         top: 28%;
+//         left: 55%;
+//     }
+//     // .cowConeContainer {
+//     //     margin-bottom: -10%;
+//     // }
     
-}
+// }
+@media screen and (max-width: 1500px) {
+    .cowConeContainer {
+        margin-bottom: -18%;
+    }
 
+    .cowHandAnimate {
+        left: 53%;
+    }
+}
 @media screen and (max-width: 800px) {
     .landing {
         // padding: 0 40px;
@@ -495,16 +497,16 @@
     }
 
     .cloud {
-        width: 200%;
+        width: 100%;
     }
 
 
     .cloudBg {
         bottom: 15%;
         height: 100%;
-        left: -25%;
+        left: 0%;
         bottom: 0;
-        width: 150%;
+        width: 100%;
     }
 
 
@@ -516,8 +518,8 @@
         overflow: visible;
     }
 
-    .cowHandImg {
-        left: 55%;
+    .cowHandAnimate {
+        left: 49%;
     }
 
     .landing {

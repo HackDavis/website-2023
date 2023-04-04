@@ -58,7 +58,9 @@
 
 .horizontalScroll {
     // position: absolute;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     // width: 100%;
     // height: 100%;
     width: inherit;
@@ -70,11 +72,15 @@
     // animation: primary 3s linear infinite;
 }
 
+// .horizontalScroll:hover {
+//     animation-play-state: paused;
+// }
+
 .primary {
-    animation: primary 3s linear infinite;
+    animation: primary 5s linear infinite;
 }
 .secondary {
-    animation: secondary 3s linear infinite;
+    animation: secondary 5s linear infinite;
 }
 
 .logo {

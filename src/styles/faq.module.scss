@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.faqCont h1 {
+.faqText h1 {
   margin-top: 200px;
   margin-bottom: 100px;
   color: #ade5e4;
@@ -24,12 +24,13 @@
 
 
 .question {
-  width: 40em;
+  width: 40em; // TODO: change width
   color: #ffffff;
   list-style: none;
   border-bottom: 3px solid #ade5e4;
   padding-bottom: 10px;
   font-size: 24px;
+  // font-size: 1.66vw;
   margin-bottom: 25px;
   cursor: pointer;
 }
@@ -43,10 +44,11 @@
   border-bottom: 3px solid #ade5e4;
   transition: max-height 1000ms ease-out;
   max-height: 1000px;
-  width: 40em;
+  width: 40em; // TODO: change width
   color: #ffffff;
   list-style: none;
-  font-size: 24px;
+  font-size: 16px;
+  font-size: 1.11vw;
   margin-bottom: 25px;
   padding-bottom: 25px;
 //   transition: display 2s;
@@ -71,41 +73,44 @@
   overflow: hidden;
   transition: max-height 1000ms ease-out;
   opacity: 0;
-  width: 40em;
+  width: 40em; // TODO: change width
   color: #ffffff;
   list-style: none;
-  font-size: 24px;
+  font-size: 16px;
+  font-size: 1.11vw;
   margin-bottom: 25px;
   padding-bottom: 25px;
 }
 
-@media screen and (max-width: 1160px) {
-  .question, .answer, .answerHidden {
-    width: 30em;
-  }
-}
 
-@media screen and (max-width: 930px) {
-  .question, .answer, .answerHidden {
-    width: 25em;
-  }
-}
+// media queries
+// @media screen and (max-width: 1160px) {
+//   .question, .answer, .answerHidden {
+//     width: 30em;
+//   }
+// }
 
-@media screen and (max-width: 780px) {
-  .question, .answer, .answerHidden {
-    width: 25em;
-    font-size: 1.25em;
-  }
-}
+// @media screen and (max-width: 930px) {
+//   .question, .answer, .answerHidden {
+//     width: 25em;
+//   }
+// }
 
-@media screen and (max-width: 640px) {
-  .question, .answer, .answerHidden {
-    width: 20em;
-  }
-}
+// @media screen and (max-width: 780px) {
+//   .question, .answer, .answerHidden {
+//     width: 25em;
+//     font-size: 1.25em;
+//   }
+// }
 
-@media screen and (max-width: 500px) {
-  .question, .answer, .answerHidden {
-    width: 17em;
-  }
-}
+// @media screen and (max-width: 640px) {
+//   .question, .answer, .answerHidden {
+//     width: 20em;
+//   }
+// }
+
+// @media screen and (max-width: 500px) {
+//   .question, .answer, .answerHidden {
+//     width: 17em;
+//   }
+// }

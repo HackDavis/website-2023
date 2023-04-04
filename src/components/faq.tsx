@@ -70,7 +70,9 @@ const Faq = () => {
   }
   return (
     <div className={styles.faqCont}>
-      <h1>FAQ</h1>
+      <div className={styles.faqText}>
+        <h1>FAQ</h1>
+      </div>
       <div className={styles.questionList}>
         {questions.map((question, index) => (
           <AccordionItem question={question} answer={answers[index]} />
