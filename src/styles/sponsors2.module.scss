@@ -1,0 +1,129 @@
+.sponsorsSection {
+    background-color: #123041;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    padding-top: 200px;
+    
+}
+
+.heartButton{
+    padding: 15px 15px 8px 15px;
+    // margin-left: 15px;
+    background: #FFC53D;
+    opacity: 1;
+    border-radius: 100px;
+    left: 0;
+    z-index: 10;
+    width: 50px;
+    margin: auto;
+    // filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
+    box-shadow: 0px 19.44px 86.4px rgba(0, 0, 0, 0.75);
+    
+    // border: 2px yellow solid;
+}
+
+.support {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    /* or 120% */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.sponsorsContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sponsorsRow1, .sponsorsRow2 {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 70px 5px 20px;
+    background: transparent;
+    height: 20rem;
+    width: 100vw;
+    border-radius:15px;
+    position: relative;
+}
+
+.horizontalScroll {
+    // position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // width: 100%;
+    // height: 100%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    // animation: primary 3s linear infinite;
+    // animation: primary 3s linear infinite;
+}
+
+// .horizontalScroll:hover {
+//     animation-play-state: paused;
+// }
+
+.primary {
+    animation: primary 5s linear infinite;
+}
+.secondary {
+    animation: secondary 5s linear infinite;
+}
+
+.logo {
+    margin-right: 22px;
+    width: 20vw;
+    height: auto;
+}
+
+
+@keyframes primary {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes secondary {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+// .sponsorsRow1, .sponsorsRow2 {
+//     position: relative;
+//     width: 100%;
+//     height: 20rem;
+//     overflow-x: hidden;
+// }
+
+// .logo {
+//     position: absolute;
+//     left: 0%;
+//     top: 0%;
+//     animation: primary 3s linear infinite;
+// }
+
+
+
+
+
+
