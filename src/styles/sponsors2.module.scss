@@ -1,10 +1,10 @@
 .sponsorsSection {
-    background-color: #123041;
+    background-color: #173A52;
     margin: 0;
     padding: 0;
     border: 0;
     padding-top: 200px;
-    
+    // padding-bottom: 100px;
 }
 
 .heartButton{
@@ -45,22 +45,22 @@
 
 }
 
-.sponsorsRow1, .sponsorsRow2 {
+.sponsorsRow {
     overflow: hidden;
     white-space: nowrap;
-    padding: 5px 70px 5px 20px;
+    //padding: 5px 70px 5px 20px;
     background: transparent;
-    height: 20rem;
+    height: 30vw;
     width: 100vw;
-    border-radius:15px;
+    //border-radius:15px;
     position: relative;
 }
 
 .horizontalScroll {
-    // position: absolute;
-    display: flex;
+    //position: absolute;
+    display: inline-block;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     // width: 100%;
     // height: 100%;
     width: inherit;
@@ -70,6 +70,19 @@
     top: 0%;
     // animation: primary 3s linear infinite;
     // animation: primary 3s linear infinite;
+    .logo {
+        margin-right: 5vw;
+        // margin-right: auto;
+        width: 20vw;
+        height: auto;
+        vertical-align: middle;
+    }
+}
+
+.row2 {
+    .logo {
+        margin-right: 25vw;
+    }
 }
 
 // .horizontalScroll:hover {
@@ -77,17 +90,12 @@
 // }
 
 .primary {
-    animation: primary 5s linear infinite;
+    animation: primary 10s linear infinite;
 }
 .secondary {
-    animation: secondary 5s linear infinite;
+    animation: secondary 10s linear infinite;
 }
 
-.logo {
-    margin-right: 22px;
-    width: 20vw;
-    height: auto;
-}
 
 
 @keyframes primary {
