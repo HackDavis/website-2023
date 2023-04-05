@@ -1,24 +1,26 @@
-import React, { useEffect, useRef, useState } from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+
+import React, { useEffect, useState } from 'react';
 import styles from '@/styles/mainSection.module.scss';
 import Image from 'next/image';
 import arrowUp from '@/images/arrowUp.svg';
 import heart from '@/images/heart.svg';
-import calendar from '@/images/calendar.svg';
+// import calendar from '@/images/calendar.svg';
 import cloudBg from '@/images/cloudBg.svg';
 import cowCone from '@/images/cowCone.svg';
 import cowHand from '@/images/cowHand.svg';
-import Carousel from './carousel';
+// import Carousel from './carousel';
 
 const MainSection = () => {
   const [sponsor, setSponsor] = useState(false);
-  const [showCow, setShowCow] = useState(false);
+  // const [showCow, setShowCow] = useState(false);
   const words = ['create', 'design', 'ideate', 'hack', 'build'];
 
   const [activeWordIndex, setActiveWordIndex] = useState(0);
   // const [previousWordIndex, setPreviousWordIndex] = useState(words.length - 1);
 
   useEffect(() => {
-    setShowCow(true);
+    // setShowCow(true);
     const intervalId = setInterval(() => {
       // setPreviousWordIndex(activeWordIndex);
       setActiveWordIndex((activeWordIndex + 1) % words.length);
@@ -27,19 +29,15 @@ const MainSection = () => {
     return () => clearInterval(intervalId);
   }, [activeWordIndex]);
 
-  const onAnimationEnd = () => {
-    setShowCow(false);
-  };
-
   const toggleSponsor = () => {
     setSponsor(!sponsor);
   };
 
-  const currentWord = () => (
-    <div className={`${styles.word} ${styles.active}`}>
-      {words[activeWordIndex]}
-    </div>
-  );
+  // const currentWord = () => (
+  //   <div className={`${styles.word} ${styles.active}`}>
+  //     {words[activeWordIndex]}
+  //   </div>
+  // );
 
   return (
     <div className={styles.cloudBgContainer}>
@@ -85,19 +83,19 @@ const MainSection = () => {
           </div>
 
           <div className={styles.mainButton}>
-            <button className={styles.yellowButton}>Register Now</button>
-            {/* <button className={styles.heartButton}>
-                                <Image src={heart} alt='' /> 
-                            </button> Sponsor */}
-            <div
+            <button className={styles.yellowButton} type="button">
+              Register Now
+            </button>
+            <button
               onClick={toggleSponsor}
               className={sponsor ? styles.sponsorButton : styles.fadedButton}
+              type="button"
             >
               <div className={styles.heartButton}>
                 <Image src={heart} alt="" />
               </div>
               Sponsor
-            </div>
+            </button>
           </div>
 
           <div className={styles.starterPack}>

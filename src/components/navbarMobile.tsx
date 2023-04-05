@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from '@/styles/navbarMobile.module.scss';
-import { Link } from 'react-router-dom';
 import Image from 'next/image';
+import Link from 'next/link';
 import Hamburger from '../images/hamburger.svg';
 import Badge from '../images/MLHBadge.svg';
-import HDLogo from '../images/HDLogo2.svg';
 
 const NavbarMobile = () => {
   const [open, setopen] = useState(false);
@@ -23,14 +22,15 @@ const NavbarMobile = () => {
         />
 
         {/* hamburger */}
-        <div
+        <button
           className={styles.hamburger}
           onClick={() => {
             setopen(!open);
           }}
+          type="button"
         >
           <Image src={Hamburger} alt="" />
-        </div>
+        </button>
       </div>
 
       <div
@@ -38,25 +38,29 @@ const NavbarMobile = () => {
         id={open ? styles.openMenu : styles.closeMenu}
       >
         <ul>
-          <li
-            onClick={() => {
-              setatHome(true);
-              setatAbout(false);
-            }}
-          >
-            <a className={atHome ? styles.bold : styles.normal} href="/">
+          <li>
+            <Link
+              className={atHome ? styles.bold : styles.normal}
+              href="/"
+              onClick={() => {
+                setatHome(true);
+                setatAbout(false);
+              }}
+            >
               Home
-            </a>
+            </Link>
           </li>
-          <li
-            onClick={() => {
-              setatHome(false);
-              setatAbout(true);
-            }}
-          >
-            <a className={atAbout ? styles.bold : styles.normal} href="/about">
+          <li>
+            <Link
+              className={atAbout ? styles.bold : styles.normal}
+              href="/about"
+              onClick={() => {
+                setatHome(false);
+                setatAbout(true);
+              }}
+            >
               About Us
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

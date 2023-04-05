@@ -64,12 +64,6 @@ const Faq = () => {
     'answer 10',
   ];
 
-  const [isOpen, setOpen] = useState(false);
-
-  function toggleOpen() {
-    setOpen(!isOpen);
-  }
-
   return (
     <div className={styles.faqCont}>
       <div className={styles.faqText}>
@@ -77,7 +71,11 @@ const Faq = () => {
       </div>
       <div className={styles.questionList}>
         {questions.map((question, index) => (
-          <AccordionItem question={question} answer={answers[index]} />
+          <AccordionItem
+            key={question}
+            question={question}
+            answer={answers[index]}
+          />
         ))}
       </div>
     </div>

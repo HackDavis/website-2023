@@ -6,12 +6,12 @@ import moon from '../images/moon.svg';
 import sun from '../images/sun.svg';
 import badge from '../images/MLHBadge.svg';
 
-function NavbarDesktop() {
+const NavbarDesktop = () => {
   const [isLight, setLight] = useState(true);
 
-  function toggleLight() {
+  const toggleLight = () => {
     setLight(!isLight);
-  }
+  };
 
   return (
     <div className={styles.navbarCont}>
@@ -21,9 +21,10 @@ function NavbarDesktop() {
       <div className={styles.navLinks}>
         <div className={styles.navLinkHome}> Home </div>
         <div className={styles.navLinkAboutUs}> About Us </div>
-        <div
+        <button
           className={isLight ? styles.lightPill : styles.darkPill}
           onClick={toggleLight}
+          type="button"
         >
           <div className={isLight ? styles.darkCircle : styles.lightCircle}>
             <Image
@@ -32,7 +33,7 @@ function NavbarDesktop() {
               alt=""
             />
           </div>
-        </div>
+        </button>
       </div>
 
       <div className={styles.navLinkBadge}>
@@ -40,6 +41,6 @@ function NavbarDesktop() {
       </div>
     </div>
   );
-}
+};
 
 export default NavbarDesktop;
