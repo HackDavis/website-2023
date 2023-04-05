@@ -38,9 +38,38 @@
     }
 }
 
+@keyframes vertical-replace {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    80% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    90% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    // 80% {
+    //   opacity: 1;
+    //   transform: translateY(0);
+    // }
+  
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+}
+
 .cloudBgContainer {
     margin: 0;
-    // padding: 0px 125px;
     width: 100vw;
     position: relative;
     background: #123041;
@@ -83,14 +112,9 @@
 
 .cowConeContainer {
     z-index: 2;
-    // margin-left: -20%;
-    // margin-left: 400px;
-    // margin-bottom: -440px;
-    // align-self: baseline;
     width: 70%;
     align-self: flex-end;
-    // margin: 9% 0 -18% 0%;
-    margin-bottom: -13.5vh;
+    margin-bottom: -220px;
 
     position: relative;
     width: auto;
@@ -100,23 +124,13 @@
 .cowCone {
     padding: 0;
     margin: 0;
-    // margin-right: 500px;
-    // margin-left: -35vw;
-    // margin-bottom: -40%;
     top: 0;
 
-    // border: 2px solid white;
     position: relative;
     height: min-content;
-    // max-width: 70%;
-    // left: -300px;
-    // top: 26.5%;
-    // width: 100%;
-    // height: 100%;
+
     z-index: 2;
-    // border: 2px solid red;
     width: 100%;
-    z-index: 2;
     
 }
 .cowHandAnimate {
@@ -127,16 +141,7 @@
     .cowHandImg {
         animation: wave 2s infinite ease-in-out;
         position: absolute;
-        // animation: slideIn 2s forwards;
-        // animation: wave 2s infinite ease-in-out;
-        // animation-name: slideIn, wave;
-        // animation-iteration-count: 1, infinite;
-        // animation-timing-function: forwards, ease-in-out;
         z-index: 0;
-        // top: 20%;
-        // left: 53%;
-        //margin: 0 30% 50% 0;
-        // border: black 2px solid;
     }
 
 }
@@ -144,11 +149,6 @@
 
 
 .landing{
-    // margin: 0;
-    // padding: 0px 125px;
-    // width: 100vw;
-
-    // background: #123041;
     color: #FFFFFF;
     text-align: right;
     font-family: 'Proxima Nova', sans-serif;
@@ -202,76 +202,9 @@
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-  }
-  
-  @keyframes vertical-replace {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    10% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  
-    80% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-    90% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-  
-    // 80% {
-    //   opacity: 1;
-    //   transform: translateY(0);
-    // }
-  
-    100% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
 }
-
-
-// .container {
-//     position: relative;
-//     height: 50px;
-//     max-height: 20px;
-//     // width: 200px;
-//     border: 1px solid black;
-//     overflow: hidden;
-//   }
   
-//   .word {
-//     position: absolute;
-//     top: 50%;
-//     left: 10%;
-//     width: 100%;
-//     text-align: center;
-//     font-size: 40px;
-
-//     transform: translateY(10%);
-//     transition: transform 1s ease-out;
-//     opacity: 0;
-//   }
-  
-//   .word.active {
-//     transform: translateY(0);
-//     opacity: 1;
-//   }
-  
-//   .word.previous {
-//     transform: translateY(-400%);
-//     opacity: 0.2;
-//   }
-  
-//   .current {
-//     opacity: 1;
-//   }
-
-  
+ 
 
 .event {
     font-family: 'Proxima Nova' 'sans-serif';
@@ -440,17 +373,13 @@
     border-radius: 40px;
 }
 
-// @media screen and (min-width: 1500px) {
-//     .cowHandImg {
-//         top: 28%;
-//         left: 55%;
+// @media screen and (min-width: 1200px) {
+//     .container2 {
+//         margin-left: auto;
 //     }
-//     // .cowConeContainer {
-//     //     margin-bottom: -10%;
-//     // }
-    
 // }
-@media screen and (max-width: 1500px) {
+
+@media screen and (max-width: 1400px) {
     .cowConeContainer {
         margin-bottom: -18%;
     }
@@ -458,24 +387,17 @@
     .cowHandAnimate {
         left: 53%;
     }
+    // .container2 {
+    //     margin-left: ;
+    // }
 }
 @media screen and (max-width: 800px) {
     .landing {
         // padding: 0 40px;
         justify-content: space-between;
         flex-direction: column;
-
-       
-        
-       
     }
-    // .cowCone, .cowConeAnimation {
-    //     transition: transform;
-    //     transform: scale(2);
-    //     // border: 2px white solid;
-    //     left: -70%;
-    //     top: 26%;
-    // }
+
     .cowCone {
         width: 100%;
         position: relative;
@@ -492,9 +414,6 @@
         //margin-left: auto;
     }
 
-    .cloudBgContainer {
-        // overflow: hidden;
-    }
 
     .cloud {
         width: 100%;
@@ -551,12 +470,17 @@
     }
     .tagline {
         text-align: left;
+        align-self: flex-start;
         font-size: 30px;
         padding-top: 85px;
 
         .socialGood {
             font-size: 45px;
         }
+    }
+
+    .container2 {
+        margin-left: default;
     }
 
     .mainButton {
