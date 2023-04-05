@@ -3,7 +3,11 @@
 .container {
   display: none;
   position: relative;
-  min-width: 30.7%;
+  width: 23.8%;
+  max-width: 296px;
+  flex-grow: 1;
+  top: 153px;
+  margin-right: 48px;
 
   > * {
     position: absolute;
