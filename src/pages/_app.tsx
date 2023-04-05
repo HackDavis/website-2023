@@ -1,21 +1,23 @@
 /* eslint-disable react/no-unknown-property */
 import '@/styles/globals.scss';
 import type { AppProps } from 'next/app';
-import { DM_Sans, DM_Mono } from '@next/font/google';
+import { DM_Mono } from '@next/font/google';
 import localFont from '@next/font/local';
 
-const dmSans = DM_Sans({
-  weight: ['400', '700'],
-  style: ['normal'],
-  subsets: ['latin'],
-});
 const dmMono = DM_Mono({
   weight: ['400', '500'],
   style: ['normal'],
   subsets: ['latin'],
+  display: 'swap',
+  fallback: ['Courier New'],
 });
+
 const proximaNova = localFont({
   src: [
+    {
+      path: '../font/ProximaNova-Light.woff2',
+      weight: '300',
+    },
     {
       path: '../font/ProximaNova-Regular.woff2',
       weight: '400',
@@ -29,6 +31,8 @@ const proximaNova = localFont({
       weight: '700',
     },
   ],
+  display: 'swap',
+  fallback: ['Arial'],
 });
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -37,7 +41,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <style jsx global>{`
         :root {
           --proxima-nova: ${proximaNova.style.fontFamily};
-          --dm-sans: ${dmSans.style.fontFamily};
           --dm-mono: ${dmMono.style.fontFamily};
         }
       `}</style>
