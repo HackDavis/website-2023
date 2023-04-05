@@ -5,13 +5,55 @@ on:
     branches: [main]
 
 jobs:
-  test_pull_request:
+  lint_build_deploy:
+    name: Lint, build, and deploy code
+    environment: branch-deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: yarn install --immutable --immutable-cache --check-cache
-      - run: yarn lint
-      - run: yarn build
+          cache: "yarn"
+
+      - name: Setup deployment
+        uses: bobheadxi/deployments@v0.6.0
+        id: deployment
+        with:
+          step: start
+          token: ${{ secrets.GITHUB_TOKEN }}
+          env: branch-deploy-${{ github.head_ref }}
+          ref: ${{ github.head_ref }}
+
+      - name: Install dependencies
+        run: yarn install --immutable --immutable-cache --check-cache
+
+      # Slightly different regexes and var names here
+      - name: Lint, build and preview deployment
+        id: deploy-netlify
+        run: |
+          COMMAND="netlify deploy --build --context branch-deploy --alias ${{ github.head_ref }}"
+          OUTPUT=$(sh -c "$COMMAND")
+
+          NETLIFY_URL=$(echo "$OUTPUT" | grep -Eo '(http|https)://[a-zA-Z0-9./?=_-]*(--)[a-zA-Z0-9./?=_-]*') # Unique key: --
+          NETLIFY_LOGS_URL=$(echo "$OUTPUT" | grep -Eo '(http|https)://app.netlify.com/[a-zA-Z0-9./?=_-]*') # Unique key: app.netlify.com
+
+          echo "netlify_preview_url=$NETLIFY_URL" >> $GITHUB_OUTPUT
+          echo "netlify_logs_url=$NETLIFY_LOGS_URL" >> $GITHUB_OUTPUT
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+      - name: Update deployment status
+        uses: bobheadxi/deployments@v0.6.0
+        if: always()
+        with:
+          step: finish
+          token: ${{ secrets.GITHUB_TOKEN }}
+          status: ${{ job.status }}
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
+          logs: ${{ steps.deploy-netlify.outputs.netlify_logs_url }}
+          env_url: ${{ steps.deploy-netlify.outputs.netlify_preview_url }}

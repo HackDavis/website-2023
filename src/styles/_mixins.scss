@@ -6,3 +6,62 @@
   letter-spacing: $letterSpacing;
   line-height: $lineHeight;
 }
+
+// 390px, the view that the rest of mobile viewports inherit from
+@mixin min {
+  @media screen and (min-width: 391px) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+  @media screen and (min-width: $screen) {
+    @content;
+  }
+}
+
+// flex gap polyfill
+@mixin cgap($distance) {
+  margin-right: -$distance;
+
+  & > * {
+    margin-right: $distance;
+  }
+}
+
+@mixin rgap($distance) {
+  margin-top: -$distance;
+
+  & > * {
+    margin-top: $distance;
+  }
+}

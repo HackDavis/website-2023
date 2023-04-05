@@ -1,0 +1,85 @@
+@use "/src/styles/mixins" as *;
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 692px;
+  border: 1.6px solid var(--color-grey-1);
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+  
+  @include min {
+    border: 1.6px solid var(--color-grey-1);
+    border-radius: 10px;
+  }
+  
+  @include lg {
+    width: 56%;
+    border-radius: 50px 0 0 50px;
+    border-width: 5px;
+    border-right: none;
+    margin-bottom: 0;
+  }
+
+  > * {
+    position: absolute;
+  }
+
+  // background
+  > :first-child {
+    display: block;
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+
+  // horizontal pipe
+  > :nth-child(2) {
+    width: 5.36%;
+    height: 1.96%;
+    top: 14.5%;
+    left: 26%;
+  }
+  
+  // vertical pipe
+  > :nth-child(3) {
+    width: 0.45%;
+    height: 6.74%;
+    top: 3%;
+    left: 19.5%;
+  }
+
+  // ice cream cone
+  > :nth-child(4) {
+    width: 28.6%;
+    height: 77%;
+    bottom: -43%;
+    left: 15%;
+  }
+
+  // ice cream scoop
+  > :nth-child(5) {
+    width: 37%;
+    height: 50.2%;
+    left: 11%;
+    bottom:5%;
+  }
+
+  // bunny
+  > :nth-child(6) {
+    width: 47%;
+    height: 71.5%;
+    top: 7.5%;
+    left: 64%;
+  }
+
+  // snow 
+  > :nth-child(7) {
+    width: 93.3%;
+    height: 92.2%;
+    top: 4%;
+    left: 4%;
+  }
+}

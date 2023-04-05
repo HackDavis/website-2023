@@ -1,0 +1,124 @@
+@use "/src/styles/mixins" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @include lg {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    margin-bottom: 162px;
+  }
+}
+
+.divider {
+  display: none;
+
+  @include lg {
+    display: block;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    background-color: var(--color-grey-1);
+    width: 15px;
+    border-radius: 50px;
+  }
+}
+
+.handle {
+  display: none;
+
+  @include lg {
+    display: block;
+    min-width: 5px;
+    height: 70px;
+    margin-right: min(52px, 10%);
+    background-color: #aeaeae;
+    border-radius: 50px;
+  }
+}
+
+.right {
+  display: flex;
+  flex-grow: 1;
+  padding: 30px;
+  border: 1.6px solid var(--color-grey-1);
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  margin-bottom: 20px;
+
+  @include min {
+    border: 1.6px solid var(--color-grey-1);
+    border-radius: 10px;
+  }
+
+  @include lg {
+    align-items: center;
+    padding: 24px 24px 24px 16px;
+    margin-bottom: 0;
+    border-radius: 0 50px 50px 0;
+    border-width: 5px;
+    border-left: none;
+  }
+  
+  @include xl {
+    padding: 44px 44px 44px 16px;
+  }
+}
+
+.info {
+  max-width: 440px;
+
+  h2 {
+    @include fontFactory(var(--dm-mono), 24px, 500, var(--color-teal-2), 0.02rem, 1);
+    margin-bottom: 12px;
+
+    > span {
+      display: block;
+      font-size: 38px;
+      color: var(--color-teal-3);
+    }
+  }
+
+  p {
+    @include fontFactory(var(--proxima-nova), 16px, 400, var(--color-teal-3), 0.02rem, 1.25);
+  }
+
+  @include lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0;
+
+    h2 {
+      font-size: 2.6vw;
+      line-height: 1.15;
+      margin-bottom: 6%;
+      
+      > span {
+        font-size: 3.04vw;
+      }
+    }
+    
+    p {
+      font-size: 1.4vw;
+      font-size: min(18px, 1.5vw);
+    }
+  }
+  
+  @include rwd(1348px) {
+    h2 {
+      font-size: 40px;
+      margin-bottom: 24px;
+
+      > span {
+        font-size: 50px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
