@@ -6,6 +6,7 @@ import WindowOne from './windowOne';
 import WindowTwo from './windowTwo';
 import WindowThree from './windowThree';
 import WindowFour from './windowFour';
+import Bottom from './bottom';
 
 const Bus = () => (
   <>
@@ -17,6 +18,7 @@ const Bus = () => (
           <WindowTwo />
           <WindowThree />
           <WindowFour />
+          <Bottom />
         </div>
         <Image src={banner} alt="banner" className={styles.banner} />
       </div>
