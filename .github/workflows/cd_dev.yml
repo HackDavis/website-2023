@@ -1,0 +1,35 @@
+name: CD Dev
+
+concurrency:
+  group: dev
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  lint_build_deploy:
+    name: Lint and build code, then publish to Netlify
+    environment:
+      name: dev
+      url: https://hd-2023-dev.netlify.app/
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      
+      - name: Install dependencies
+        run: yarn install --immutable --immutable-cache --check-cache
+
+      - name: Lint and build code, then publish to Netlify
+        run: netlify deploy --build --prod
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
