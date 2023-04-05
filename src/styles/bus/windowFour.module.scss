@@ -1,0 +1,12 @@
+@use "/src/styles/mixins" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @include lg {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
