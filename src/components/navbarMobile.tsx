@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import styles from "@/styles/navbarMobile.module.scss";
-import Hamburger from "../images/hamburger.svg";
-import Badge from "../images/MLHBadge.svg";
-import HDLogo from "../images/HDLogo2.svg";
-import { Link } from "react-router-dom";
-import Image from "next/image";
+import React, { useState, useEffect } from 'react';
+import styles from '@/styles/navbarMobile.module.scss';
+import { Link } from 'react-router-dom';
+import Image from 'next/image';
+import Hamburger from '../images/hamburger.svg';
+import Badge from '../images/MLHBadge.svg';
+import HDLogo from '../images/HDLogo2.svg';
 
 const NavbarMobile = () => {
   const [open, setopen] = useState(false);
@@ -44,7 +44,9 @@ const NavbarMobile = () => {
               setatAbout(false);
             }}
           >
-            <a className={atHome ? styles.bold : styles.normal} href="/">Home</a>
+            <a className={atHome ? styles.bold : styles.normal} href="/">
+              Home
+            </a>
           </li>
           <li
             onClick={() => {
@@ -52,7 +54,9 @@ const NavbarMobile = () => {
               setatAbout(true);
             }}
           >
-            <a className={atAbout ? styles.bold : styles.normal} href="/about">About Us</a>
+            <a className={atAbout ? styles.bold : styles.normal} href="/about">
+              About Us
+            </a>
           </li>
         </ul>
       </div>
