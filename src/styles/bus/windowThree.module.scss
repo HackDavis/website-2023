@@ -103,5 +103,8 @@
     &:hover {
       cursor: pointer;
     }
+    @include lg {
+      font-size: 20px;
+    }
   }
 }

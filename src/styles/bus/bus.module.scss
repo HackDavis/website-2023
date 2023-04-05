@@ -1,7 +1,15 @@
 @use "/src/styles/mixins" as *;
 
 .background {
+  position: relative;
   background-color: #043142;
+  padding-bottom: 63px;
+  // overflow: hidden;
+  contain: paint;
+  
+  @include lg {
+    padding-bottom: 150px;
+  }
 }
 
 .wrapper {
@@ -23,7 +31,7 @@
   position: sticky;
   top: 0;
   padding-top: 92px;
-  margin-bottom: 48px;
+  margin-bottom: 280px;
   width: 96px;
   
   @include lg {
@@ -40,7 +48,7 @@
   position: relative;
   right: 25px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   padding: 20px;
   max-width: 380px;
 
@@ -48,7 +56,6 @@
     right: 0;
     flex-basis: 1378px;
     max-width: 1378px;
-    border-radius: 20px;
     padding: 70px;
   }
 }
