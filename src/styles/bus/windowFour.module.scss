@@ -5,17 +5,8 @@
   flex-direction: column;
 
   @include lg {
-    display: flex;
-    align-items: stretch;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
-}
-
-.fake {
-  border: 1.6px solid var(--color-grey-1);
-  border-left: none;
-  border-radius: 0 10px 10px 0;
-  margin-bottom: 20px;
-  background-color: var(--color-teal-3);
-  height: 340px;
-  width: 100%;
 }

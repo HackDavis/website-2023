@@ -8,6 +8,7 @@
   border-left: none;
   border-radius: 0 10px 10px 0;
   overflow: hidden;
+  margin-bottom: 20px;
   
   @include min {
     border: 1.6px solid var(--color-grey-1);
@@ -19,6 +20,7 @@
     border-radius: 50px 0 0 50px;
     border-width: 5px;
     border-right: none;
+    margin-bottom: 0;
   }
 
   > * {

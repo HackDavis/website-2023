@@ -7,16 +7,22 @@
   align-self: flex-end;
   border: 1.6px solid var(--color-grey-1);
   border-left: none;
-  border-radius: 50px 75px 0 50px;
+  border-radius: 28px 45px 0 28px;
   overflow: hidden;
 
   @include min {
     border: 1.6px solid var(--color-grey-1);
   }
 
+  @include lg {
+    border-radius: 50px 75px 0 50px;
+    align-self: center;
+    width: 31.66%;
+    max-width: 392px;
+  }
+
   // background
   > :first-child {
-    border-radius: 50px 75px 0 50px;
     display: block;
     position: static;
     width: 100%;

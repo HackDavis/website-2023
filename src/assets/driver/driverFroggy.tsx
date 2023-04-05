@@ -6,13 +6,10 @@ export const DriverFroggy = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clipPath="url(#clip0_721_3120)">
-      <path
-        d="M122 0H308.667C354.69 0 392 29.1516 392 65.1119V349H122V0Z"
-        fill="#005271"
-      />
+    <g clipPath="url(#clip0_798_3414)">
+      <path d="M122 0H392V349H122V0Z" fill="#005271" />
       <path d="M0 0H127V349H0V0Z" fill="#005271" />
-      <g clipPath="url(#clip1_721_3120)">
+      <g clipPath="url(#clip1_798_3414)">
         <path
           d="M339.4 285.318C339.4 285.318 366.138 286.316 368.524 301.963C370.911 317.61 344.289 312.32 344.289 312.32L328.22 310.773L316.094 285.113C323.86 284.724 331.642 284.792 339.4 285.318V285.318Z"
           fill="#4B9B3A"
@@ -508,12 +505,20 @@ export const DriverFroggy = () => (
         transform="rotate(52.1656 229.349 -44.9441)"
         fill="white"
       />
+      <line
+        x1="124.5"
+        y1="1.09279e-07"
+        x2="124.5"
+        y2="349"
+        stroke="#EDEDED"
+        strokeWidth="5"
+      />
     </g>
     <defs>
-      <clipPath id="clip0_721_3120">
+      <clipPath id="clip0_798_3414">
         <rect width="392" height="349" fill="white" />
       </clipPath>
-      <clipPath id="clip1_721_3120">
+      <clipPath id="clip1_798_3414">
         <rect
           width="270"
           height="349"
