@@ -50,13 +50,13 @@
 }
 
 #closeMenu {
-    display: block;
-    visibility: none;
+    display: none;
+   // visibility: none;
 }
 
 #openMenu {
-    display: none;
-    visibility: visible;
+    display: block;
+   // visibility: visible;
 }
 
 .bold {
