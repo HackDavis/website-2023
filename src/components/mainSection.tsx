@@ -6,10 +6,10 @@ import Image from 'next/image';
 import arrowUp from '@/images/arrowUp.svg';
 import heart from '@/images/heart.svg';
 import calendar from '@/images/calendar.svg';
-import cloudBg from '@/images/cloudBg.svg';
+// import cloudBg from '@/images/cloudBg.svg';
 import cowCone from '@/images/cowCone.svg';
-import cowHand from '@/images/cowHand.svg';
-import Clouds from './clouds';
+// import cowHand from '@/images/cowHand.svg';
+// import Clouds from './clouds';
 // import Carousel from './carousel';
 
 const MainSection = () => {
