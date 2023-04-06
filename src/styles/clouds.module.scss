@@ -1,0 +1,22 @@
+.container {
+  > * {
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+  > img {
+    animation: backAndForth 3s infinite ease-in-out;
+  }
+}
+
+@keyframes backAndForth {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translate(5px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}

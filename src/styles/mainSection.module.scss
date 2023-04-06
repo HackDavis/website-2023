@@ -1,70 +1,58 @@
+@use "/src/styles/mixins" as *;
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 
-@keyframes backAndForth {
-    0% {
-      transform: translateX(-10px);
-    }
-    50% {
-      transform: translate(5px);
-    }
-    100% {
-      transform: translateX(-10px);
-    }
-  }
-
 @keyframes wave {
     0% {
-        transform: rotate(-0deg) ;
+        transform: rotate(-0deg);
     }
     50% {
-        transform: rotate(40deg) ;
+        transform: rotate(40deg);
     }
     100% {
-        transform: rotate(-0deg) ;
+        transform: rotate(-0deg);
     }
 }
 
 @keyframes slideIn {
     0% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
     70% {
-      transform: translateX(2%);
+        transform: translateX(2%);
     }
     100% {
-      transform: translateX(0%);
-  
+        transform: translateX(0%);
     }
 }
 
 @keyframes vertical-replace {
     0% {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
     10% {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  
+
     80% {
-      opacity: 1;
-      transform: translateY(0px);
+        opacity: 1;
+        transform: translateY(0px);
     }
     90% {
-      opacity: 0;
-      transform: translateY(-20px);
+        opacity: 0;
+        transform: translateY(-20px);
     }
-  
+
     // 80% {
     //   opacity: 1;
     //   transform: translateY(0);
     // }
-  
+
     100% {
-      opacity: 0;
-      transform: translateY(-20px);
+        opacity: 0;
+        transform: translateY(-20px);
     }
 }
 
@@ -73,12 +61,11 @@
     width: 100vw;
     position: relative;
     background: #123041;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: right;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     // overflow-x: hidden;
     // overflow-y: visible;
-    
 }
 
 .cloud {
@@ -102,36 +89,75 @@
     // position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    // justify-content: center;
+    justify-content: space-between;
 
-    margin-right: 8%;
+    // margin-right: 8%;
     z-index: 2;
-    overflow-y: visible;
+    // overflow-y: visible;
+    max-width: 1290px;
+    margin: auto;
+    padding-right: 64px;
+
+    @include mrwd(1190px) {
+        justify-content: flex-end;
+    }
+
+    @include mrwd(991px) {
+        align-items: center;
+        flex-direction: column-reverse;
+        // justify-content: center;
+
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 .cowConeContainer {
-    z-index: 2;
-    width: 70%;
-    align-self: flex-end;
-    margin-bottom: -220px;
-
     position: relative;
-    width: auto;
-    animation: slideIn 2s forwards;
+    z-index: 2;
+    // width: 70%;
+    // min-width: 858px;
+    height: auto;
+    // align-self: flex-end;
+    margin-bottom: -221px;
+    margin-left: -134px;
+    margin-right: -150px;
+
+    @include mrwd(1330px) {
+        // margin-left: -25%;
+        // width: 600px;
+        // margin-right: 30%;
+    }
+    @include mrwd(991px) {
+        width: 408px;
+        height: auto;
+        margin-left: -175px;
+        margin-bottom: -109px;
+        margin-right: 0;
+    }
+    // width: auto;
+    // animation: slideIn 2s forwards;
+
 }
 
 .cowCone {
+    // margin-bottom: -213px;
     padding: 0;
-    margin: 0;
+
+    @include mrwd(991px) {
+        width: 100%;
+        height: 100%;
+        // margin: 0;
+    }
     top: 0;
 
     position: relative;
-    height: min-content;
+    // height: min-content;
 
     z-index: 2;
-    width: 100%;
-    
+    // width: 100%;
 }
 .cowHandAnimate {
     position: absolute;
@@ -143,40 +169,48 @@
         position: absolute;
         z-index: 0;
     }
-
 }
 
-
-
-.landing{
-    color: #FFFFFF;
+.landing {
+    color: #ffffff;
     text-align: right;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: "Proxima Nova", sans-serif;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    
+    min-width: 470px;
+    max-width: 470px;
+
+    @include mrwd(1190px) {
+        margin-left: 8%;
+    }
     // z-index: 1;
-   
+
+    @include mrwd(991px) {
+        margin-left: 0;
+        min-width: 0;
+        
+    }
 
     position: relative;
-
 }
-
 
 .mainSection {
     display: flex;
     flex-direction: column-reverse;
     z-index: 100;
+    @include mrwd(991px) {
+        flex-direction: column;
+    }
 }
 
-
-.tagline{
+.tagline {
     font-weight: 700;
     font-size: 40px;
-    color: #FFFFFF;
+    color: #ffffff;
     padding-top: 100px;
+    @include fontFactory(var(--proxima-nova), 40px, 700, white, 0.02rem, 1.15);
 
     .container2 {
         height: 40px;
@@ -187,14 +221,24 @@
         align-items: center;
         // border: 1px solid black;
         margin-left: auto;
-      }
-    
-    .socialGood{
-        color: #9EE7E5;
-        font-size: 90px;
-        
     }
 
+    .socialGood {
+        color: #9ee7e5;
+        font-size: 90px;
+    }
+    @include mrwd(991px) {
+        padding-top: 85px;
+        .container2 {
+            font-size: 30px;
+            text-align: left;
+            margin-left: 0;
+        }
+        .socialGood {
+            font-size: 45px;
+            text-align: left;
+        }
+    }
 }
 
 .word2 {
@@ -203,31 +247,32 @@
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
-  
- 
 
 .event {
-    font-family: 'Proxima Nova' 'sans-serif';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 15px;
-    letter-spacing: 0.02em;
-
-    padding-top: 100px;
-    .hackdavis{
+    @include fontFactory(var(--proxima-nova), 24px, 400, white, 0.02rem, 1);
+    padding-top: 118px;
+    .hackdavis {
         font-weight: 300;
         font-size: 30px;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.02rem;
         margin-bottom: 15px;
+        strong {
+            font-weight: 700;
+        }
+    }
+    @include mrwd(991px) {
+        font-size: 16px;
+        padding-top: 100px;
+        .hackdavis {
+            margin-bottom: 10px;
+            letter-spacing: 0.05rem;
+            font-size: 20px;
+        }
     }
 
-    b {
-        font-weight: 700;
-    }
 }
 
-.mainButton{
+.mainButton {
     // margin: 0;
     display: flex;
     flex-direction: row;
@@ -236,36 +281,39 @@
     align-items: center;
     text-align: center;
 
-
     padding-top: 60px;
-    
+
     font-weight: 700;
     font-size: 18px;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: "Proxima Nova", sans-serif;
     color: #123041;
 
     z-index: 10;
-
+    @include mrwd(991px) {
+        padding-top: 43px;
+    }
 }
 
 .yellowButton {
     border: 0;
     margin: 0;
     padding: 15px 40px;
-    // padding: 5% 3%;
-    // width:150px;
+    appearance: button;
 
-    display: flex;
-    flex-direction: row;
+    display: block;
+    text-decoration: none;
 
-
-    background: #FFC53D;
+    background: #ffc53d;
     border-radius: 100px;
 
     color: #123041;
     font-weight: 700;
-    font-size: 18px;
-    font-family: 'Proxima Nova', sans-serif;
+    font-size: 20px;
+    font-family: var(--proxima-nova), sans-serif;
+    @include mrwd(991px) {
+        padding: 11px 20px;
+        font-size: 18px;
+    }
 }
 
 .fadedButton {
@@ -273,7 +321,7 @@
     // opacity: 0.15;
     width: fit-content;
     border-radius: 100px;
-    color: #FFC53D;
+    color: #ffc53d;
 
     display: flex;
     flex-direction: row;
@@ -287,7 +335,7 @@
 }
 
 .sponsorButton {
-    background: #FFC53D;
+    background: #ffc53d;
     width: fit-content;
     border-radius: 100px;
 
@@ -298,59 +346,64 @@
     gap: 20px;
 
     padding-left: 20px;
-    
+
     transition: 0.4s;
 }
 
-.heartButton{
+.heartButton {
     padding: 15px 15px 8px 15px;
     // margin-left: 15px;
-    background: #FFC53D;
+    background: #ffc53d;
     opacity: 1;
     border-radius: 100px;
     left: 0;
     z-index: 10;
     // filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
     box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
-    
+
     // border: 2px yellow solid;
 }
 
-.starterPack{
-    padding: 25px 0px 50px 0;
+.starterPack {
+    padding: 26px 0 53px 0;
 
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    font-family: 'Proxima Nova', sans-serif; 
-    
+    font-family: "Proxima Nova", sans-serif;
     z-index: 100;
+    @include mrwd(991px) {
+        padding-bottom: 0;
+        align-self: end;
+        max-width: 286px;
+        font-size: 16px;
+    }
 }
 
 .calendar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    column-gap: 12px;
-    align-items:baseline;
+    align-items: center;
 }
 
 .calendarIcon {
-    height: 15px;
-    width: 15px
+    height: 24px;
+    width: 24px;
+    margin-right: 12.45px;
 }
 
-.starterPack a, .calendar a{
-    color: #FFFFFF;
+.starterPack a,
+.calendar a {
+    color: #ffffff;
     text-decoration: none;
-
 }
 
 .starterPack a:hover {
     border-bottom-color: white;
     transition: border-bottom ease-in-out;
     padding-bottom: 7px;
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: 2px solid #ffffff;
 }
 
 .slideshow {
@@ -359,7 +412,7 @@
     max-width: 500px;
     border: 2px solid red;
 }
-  
+
 .slideshowSlider {
     white-space: nowrap;
     transition: ease 1000ms;
@@ -379,135 +432,131 @@
 //     }
 // }
 
-@media screen and (max-width: 1400px) {
-    .cowConeContainer {
-        margin-bottom: -18%;
-    }
+// @media screen and (max-width: 1400px) {
+//     // .cowConeContainer {
+//     //     margin-bottom: -18%;
+//     // }
 
-    .cowHandAnimate {
-        left: 53%;
-    }
-    // .container2 {
-    //     margin-left: ;
-    // }
-}
-@media screen and (max-width: 800px) {
-    .landing {
-        // padding: 0 40px;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+//     .cowHandAnimate {
+//         left: 53%;
+//     }
+//     // .container2 {
+//     //     margin-left: ;
+//     // }
+// }
+// @media screen and (max-width: 800px) {
+//     .landing {
+//         // padding: 0 40px;
+//         justify-content: space-between;
+//         flex-direction: column;
+//     }
 
-    .cowCone {
-        width: 100%;
-        position: relative;
-        max-width: 100%;
-        //margin-right: 100px
-    }
+//     .cowCone {
+//         // width: 100%;
+//         position: relative;
+//         // max-width: 100%;
+//         //margin-right: 100px
+//     }
 
-    .cowConeContainer {
-        align-items: flex-start;
-        margin-bottom: -19vmin;
-        margin: -15% 10% -25% -10%;
-        //margin-right: auto;
-        padding-right: 5%;
-        //margin-left: auto;
-    }
+//     .cowConeContainer {
+//         align-items: flex-start;
+//         // margin-bottom: -19vmin;
+//         // margin: -15% 10% -25% -10%;
+//         //margin-right: auto;
+//         padding-right: 5%;
+//         //margin-left: auto;
+//     }
 
+//     .cloud {
+//         width: 100%;
+//     }
 
-    .cloud {
-        width: 100%;
-    }
+//     .cloudBg {
+//         bottom: 15%;
+//         height: 100%;
+//         left: 0%;
+//         bottom: 0;
+//         width: 100%;
+//     }
 
+//     .mainAnimationSection {
+//         // display: flex;
+//         flex-direction: column-reverse;
+//         justify-content: flex-start;
+//         margin: 0;
+//         overflow: visible;
+//     }
 
-    .cloudBg {
-        bottom: 15%;
-        height: 100%;
-        left: 0%;
-        bottom: 0;
-        width: 100%;
-    }
+//     .cowHandAnimate {
+//         left: 49%;
+//     }
 
+//     .landing {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: flex-end;
 
-    .mainAnimationSection {
-        // display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-start;
-        margin: 0;
-        overflow: visible;
-    }
+//         margin-left: auto;
+//         padding: 0 40px;
+//         // margin: 0 20px 0 0;
+//     }
 
-    .cowHandAnimate {
-        left: 49%;
-    }
+//     .mainSection {
+//         display: flex;
+//         flex-direction: column;
+//         font-size: 18px;
+//         // justify-content: flex-end;
+//         align-items: flex-end;
+//     }
+//     .event {
+//         font-size: 16px;
+//         padding-top: 45px;
 
-    .landing {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+//         .hackdavis {
+//             margin-bottom: 0px;
+//             font-size: 20px;
+//         }
+//     }
+//     .tagline {
+//         text-align: left;
+//         align-self: flex-start;
+//         font-size: 30px;
+//         padding-top: 85px;
 
-        margin-left: auto;
-        padding: 0 40px;
-        // margin: 0 20px 0 0;
-    }
+//         .socialGood {
+//             font-size: 45px;
+//         }
+//     }
 
-    
-    .mainSection {
-        display: flex;
-        flex-direction: column;
-        font-size: 18px;
-        // justify-content: flex-end;
-        align-items: flex-end;
-    }
-    .event {
-        font-size: 16px;
-        padding-top: 45px;
-        
-        .hackdavis {
-            margin-bottom: 0px;
-            font-size: 20px;
-        }
-    }
-    .tagline {
-        text-align: left;
-        align-self: flex-start;
-        font-size: 30px;
-        padding-top: 85px;
+//     .container2 {
+//         margin-left: default;
+//     }
 
-        .socialGood {
-            font-size: 45px;
-        }
-    }
+//     .mainButton {
+//         font-size: 17px;
+//         flex-direction: row;
+//         justify-content: flex-end;
+//         padding-top: 40px;
+//     }
 
-    .container2 {
-        margin-left: default;
-    }
+//     .yellowButton {
+//         padding: 12px 20px;
+//         font-size: 17px;
+//         min-width: fit-content;
+//     }
 
-    .mainButton {
-        font-size: 17px;
-        flex-direction: row;
-        justify-content: flex-end;
-        padding-top: 40px;
-    }
+//     .fadedButton {
+//         gap: 10px;
+//         font-size: 17px;
+//     }
 
-    .yellowButton  {
-        padding: 12px 20px;
-        font-size: 17px;
-        min-width: fit-content;
-    }
+//     .sponsorButton {
+//         gap: 10px;
+//         font-size: 17px;
+//     }
 
-    .fadedButton {
-        gap: 10px;
-        font-size: 17px;
-    }
-
-    .sponsorButton {
-        gap: 10px;
-        font-size: 17px;
-    }
-
-    .heartButton {
-        padding: 13px 13px 6px 13px;
-        // padding: 15px 15px 11px 15px;
-    }
-}
+//     .heartButton {
+//         padding: 13px 13px 6px 13px;
+//         // padding: 15px 15px 11px 15px;
+//     }
+// }

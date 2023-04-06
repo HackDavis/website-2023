@@ -21,7 +21,7 @@ const NavbarDesktop = () => {
       <div className={styles.navLinks}>
         <div className={styles.navLinkHome}> Home </div>
         <div className={styles.navLinkAboutUs}> About Us </div>
-        <button
+        {/* <button
           className={isLight ? styles.lightPill : styles.darkPill}
           onClick={toggleLight}
           type="button"
@@ -33,7 +33,7 @@ const NavbarDesktop = () => {
               alt=""
             />
           </div>
-        </button>
+        </button> */}
       </div>
 
       <div className={styles.navLinkBadge}>

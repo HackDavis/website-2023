@@ -49,6 +49,13 @@
   }
 }
 
+// Custom devices
+@mixin mrwd($screen) {
+  @media screen and (max-width: $screen) {
+    @content;
+  }
+}
+
 // flex gap polyfill
 @mixin cgap($distance) {
   margin-right: -$distance;

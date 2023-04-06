@@ -3,6 +3,7 @@ import MainSection from '@/components/mainSection';
 import Faq from '@/components/faq';
 import Footer from '@/components/footer';
 import Sponsors2 from '@/components/sponsors/sponsors2';
+import Bus from '@/components/bus/bus';
 
 // Landing page
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <Navbar />
       <MainSection />
+      <Bus />
       <Faq />
       <Sponsors2 />
       <Footer />

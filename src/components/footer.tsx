@@ -22,7 +22,11 @@ const Footer = () => (
 
       <div className={styles.iceCreamText}>
         <p>SPRINKLE IN YOUR FLAIR</p>
-        <a href="https://hackdavis.typeform.com/hacker2023?utm_source=xxxxx">
+        <a
+          href="https://hackdavis.typeform.com/hacker2023?utm_source=xxxxx"
+          target="_blank"
+          rel="noreferrer"
+        >
           Register Now
         </a>
       </div>
