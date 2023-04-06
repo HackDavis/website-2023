@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '@/styles/sponsors2.module.scss';
+import styles from '@/styles/sponsors/sponsors2.module.scss';
 import chevron from '@/images/sponsors/chevron.png';
 import cs from '@/images/sponsors/cs.png';
 import globalAffairs from '@/images/sponsors/globalaffairs.png';

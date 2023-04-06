@@ -1,4 +1,4 @@
-import styles from '@/styles/sponsors2.module.scss';
+import styles from '@/styles/sponsors/sponsors2.module.scss';
 import Image from 'next/image';
 import heart from '@/images/heart.svg';
 import Row1 from './row1';

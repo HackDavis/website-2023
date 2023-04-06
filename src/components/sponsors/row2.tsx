@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '@/styles/sponsors2.module.scss';
+import styles from '@/styles/sponsors/sponsors2.module.scss';
 import yakult from '@/images/sponsors/yakult.png';
 import pocky from '@/images/sponsors/pocky.svg';
 

@@ -1,13 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import React, { useEffect, useState } from 'react';
-import styles from '@/styles/mainSection.module.scss';
 import Image from 'next/image';
 import arrowUp from '@/images/arrowUp.svg';
 import heart from '@/images/heart.svg';
 import calendar from '@/images/calendar.svg';
+import styles from '@/styles/mainSection/mainSection.module.scss';
 // import cloudBg from '@/images/cloudBg.svg';
-import cowCone from '@/images/cowCone.svg';
+// import CowCone from '@/images/cowCone.svg';
+import CowCone from './cowCone';
 // import cowHand from '@/images/cowHand.svg';
 // import Clouds from './clouds';
 // import Carousel from './carousel';
@@ -33,12 +34,7 @@ const MainSection = () => {
   return (
     <div className={styles.cloudBgContainer}>
       <div className={styles.mainAnimationSection}>
-        <div className={styles.cowConeContainer}>
-          <Image src={cowCone} alt="" className={`${styles.cowCone}`} />
-          {/* <div className={styles.cowHandAnimate}>
-            <Image src={cowHand} alt="" className={styles.cowHandImg} />
-          </div> */}
-        </div>
+        <CowCone />
         <div className={styles.landing}>
           <div className={styles.mainSection}>
             <div className={styles.event}>
