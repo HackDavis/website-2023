@@ -19,7 +19,7 @@ const AccordionItem = ({
         onOpening={() => setOpen(true)}
         onClosing={() => setOpen(false)}
         // This doesn't change the speed of the arrow :(
-        // transitionTime={200}
+        transitionTime={200}
         trigger={
           <div className={styles.question}>
             <span>{question}</span>

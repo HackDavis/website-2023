@@ -9,6 +9,7 @@ import styles from '@/styles/mainSection/mainSection.module.scss';
 // import cloudBg from '@/images/cloudBg.svg';
 // import CowCone from '@/images/cowCone.svg';
 import CowCone from './cowCone';
+import Clouds from './clouds';
 // import cowHand from '@/images/cowHand.svg';
 // import Clouds from './clouds';
 // import Carousel from './carousel';
@@ -33,6 +34,7 @@ const MainSection = () => {
 
   return (
     <div className={styles.cloudBgContainer}>
+      {/* <Clouds /> */}
       <div className={styles.mainAnimationSection}>
         <CowCone />
         <div className={styles.landing}>
@@ -55,7 +57,7 @@ const MainSection = () => {
             <div className={styles.tagline}>
               <div className={styles.container2}>
                 <span className={styles.word2}>{words[activeWordIndex]}</span>
-                <span style={{ opacity: 0.5, margin: 10 }}>for</span>
+                <span className={styles.for}>for</span>
               </div>
               <div className={styles.socialGood}> social good </div>
             </div>
@@ -72,8 +74,8 @@ const MainSection = () => {
             </a>
 
             <button
-              onClick={toggleSponsor}
-              className={sponsor ? styles.sponsorButton : styles.fadedButton}
+              
+              className={styles.sponsorButton }
               type="button"
             >
               <div className={styles.heartButton}>

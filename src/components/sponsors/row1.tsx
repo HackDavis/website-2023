@@ -5,21 +5,32 @@ import cs from '@/images/sponsors/cs.png';
 import globalAffairs from '@/images/sponsors/globalaffairs.png';
 import ls from '@/images/sponsors/ls.png';
 
-const Row1 = () => (
-  <div className={styles.sponsorsRow}>
-    <div className={`${styles.horizontalScroll} ${styles.primary}`}>
-      <Image src={chevron} alt="" className={styles.logo} />
-      <Image src={cs} alt="" className={styles.logo} />
-      <Image src={globalAffairs} alt="" className={styles.logo} />
-      <Image src={ls} alt="" className={styles.logo} />
+const Row1 = () => {
+  const logo = (imgSrc:any) => {
+    return(
+      <div className={styles.logoContainer}>
+        <Image src={imgSrc} alt='' className={styles.logo} />
+      </div>
+    )
+  }
+  return(
+
+      <div className={styles.sponsorsRow}>
+      <div className={`${styles.horizontalScroll} ${styles.primary}`}>
+
+        {logo(chevron)}
+        {logo(cs)}
+        {logo(globalAffairs)}
+        {logo(ls)}
+      </div>
+      <div className={`${styles.horizontalScroll} ${styles.secondary}`}>
+        {logo(chevron)}
+        {logo(cs)}
+        {logo(globalAffairs)}
+        {logo(ls)}
+      </div>
     </div>
-    <div className={`${styles.horizontalScroll} ${styles.secondary}`}>
-      <Image src={chevron} alt="" className={styles.logo} />
-      <Image src={cs} alt="" className={styles.logo} />
-      <Image src={globalAffairs} alt="" className={styles.logo} />
-      <Image src={ls} alt="" className={styles.logo} />
-    </div>
-  </div>
-);
+  )
+};
 
 export default Row1;

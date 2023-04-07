@@ -227,6 +227,18 @@
         color: #9ee7e5;
         font-size: 90px;
     }
+
+    .for {
+        opacity: 0.5;
+        margin: 10px;
+
+        position: absolute;
+        left: 30%;
+
+        @include lg {
+            right: 30%;
+        }
+    }
     @include mrwd(991px) {
         padding-top: 85px;
         .container2 {
@@ -242,11 +254,13 @@
 }
 
 .word2 {
+    max-width: 200px;
     animation-name: vertical-replace;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
+
 
 .event {
     @include fontFactory(var(--proxima-nova), 24px, 400, white, 0.02rem, 1);
@@ -316,7 +330,7 @@
     }
 }
 
-.fadedButton {
+.sponsorButton:hover {
     background: #ffc53d28;
     // opacity: 0.15;
     width: fit-content;
@@ -329,14 +343,21 @@
     align-items: center;
     gap: 20px;
 
-    padding-right: 20px;
+    padding: 14px 60px 15px 20px;
 
-    transition: 0.4s;
+    // transition: 0.4s;
+    .heartButton {
+
+        transform: translateX(100px);
+    }
+    //animation: buttonSlide 1s eas;
 }
 
 .sponsorButton {
     background: #ffc53d;
+    color: #123041;
     width: fit-content;
+    padding: 14px 20px 15px 60px;
     border-radius: 100px;
 
     display: flex;
@@ -345,13 +366,14 @@
     align-items: center;
     gap: 20px;
 
-    padding-left: 20px;
+    //padding-left: 20px;
 
-    transition: 0.4s;
+    
+    position: relative;
 }
 
 .heartButton {
-    padding: 15px 15px 8px 15px;
+    padding: 16px 14px 9px 14px;
     // margin-left: 15px;
     background: #ffc53d;
     opacity: 1;
@@ -362,6 +384,8 @@
     box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
 
     // border: 2px yellow solid;
+    position: absolute;
+    transition: transform 400ms;
 }
 
 .starterPack {
@@ -385,11 +409,12 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    //margin-bottom: 10px;
 }
 
 .calendarIcon {
-    height: 24px;
-    width: 24px;
+    height: 4.5%;
+    width: 4.5%;
     margin-right: 12.45px;
 }
 
@@ -399,7 +424,7 @@
     text-decoration: none;
 }
 
-.starterPack a:hover {
+.starterPack a:hover, .calendar a:hover {
     border-bottom-color: white;
     transition: border-bottom ease-in-out;
     padding-bottom: 7px;
