@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;500;700&display=swap");
+@use "/src/styles/mixins" as *;
+@import url("https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;500;600;700&display=swap");
 
 .footerCont {
   background-color: #173a52;
+  height: 100%;
 }
 
 .footerstyle {
@@ -21,14 +23,24 @@
 .iceCreamCont {
   position: relative;
   margin-top: -3em;
+  margin: auto;
   max-width: 100%;
   max-height: 100%;
+  //margin: auto;
+  //overflow: hidden;
 }
 
 .iceCreamImg {
   z-index: 0;
   width: 100%;
   height: auto;
+}
+
+.iceCreamImgMobile {
+  display: none;
+}
+.iceCreamSprinkles {
+  display: none;
 }
 
 .iceCreamText {
@@ -40,29 +52,43 @@
   margin-bottom: 400px;
   margin-bottom: 25em;
   margin-bottom: 28%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  //margin: auto;
+
 }
 
-.iceCreamText p {
+.text {
   font-size: 3.5vw;
   font-weight: 700;
   line-height: 2.6vw;
   letter-spacing: 0.08em;
   color: #173a52;
-
+  
   margin: 2.7%;
+  margin-bottom: 2%;
 }
 
-.iceCreamText a {
+.iceCreamText button {
   font-size: 1.4vw;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.04vw;
   letter-spacing: 0.02em;
   color: #ffffff;
   text-decoration: none;
 
   padding: 1.4% 3.5%;
-  background: #173a52;
+  padding: 15px 40px;
+  background-color: #173a52;
   border-radius: 100px;
+  //border: solid 2px red;
+  //width: 100px;
+  box-shadow: 0px 9px 35px rgba(0, 0, 0, 0.2);
+  
 }
 
 #footer-content {
@@ -133,6 +159,7 @@ div#copyright {
 }
 
 @media (min-width: 768px) {
+
   .icon {
     font-size: 30px;
     width: 40px;
@@ -151,8 +178,104 @@ div#copyright {
   }
 }
 
-@media (max-width: 540px) {
-  .iceCreamText p {
-    margin: 1.5%;
+@media (max-width: 992px) {
+  .footerCont 
+  .iceCreamCont {
+    position: relative;
+    max-height: 100px;
+    margin-top: 30%;
+    padding-bottom: 500px;
   }
+
+  .iceCreamImgMobile {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    //margin: auto;
+    width: 100%;
+  
+  }
+  .iceCreamSprinkles {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+
+  }
+  .iceCreamImg {
+    display: none;
+  }
+
+  .iceCreamText {
+    padding-top: 160px;
+  }
+
+  .iceCreamText button {
+    font-size: 17px;
+    padding: 20px 40px;
+  }
+
+  .text {
+    padding: 0;
+    //padding-bottom: 15px;
+    margin: 0;
+    max-width: 250px;
+    line-height: 38px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+}
+
+@media (max-width: 360px) {
+  .iceCreamSprinkles {
+    top: 12%;
+    // width: 90%;
+    margin-top: 7%;
+    padding: 2%;
+  }
+}
+
+@media (max-width: 734px) {
+  .text {
+    //margin: 1%;
+    font-size: 25px;
+    word-wrap: break-word;
+
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 560px) {
+  .text {
+    //margin: 1.5%;
+    font-size: 25px;
+    word-wrap: break-word;
+    max-width: 200px;
+  }
+
+
+
+  // .iceCreamCont {
+  //   overflow: hidden;
+  //  // width: 150%;
+  //   //height: 500px;
+  // }
+  .iceCreamImg {
+  //  width: 150%;
+  //  height: 100px;
+   //position: absolute;
+  }
+
+  // .iceCreamText p {
+  //   margin-bottom: 3%;
+  //   margin-top: 0;
+  // }
+
+  // .iceCreamText a {
+  //   padding: 10px 30px;
+  //   font-size: 17px;
+  // }
 }
