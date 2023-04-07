@@ -9,7 +9,7 @@ const WindowOne = () => (
       HackDavis <span>is the</span> largest collegiate hackathon{' '}
       <span>
         in California where over 700 students, creators, and leaders come
-        together for 36 hours to
+        together for 24 hours to
       </span>{' '}
       create for social good.
     </p>

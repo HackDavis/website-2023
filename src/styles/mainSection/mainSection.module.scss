@@ -55,152 +55,126 @@
   }
 }
 
-// .cloudBgContainer {
-//   margin: 0;
-//   width: 100vw;
-//   position: relative;
-//   background: #123041;
-//   color: #ffffff;
-//   text-align: right;
-//   font-family: "Proxima Nova", sans-serif;
-//   // overflow-x: hidden;
-//   // overflow-y: visible;
-// }
-
-// .cloud {
-//   overflow-x: hidden;
-//   width: 100vw;
-// }
-
-// .cloudBg {
-//   position: absolute;
-//   //border: 2px solid red;
-//   left: 0%;
-//   // top: 30%;
-//   bottom: 7%;
-//   width: 100%;
-//   height: 90%;
-//   animation: backAndForth 3s infinite ease-in-out;
-// }
-
 .mainAnimationSection {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    z-index: 100;
-    max-width: 1290px;
-    margin: auto;
-    padding-right: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  z-index: 100;
+  max-width: 1290px;
+  margin: auto;
+  padding-right: 64px;
 
   @include mrwd(1190px) {
     justify-content: flex-end;
   }
 
-    @include mrwd(991px) {
-        flex-direction: column-reverse;
-        align-items: center;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  @include mrwd(991px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .landing {
-    display: flex;
-    position: relative;
-    text-align: right;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-width: 470px;
-    max-width: 470px;
-    padding-bottom: 41px;
+  display: flex;
+  position: relative;
+  text-align: right;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 470px;
+  max-width: 470px;
+  padding-bottom: 41px;
 
-    @include mrwd(991px) {
-        margin-left: 0;
-        min-width: 0;
-        padding-bottom: 0;
-    }
+  @include mrwd(991px) {
+    margin-left: 0;
+    min-width: 0;
+    padding-bottom: 0;
+  }
 }
 
 .mainSection {
-    display: flex;
-    flex-direction: column;
-    // z-index: 100;
+  display: flex;
+  flex-direction: column;
+  // z-index: 100;
 
-    @include mrwd(991px) {
-        flex-direction: column-reverse;
-    }
+  @include mrwd(991px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .tagline {
-    @include fontFactory(var(--proxima-nova), 40px, 700, white, 0.02rem, 1.15);
-    margin-bottom: 58px;
+  @include fontFactory(var(--proxima-nova), 40px, 700, white, 0.02rem, 1.15);
+  margin-bottom: 58px;
+
+  .socialGood {
+    display: inline-block;
+    letter-spacing: 0.02rem;
+    color: #9ee7e5;
+    font-size: 90px;
+  }
+
+  .for {
+    opacity: 0.5;
+    margin: 10px;
+
+    position: absolute;
+    left: 30%;
+
+    @include lg {
+      right: 30%;
+    }
+  }
+  @include mrwd(991px) {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 43px;
 
     .socialGood {
-        display: inline-block;
-        letter-spacing: 0.02rem;
-        color: #9ee7e5;
-        font-size: 90px;
+      font-size: 45px;
+      text-align: left;
     }
-
-    .for {
-        opacity: 0.5;
-        margin: 10px;
-
-        position: absolute;
-        left: 30%;
-
-        @include lg {
-            right: 30%;
-        }
-    }
-    @include mrwd(991px) {
-        font-size: 30px;
-        text-align: left;
-        margin-bottom: 43px;
-
-        .socialGood {
-            font-size: 45px;
-            text-align: left;
-        }
-    }
+  }
 }
 
 .event {
-    margin-bottom: 58px;
+  margin-bottom: 58px;
 
-    @include mrwd(991px) {
-        margin-bottom: 85px;
-    }
+  @include mrwd(991px) {
+    margin-bottom: 85px;
+  }
 }
 
 .hackdavis {
-    @include fontFactory(var(--proxima-nova), 30px, 300, white, 0.05rem, 1);
-    text-transform: uppercase;
-    margin-bottom: 15px;
+  @include fontFactory(var(--proxima-nova), 30px, 300, white, 0.05rem, 1);
+  text-transform: uppercase;
+  margin-bottom: 15px;
 
-    b {
-        font-weight: 700;
-    }
+  b {
+    font-weight: 700;
+  }
 
-    @include mrwd(991px) {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
+  @include mrwd(991px) {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 }
 
 .calendar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 
+  img {
+    width: 20px;
+    height: 22px;
+    margin-right: 15px;
+  }
+
+  @include mrwd(991px) {
     img {
-        width: 20px;
-        height: 22px;
-        margin-right: 15px;
-
-    @include mrwd(991px) {
       width: 13px;
       margin-right: 12px;
     }
@@ -228,138 +202,116 @@
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 26px;
 
-    @include mrwd(991px) {
-        // padding-top: 43px;
-    }
+  @include mrwd(991px) {
+    // padding-top: 43px;
+  }
 }
 
 .yellowButton {
-    @include fontFactory(var(--proxima-nova), 20px, 700, var(--color-teal-5), 0.02rem, 1);
-    display: block;
-    padding: 15px 40px;
-    appearance: button;
-    text-decoration: none;
-    text-align: center;
-    background-color: #ffc53d;
-    border-radius: 100px;
-    margin-right: 28px;
-    filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
+  @include fontFactory(var(--proxima-nova), 20px, 700, var(--color-teal-5), 0.02rem, 1);
+  display: block;
+  padding: 15px 40px;
+  appearance: button;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ffc53d;
+  border-radius: 100px;
+  margin-right: 28px;
+  filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
 
-    @include mrwd(991px) {
-        padding: 11px 20px;
-        font-size: 18px;
-    }
+  @include mrwd(991px) {
+    padding: 11px 20px;
+    font-size: 18px;
+  }
 }
 
-.sponsorButton:hover {
-    background: #ffc53d28;
-    // opacity: 0.15;
-    width: fit-content;
-    border-radius: 100px;
-    color: #ffc53d;
-    
-.fadedButton {
+.sponsorButton {
+  @include fontFactory(var(--proxima-nova), 20px, 700, var(--color-ducky), 0.02rem, 1);
   background: #ffc53d28;
-  // opacity: 0.15;
+  transition: background 200ms ease flex-direction 200ms ease;
+  color: var(--color-ducky);
   width: fit-content;
+  padding: 14px 20px 15px 60px;
   border-radius: 100px;
-  color: #ffc53d;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-
-    padding: 14px 60px 15px 20px;
-
-    // transition: 0.4s;
-    .heartButton {
-
-        transform: translateX(100px);
-    }
-    //animation: buttonSlide 1s eas;
-}
-
-.sponsorButton {
-    background: #ffc53d;
-    color: #123041;
-    width: fit-content;
-    padding: 14px 20px 15px 60px;
-    border-radius: 100px;
-  padding-right: 20px;
-
-  transition: 0.4s;
-}
-
-.sponsorButton {
-  background: #ffc53d;
-  width: fit-content;
-  border-radius: 100px;
-
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+  position: relative;
+  text-decoration: none;
+}
 
-  padding-left: 20px;
+.sponsorButton:hover {
+  cursor: pointer;
+  background: #ffc53d;
+  width: fit-content;
+  border-radius: 100px;
+  color: #122F40;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 60px 15px 20px;
 
-  transition: 0.4s;
+  // transition: 0.4s;
+  .heartButton {
+      transform: translateX(108px);
+  }
 }
 
 .heartButton {
-    padding: 16px 14px 9px 14px;
-    // margin-left: 15px;
-    background: #ffc53d;
-    opacity: 1;
-    border-radius: 100px;
-    left: 0;
-    // z-index: 10;
-    // filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
-    box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
+  padding: 16px 14px 9px 14px;
+  // margin-left: 15px;
+  background: #ffc53d;
+  opacity: 1;
+  border-radius: 100px;
+  left: 0;
+  // filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
+  box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
 
-    // border: 2px yellow solid;
-    position: absolute;
-    transition: transform 400ms;
+  // border: 2px yellow solid;
+  position: absolute;
+  transition: transform 400ms;
 }
 
 .starterPack {
-    @include fontFactory(var(--proxima-nova), 18px, 400, white, 0.02rem, 1);
+  @include fontFactory(var(--proxima-nova), 18px, 400, white, 0.02rem, 1);
 
-    strong {
-        font-weight: 700;
-    }
+  strong {
+    font-weight: 700;
+  }
 
-    a {
-        color: white;
-        text-decoration: none;
-        transition: border-bottom 200ms;
-        border-bottom: 2px solid transparent;
-        padding-bottom: 5px;
-        &:hover {
-            border-bottom-color: white;
-            border-bottom: 2px solid #ffffff;
-        }
-
-        @include mrwd(991px) {
-            display: inline-block;
-            margin-top: 7px;
-        }
+  a {
+    color: white;
+    text-decoration: none;
+    transition: border-bottom 200ms;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    &:hover {
+      border-bottom-color: white;
+      border-bottom: 2px solid #ffffff;
     }
 
     @include mrwd(991px) {
-        padding-bottom: 0;
-        align-self: end;
-        max-width: 286px;
-        font-size: 16px;
+      display: inline-block;
+      margin-top: 7px;
     }
+  }
+
+  @include mrwd(991px) {
+    padding-bottom: 0;
+    align-self: end;
+    max-width: 286px;
+    font-size: 16px;
+  }
 }
 .slideshow {
   margin: 0 auto;
