@@ -1,13 +1,18 @@
+.container {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
 .desktop {
-    display: none;
+  display: none;
 }
 
-@media screen and (min-width: 1035px) {
-    .desktop {
-        display: block;
-    }
+@media screen and (min-width: 992px) {
+  .desktop {
+    display: block;
+  }
 
-    .mobile {
-        display: none;
-    }
+  .mobile {
+    display: none;
+  }
 }
