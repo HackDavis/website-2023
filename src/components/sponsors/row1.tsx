@@ -3,7 +3,7 @@ import styles from '@/styles/sponsors/sponsors2.module.scss';
 import chevron from '@/images/sponsors/chevron.png';
 import cs from '@/images/sponsors/cs.png';
 import globalAffairs from '@/images/sponsors/globalaffairs.png';
-import ls from '@/images/sponsors/ls.png';
+import datalab from '@/images/sponsors/datalab.png';
 
 const Row1 = () => {
   const logo = (imgSrc: StaticImageData) => (
@@ -18,13 +18,13 @@ const Row1 = () => {
         {logo(chevron)}
         {logo(cs)}
         {logo(globalAffairs)}
-        {logo(ls)}
+        {logo(datalab)}
       </div>
       <div className={`${styles.horizontalScroll} ${styles.secondary}`}>
         {logo(chevron)}
         {logo(cs)}
         {logo(globalAffairs)}
-        {logo(ls)}
+        {logo(datalab)}
       </div>
     </div>
   );
