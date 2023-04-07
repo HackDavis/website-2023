@@ -4,6 +4,7 @@
 .footerCont {
   background-color: #173a52;
   height: 100%;
+  padding-top: 150px;
 }
 
 .footerstyle {
@@ -21,11 +22,11 @@
 }
 
 .iceCreamCont {
-  position: relative;
-  margin-top: -3em;
-  margin: auto;
-  max-width: 100%;
-  max-height: 100%;
+  // position: relative;
+  // margin-top: -3em;
+  // margin: auto;
+  // max-width: 100%;
+  // max-height: 100%;
   //margin: auto;
   //overflow: hidden;
 }
@@ -47,7 +48,7 @@
   text-align: center;
 
   position: relative;
-  margin-top: -37%;
+  margin-top: -40%;
   margin-bottom: 400px;
   margin-bottom: 25em;
   margin-bottom: 28%;
@@ -57,36 +58,25 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  //margin: auto;
 
 }
 
 .text {
-  font-size: 3.5vw;
-  font-weight: 700;
-  line-height: 2.6vw;
-  letter-spacing: 0.08em;
-  color: #173a52;
-  
-  margin: 2.7%;
-  margin-bottom: 2%;
+  @include fontFactory(var(--proxima-nova), 40px, 700, #173a52, 0.08rem, 1);
+  margin-bottom: 32px;
+  // margin: 2.7%;
+  // margin-bottom: 2%;
 }
 
 .iceCreamText button {
-  font-size: 1.4vw;
-  font-weight: 600;
-  line-height: 1.04vw;
-  letter-spacing: 0.02em;
-  color: #ffffff;
+  @include fontFactory(var(--proxima-nova), 20px, 600, var(--color-teal-5), 0.02rem, 1);
   text-decoration: none;
-
-  padding: 1.4% 3.5%;
   padding: 15px 40px;
-  background-color: #173a52;
+  background-color: #FFC200;
   border-radius: 100px;
   //border: solid 2px red;
   //width: 100px;
-  box-shadow: 0px 9px 35px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0px 9px 35px rgba(0, 0, 0, 0.2);
   
   &:hover {
     cursor: pointer;
@@ -181,7 +171,7 @@ div#copyright {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 379px) {
   .footerCont 
   .iceCreamCont {
     position: relative;
@@ -241,40 +231,21 @@ div#copyright {
   }
 }
 
-@media (max-width: 734px) {
-  .text {
-    //margin: 1%;
-    font-size: 25px;
-    word-wrap: break-word;
+// @media (max-width: 734px) {
+//   .text {
+//     //margin: 1%;
+//     font-size: 25px;
+//     word-wrap: break-word;
 
-    max-width: 200px;
-  }
-}
+//     max-width: 200px;
+//   }
+// }
 
-@media (max-width: 560px) {
-  .text {
-    //margin: 1.5%;
-    font-size: 25px;
-    word-wrap: break-word;
-    max-width: 200px;
-  }
-
-
-
-  // .iceCreamCont {
-  //   overflow: hidden;
-  //  // width: 150%;
-  //   //height: 500px;
-  // }
- 
-
-  // .iceCreamText p {
-  //   margin-bottom: 3%;
-  //   margin-top: 0;
-  // }
-
-  // .iceCreamText a {
-  //   padding: 10px 30px;
-  //   font-size: 17px;
-  // }
-}
+// @media (max-width: 560px) {
+//   .text {
+//     //margin: 1.5%;
+//     font-size: 25px;
+//     word-wrap: break-word;
+//     max-width: 200px;
+//   }
+// }
