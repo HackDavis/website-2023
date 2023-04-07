@@ -5,7 +5,7 @@
   min-width: 657px;
   max-width: 657px;
   height: auto;
-  // z-index: 2;
+  z-index: 1;
   // animation: slideIn 2s forwards;
 
   @include mrwd(991px) {
