@@ -228,6 +228,7 @@
   @include mrwd(991px) {
     padding: 11px 20px;
     font-size: 18px;
+    margin-right: 18px;
   }
 }
 
@@ -246,6 +247,12 @@
   gap: 20px;
   position: relative;
   text-decoration: none;
+
+  @include mrwd(991px) {
+    font-size: 18px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
 }
 
 .sponsorButton:hover {
@@ -261,9 +268,17 @@
   gap: 20px;
   padding: 14px 60px 15px 20px;
 
+  @include mrwd(991px) {
+    padding: 11px 60px 11px 20px;
+  }
+
   // transition: 0.4s;
   .heartButton {
       transform: translateX(108px);
+
+      @include mrwd(991px) {
+        transform: translateX(110px);
+      }
   }
 }
 
@@ -280,6 +295,10 @@
   // border: 2px yellow solid;
   position: absolute;
   transition: transform 400ms;
+
+  @include mrwd(991px) {
+    padding: 11px 9px 6px 10px;
+  }
 }
 
 .starterPack {

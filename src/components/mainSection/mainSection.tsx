@@ -23,7 +23,15 @@ const MainSection = () => (
             <div className={styles.calendar}>
               <Image src={calendar} alt="" />
               <strong>
-                May 20, 2023 @{' '}
+                <a
+                  href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MW40NHJuYzFqN2xrajQxcTRrdDVnazQ4aHEgY18wODYxOGRjNTgwZmVmZjJkOGUxMzFmNDVhNGU0ODE3ZjQwMzM3NzdlZTRiOWFlZTVmY2I5NGE0MmEwNDVlNzA4QGc&tmsrc=c_08618dc580feff2d8e131f45a4e4817f4033777ee4b9aee5fcb94a42a045e708%40group.calendar.google.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {' '}
+                  May 20, 2023
+                </a>{' '}
+                @{' '}
                 <a
                   href="https://goo.gl/maps/MTxJ6FxKH3k9DQxA6"
                   target="_blank"
