@@ -1,18 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@100;400;500;700&display=swap");
-
 .faqCont {
   margin: 0;
-  background-color: #173A52;
-  font-family: "Proxima Nova";
+  background: linear-gradient(0deg, rgba(0, 82, 113, 0) 0%, #005271 100%);
+  font-family: var(--proxima-nova);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.faqText h1 {
+.faqText h2 {
+  font-weight: 700;
   margin-top: 200px;
   margin-bottom: 100px;
-  color: #ade5e4;
+  color: white;
   font-size: 50px;
 }
 

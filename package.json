@@ -27,11 +27,13 @@
     "react-fontawesome": "^1.7.1",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^6.10.0",
+    "react-transition-group": "^4.4.5",
     "reactstrap": "^9.1.6",
     "sass": "^1.58.3",
     "typescript": "4.9.5"
   },
   "devDependencies": {
+    "@types/react-transition-group": "^4.4.5",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "eslint-config-react-tc": "10.0.1",
     "eslint-config-tc": "22.2.0",

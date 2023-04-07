@@ -1,70 +1,96 @@
-.navbarCont {
-    background: #123041;
-    
-}
+@use "/src/styles/mixins" as *;
 
-.navbarItems {
+.navbarCont {
+  background: #023142;
+  transition: box-shadow 200ms linear;
+  .navbarItems {
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    z-index: 11;
+    align-items: center;
+    margin: 0 40px;
+    padding: 10px 0;
+    transition: height 200ms linear;
+    .showLogo {
+      animation: fadeIn 200ms;
+    }
+    .badge {
+      position: relative;
+      top: 10px;
+      transition: top 200ms linear;
+    }
+    .hamburger {
+      cursor: pointer;
+      background-color: transparent;
+    }
+  }
+  .navbarItemsOnScroll {
+    height: 70px;
+  }
 }
 
-.hamburger {
-    cursor: pointer;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 7%;
-    background-color: transparent;
-}
-
-.badge {
-    position: relative;
-    margin-left: 5%;
+.showShadow {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.5);
 }
 
 .navMenu {
-    display: flex;
-    flex-direction: column;
-    font-family: "Proxima Nova", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    transition: 500ms;
-    position: relative;
-    box-shadow: 0 3px 3px 1px rgba(0,0,0,.5);
-    z-index: 10;
-}
+  background-color: #123041;
+  @include fontFactory(
+    var(--proxima-nova),
+    16px,
+    500,
+    var(--color-teal-1),
+    0.02rem,
+    1
+  );
+  position: absolute;
+  width: 100%;
+  // transform: translateY(-112px);
+  transition: 200ms;
+  top: -112px;
+  transform: scaleY(1);
+  z-index: -1;
 
-.navMenu a {
-    float: right;
-    color: #9ee7e5;
-    // text-decoration: none;
-}
+  ul {
+    text-align: right;
+    padding: 10px 40px;
+    list-style-type: none;
+    li {
+      margin-bottom: 20px;
+      .selected {
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 2px white solid;
+      }
 
-.navMenu li {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-right: 7%;
+      .unselected {
+        font-weight: normal;
+        text-decoration: none;
+        color: #9ee7e5;
+      }
+    }
+  }
 }
-
-#closeMenu {
-    display: none;
-   // visibility: none;
+.navMenuAnimation {
+  top: 100px;
+  z-index: -2;
 }
-
+.navMenuOnScroll {
+  top: 70px;
+  transition: top 200ms linear;
+}
 #openMenu {
-    display: block;
-   // visibility: visible;
+  display: block;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.5);
 }
 
-.bold {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.normal {
-    font-weight: normal;
-    text-decoration: none;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

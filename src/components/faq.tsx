@@ -65,18 +65,20 @@ const Faq = () => {
   ];
 
   return (
-    <div className={styles.faqCont}>
-      <div className={styles.faqText}>
-        <h1>FAQ</h1>
-      </div>
-      <div className={styles.questionList}>
-        {questions.map((question, index) => (
-          <AccordionItem
-            key={question}
-            question={question}
-            answer={answers[index]}
-          />
-        ))}
+    <div style={{ background: '#033143' }}>
+      <div className={styles.faqCont}>
+        <div className={styles.faqText}>
+          <h2>FAQ</h2>
+        </div>
+        <div className={styles.questionList}>
+          {questions.map((question, index) => (
+            <AccordionItem
+              key={question}
+              question={question}
+              answer={answers[index]}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

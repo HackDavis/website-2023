@@ -1,69 +1,52 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import arrowUp from '@/images/arrowUp.svg';
 import heart from '@/images/heart.svg';
 import calendar from '@/images/calendar.svg';
 import styles from '@/styles/mainSection/mainSection.module.scss';
-// import cloudBg from '@/images/cloudBg.svg';
-// import CowCone from '@/images/cowCone.svg';
 import CowCone from './cowCone';
-// import Clouds from './clouds';
-// import cowHand from '@/images/cowHand.svg';
-// import Clouds from './clouds';
-// import Carousel from './carousel';
+import WordCycle from './wordCycle';
 
 const MainSection = () => {
-  // const [sponsor, setSponsor] = useState(false);
-  const words = ['create', 'design', 'ideate', 'hack', 'build'];
-
-  const [activeWordIndex, setActiveWordIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setActiveWordIndex((activeWordIndex + 1) % words.length);
-    }, 5000);
-
-    return () => clearInterval(intervalId);
-  }, [activeWordIndex]);
+  const [sponsor, setSponsor] = useState(false);
 
   // const toggleSponsor = () => {
   //   setSponsor(!sponsor);
   // };
 
   return (
-    <div className={styles.cloudBgContainer}>
+    <>
       {/* <Clouds /> */}
       <div className={styles.mainAnimationSection}>
         <CowCone />
         <div className={styles.landing}>
           <div className={styles.mainSection}>
+            <h1 className={styles.tagline}>
+              <WordCycle />
+              <span className={styles.socialGood}>social good</span>
+            </h1>
             <div className={styles.event}>
-              <div className={styles.hackdavis}>
-                HACK<strong>DAVIS</strong>{' '}
-              </div>
+              <h2 className={styles.hackdavis}>
+                Hack<b>Davis</b>{' '}
+              </h2>
               <div className={styles.calendar}>
-                <Image src={calendar} alt="" className={styles.calendarIcon} />
-                <a
-                  href="https://goo.gl/maps/MTxJ6FxKH3k9DQxA6"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  May 20, 2023 @ UCenter{' '}
-                </a>
+                <Image src={calendar} alt="" />
+                <strong>
+                  May 20, 2023 @
+                  <a
+                    href="https://goo.gl/maps/MTxJ6FxKH3k9DQxA6"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {' '}
+                    UCenter
+                  </a>
+                </strong>
               </div>
-            </div>
-            <div className={styles.tagline}>
-              <div className={styles.container2}>
-                <span className={styles.word2}>{words[activeWordIndex]}</span>
-                <span className={styles.for}>for</span>
-              </div>
-              <div className={styles.socialGood}> social good </div>
             </div>
           </div>
 
-          <div className={styles.mainButton}>
+          <div className={styles.buttons}>
             <a
               className={styles.yellowButton}
               href="https://hackdavis.typeform.com/hacker2023?utm_source=xxxxx"
@@ -88,13 +71,13 @@ const MainSection = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <b>Starter Pack </b>
+              <strong style={{ marginRight: 10 }}>Starter Pack</strong>
               <Image src={arrowUp} alt="" />{' '}
             </a>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
