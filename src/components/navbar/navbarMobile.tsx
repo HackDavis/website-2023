@@ -39,7 +39,7 @@ const NavbarMobile = () => {
         }`}
       >
         {/* badge */}
-        {/* {isScroll ? (
+        {isScroll ? (
           <Link href="/">
             <Image
               className={`${isScroll ? `${styles.showLogo}` : ''}`}
@@ -55,27 +55,7 @@ const NavbarMobile = () => {
           >
             <Image className={styles.badge} src={Badge} alt="MLH Logo" />
           </Link>
-        )} */}
-        <Link href="/">
-          <Image
-            // className={`${isScroll ? `${styles.showLogo}` : ''}`}
-            src={HDLogo}
-            alt="HackDavis Logo"
-          />
-        </Link>
-        <Link
-          href="https://mlh.io/seasons/2023/events"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Image
-            className={`${styles.badge} ${
-              isScroll ? `${styles.adjustMLH}` : ''
-            }`}
-            src={Badge}
-            alt="MLH Logo"
-          />
-        </Link>
+        )}
         {/* hamburger */}
         {/* <button
           className={styles.hamburger}

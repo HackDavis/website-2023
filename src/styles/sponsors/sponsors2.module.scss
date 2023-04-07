@@ -1,41 +1,58 @@
+@use "/src/styles/mixins" as *;
+
 .sponsorsSection {
-  background-color: #173a52;
+  background-color: #033B54;
   margin: 0;
   padding: 0;
   border: 0;
-  padding-top: 200px;
-  // padding-bottom: 100px;
+  padding-top: 100px;
+
+  @include lg {
+    padding-top: 200px;
+  }
 }
 
 .heartButton {
-  padding: 15px 15px 8px 15px;
-  // margin-left: 15px;
+  padding: 19.2px 18px;
   background: #ffc53d;
   opacity: 1;
   border-radius: 100px;
   left: 0;
-  width: 50px;
+  width: 60px;
+  height: 60px;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   // filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
   box-shadow: 0px 19.44px 86.4px rgba(0, 0, 0, 0.75);
-
-  // border: 2px yellow solid;
+  @include lg {
+    width: 108px;
+    height: 108px;
+    padding: 34.06px 32.4px;
+    img {
+      width: 45.15px;
+      height: 39.38px;
+    }
+  }
 }
 
 .support {
-  margin-top: 50px;
-  margin-bottom: 100px;
-  font-family: "Proxima Nova";
+  @include fontFactory(var(--proxima-nova), 24px, 700, white, 0.02rem, 1.25);
+  margin-top: 10px;
+  margin-bottom: 30px;
   font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 60px;
-  /* or 120% */
-
   text-align: center;
-  letter-spacing: 0.02em;
-
-  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  
+  @include lg {
+    @include fontFactory(var(--proxima-nova), 50px, 700, white, 0.02rem, 120%);
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
 }
 
 .sponsorsContainer {

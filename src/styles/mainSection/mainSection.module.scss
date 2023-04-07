@@ -55,33 +55,33 @@
   }
 }
 
-.cloudBgContainer {
-  margin: 0;
-  width: 100vw;
-  position: relative;
-  background: #123041;
-  color: #ffffff;
-  text-align: right;
-  font-family: "Proxima Nova", sans-serif;
-  // overflow-x: hidden;
-  // overflow-y: visible;
-}
+// .cloudBgContainer {
+//   margin: 0;
+//   width: 100vw;
+//   position: relative;
+//   background: #123041;
+//   color: #ffffff;
+//   text-align: right;
+//   font-family: "Proxima Nova", sans-serif;
+//   // overflow-x: hidden;
+//   // overflow-y: visible;
+// }
 
-.cloud {
-  overflow-x: hidden;
-  width: 100vw;
-}
+// .cloud {
+//   overflow-x: hidden;
+//   width: 100vw;
+// }
 
-.cloudBg {
-  position: absolute;
-  //border: 2px solid red;
-  left: 0%;
-  // top: 30%;
-  bottom: 7%;
-  width: 100%;
-  height: 90%;
-  animation: backAndForth 3s infinite ease-in-out;
-}
+// .cloudBg {
+//   position: absolute;
+//   //border: 2px solid red;
+//   left: 0%;
+//   // top: 30%;
+//   bottom: 7%;
+//   width: 100%;
+//   height: 90%;
+//   animation: backAndForth 3s infinite ease-in-out;
+// }
 
 .mainAnimationSection {
     display: flex;
@@ -107,6 +107,8 @@
 
 .landing {
     display: flex;
+    position: relative;
+    text-align: right;
     flex-direction: column;
     justify-content: flex-end;
     min-width: 470px;
@@ -191,9 +193,19 @@
     a {
         @include fontFactory(var(--proxima-nova), 24px, 400, white, 0.02rem, 1);
         text-decoration: none;
-
+        strong {
+          a{
+            transition: border-bottom 200ms linear;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+          }
+          a:hover {
+            border-bottom-color: white;
+            border-bottom: 2px solid #ffffff;
+          }
+        }
         @include mrwd(991px) {
-            font-size: 16px;
+          font-size: 16px;
         }
     }
 }
@@ -286,14 +298,12 @@
     a {
         color: white;
         text-decoration: none;
-        border-bottom: none;
         transition: border-bottom 200ms;
-        
+        border-bottom: 2px solid transparent;
+        padding-bottom: 5px;
         &:hover {
             border-bottom-color: white;
-            padding-bottom: 5px;
             border-bottom: 2px solid #ffffff;
-            transition: border-bottom 200ms;
         }
 
         @include mrwd(991px) {

@@ -7,7 +7,7 @@ import Row2 from './row2';
 const Sponsors2 = () => (
   <div className={styles.sponsorsSection}>
     <div className={styles.heartButton}>
-      <Image src={heart} alt="" />
+      <Image src={heart} height={21.88} width={25.08} alt="" />
     </div>
     <div className={styles.support}>support for social good.</div>
     <div className={styles.sponsorsContainer}>

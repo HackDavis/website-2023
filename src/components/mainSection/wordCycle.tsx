@@ -2,7 +2,18 @@ import { useState, useEffect, useRef } from 'react';
 import styles from '@/styles/mainSection/wordCycle.module.scss';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
 
-const words = ['create', 'design', 'ideate', 'hack', 'build'];
+const words = [
+  'create',
+  'code',
+  'design',
+  'innovate',
+  'collaborate',
+  'ideate',
+  'engineer',
+  'advocate',
+  'hack',
+  'strive',
+];
 
 const WordCycle = () => {
   const [wordIdx, setWordIdx] = useState(0);
