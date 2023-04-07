@@ -12,22 +12,26 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import Image from 'next/image';
-import iceCreamSprinkles from '../images/iceCreamFooter.svg';
-import LogoIcon from '../images/HDLogoWhite.svg';
+import iceCreamMobile from '@/images/iceCreamMobile.svg';
+import sprinkles from '@/images/sprinkles.svg';
+import iceCreamSprinkles from '@/images/iceCreamFooter.svg';
+import LogoIcon from '@/images/HDLogoWhite.svg';
 
 const Footer = () => (
   <div className={styles.footerCont}>
     <div className={styles.iceCreamCont}>
       <Image className={styles.iceCreamImg} src={iceCreamSprinkles} alt="" />
 
+      <Image className={styles.iceCreamImgMobile} src={iceCreamMobile} alt="" />
+      <Image src={sprinkles} className={styles.iceCreamSprinkles} alt="" />
       <div className={styles.iceCreamText}>
-        <p>SPRINKLE IN YOUR FLAIR</p>
+        <div className={styles.text}>SPRINKLE IN YOUR FLAIR</div>
         <a
           href="https://hackdavis.typeform.com/hacker2023?utm_source=xxxxx"
           target="_blank"
           rel="noreferrer"
         >
-          Register Now
+          <button type="button">Register Now</button>
         </a>
       </div>
     </div>

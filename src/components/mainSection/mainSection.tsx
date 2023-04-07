@@ -10,9 +10,9 @@ import WordCycle from './wordCycle';
 const MainSection = () => {
   const [sponsor, setSponsor] = useState(false);
 
-  const toggleSponsor = () => {
-    setSponsor(!sponsor);
-  };
+  // const toggleSponsor = () => {
+  //   setSponsor(!sponsor);
+  // };
 
   return (
     <>
@@ -56,11 +56,7 @@ const MainSection = () => {
               Register Now
             </a>
 
-            <button
-              onClick={toggleSponsor}
-              className={sponsor ? styles.sponsorButton : styles.fadedButton}
-              type="button"
-            >
+            <button className={styles.sponsorButton} type="button">
               <div className={styles.heartButton}>
                 <Image src={heart} alt="" />
               </div>

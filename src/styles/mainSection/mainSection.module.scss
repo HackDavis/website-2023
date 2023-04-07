@@ -143,6 +143,17 @@
         font-size: 90px;
     }
 
+    .for {
+        opacity: 0.5;
+        margin: 10px;
+
+        position: absolute;
+        left: 30%;
+
+        @include lg {
+            right: 30%;
+        }
+    }
     @include mrwd(991px) {
         font-size: 30px;
         text-align: left;
@@ -240,6 +251,13 @@
     }
 }
 
+.sponsorButton:hover {
+    background: #ffc53d28;
+    // opacity: 0.15;
+    width: fit-content;
+    border-radius: 100px;
+    color: #ffc53d;
+    
 .fadedButton {
   background: #ffc53d28;
   // opacity: 0.15;
@@ -253,6 +271,22 @@
   align-items: center;
   gap: 20px;
 
+    padding: 14px 60px 15px 20px;
+
+    // transition: 0.4s;
+    .heartButton {
+
+        transform: translateX(100px);
+    }
+    //animation: buttonSlide 1s eas;
+}
+
+.sponsorButton {
+    background: #ffc53d;
+    color: #123041;
+    width: fit-content;
+    padding: 14px 20px 15px 60px;
+    border-radius: 100px;
   padding-right: 20px;
 
   transition: 0.4s;
@@ -275,7 +309,7 @@
 }
 
 .heartButton {
-    padding: 15px 15px 8px 15px;
+    padding: 16px 14px 9px 14px;
     // margin-left: 15px;
     background: #ffc53d;
     opacity: 1;
@@ -285,7 +319,9 @@
     // filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
     box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
 
-  // border: 2px yellow solid;
+    // border: 2px yellow solid;
+    position: absolute;
+    transition: transform 400ms;
 }
 
 .starterPack {
@@ -319,7 +355,6 @@
         font-size: 16px;
     }
 }
-
 .slideshow {
   margin: 0 auto;
   overflow: hidden;
