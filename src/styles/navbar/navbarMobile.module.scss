@@ -18,6 +18,10 @@
     .badge {
       position: relative;
       top: 10px;
+      transition: top 200ms linear;
+    }
+    .adjustMLH {
+      top: 25px;
     }
     .hamburger {
       cursor: pointer;

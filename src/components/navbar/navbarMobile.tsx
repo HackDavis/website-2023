@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
-import styles from "@/styles/navbar/navbarMobile.module.scss";
-import Image from "next/image";
-import Link from "next/link";
-import Hamburger from "@/images/hamburger.svg";
-import Badge from "@/images/MLHBadge.svg";
-import HDLogo from "@/images/HDLogo.svg";
+import React, { useEffect, useState } from 'react';
+import styles from '@/styles/navbar/navbarMobile.module.scss';
+import Image from 'next/image';
+import Link from 'next/link';
+// import Hamburger from '@/images/hamburger.svg';
+import Badge from '@/images/MLHBadge.svg';
+import HDLogo from '@/images/HDLogo.svg';
 
 const NavbarMobile = () => {
-  const [open, setOpen] = useState(false);
-  const [atHome, setAtHome] = useState(true);
-  const [atAbout, setAtAbout] = useState(false);
+  // const [open, setOpen] = useState(false);
+  // const [atHome, setAtHome] = useState(true);
+  // const [atAbout, setAtAbout] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
   const setNavbarLogo = () => {
     if (window.scrollY > 0) {
@@ -20,40 +20,64 @@ const NavbarMobile = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", setNavbarLogo);
+    window.addEventListener('scroll', setNavbarLogo);
+
     return () => {
-      window.removeEventListener("scroll", setNavbarLogo);
+      window.removeEventListener('scroll', setNavbarLogo);
     };
   }, []);
 
   return (
     <div
       className={`${styles.navbarCont} ${
-        isScroll && !open ? `${styles.showShadow}` : ""
+        isScroll ? `${styles.showShadow}` : ''
       }`}
     >
       <div
         className={`${styles.navbarItems} ${
-          isScroll ? `${styles.navbarItemsOnScroll}` : ""
+          isScroll ? `${styles.navbarItemsOnScroll}` : ''
         }`}
       >
         {/* badge */}
-        {isScroll || open ? (
-          <a href="/">
+        {/* {isScroll ? (
+          <Link href="/">
             <Image
-              className={`${isScroll || open ? `${styles.showLogo}` : ""}`}
+              className={`${isScroll ? `${styles.showLogo}` : ''}`}
               src={HDLogo}
               alt="HackDavis Logo"
             />
-          </a>
+          </Link>
         ) : (
-          <a href="https://mlh.io/seasons/2023/events" target="_blank">
+          <Link
+            href="https://mlh.io/seasons/2023/events"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image className={styles.badge} src={Badge} alt="MLH Logo" />
-          </a>
-        )}
-
+          </Link>
+        )} */}
+        <Link href="/">
+          <Image
+            // className={`${isScroll ? `${styles.showLogo}` : ''}`}
+            src={HDLogo}
+            alt="HackDavis Logo"
+          />
+        </Link>
+        <Link
+          href="https://mlh.io/seasons/2023/events"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image
+            className={`${styles.badge} ${
+              isScroll ? `${styles.adjustMLH}` : ''
+            }`}
+            src={Badge}
+            alt="MLH Logo"
+          />
+        </Link>
         {/* hamburger */}
-        <button
+        {/* <button
           className={styles.hamburger}
           onClick={() => {
             setOpen(!open);
@@ -61,10 +85,10 @@ const NavbarMobile = () => {
           type="button"
         >
           <Image src={Hamburger} alt="hamborger" />
-        </button>
+        </button> */}
       </div>
 
-      <div
+      {/* <div
         className={`${styles.navMenu} ${
           open ? `${styles.navMenuAnimation}` : ""
         } ${open && isScroll ? styles.navMenuOnScroll : ""}`}
@@ -98,7 +122,7 @@ const NavbarMobile = () => {
             </Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

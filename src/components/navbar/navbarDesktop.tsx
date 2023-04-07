@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import styles from "@/styles/navbar/navbarDesktop.module.scss";
-import Image from "next/image";
-import HDLogo from "@/images/HDLogo.svg";
+import React, { useState, useEffect } from 'react';
+import styles from '@/styles/navbar/navbarDesktop.module.scss';
+import Image from 'next/image';
+import HDLogo from '@/images/HDLogo.svg';
 // import moon from '../images/moon.svg';
 // import sun from '../images/sun.svg';
-import badge from "@/images/MLHBadge.svg";
-import Link from "next/link";
+import badge from '@/images/MLHBadge.svg';
+import Link from 'next/link';
 
 const NavbarDesktop = () => {
-  const [atHome, setAtHome] = useState(true);
-  const [atAbout, setAtAbout] = useState(false);
+  // const [atHome, setAtHome] = useState(true);
+  // const [atAbout, setAtAbout] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
 
   const setNavbarLogo = () => {
@@ -21,9 +21,10 @@ const NavbarDesktop = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", setNavbarLogo);
+    window.addEventListener('scroll', setNavbarLogo);
+
     return () => {
-      window.removeEventListener("scroll", setNavbarLogo);
+      window.removeEventListener('scroll', setNavbarLogo);
     };
   }, []);
   // const [isLight, setLight] = useState(true);
@@ -34,19 +35,19 @@ const NavbarDesktop = () => {
   return (
     <div
       className={`${styles.navbarCont} ${
-        isScroll ? `${styles.showShadow}` : ""
+        isScroll ? `${styles.showShadow}` : ''
       }`}
     >
       <div
         className={`${styles.navbarItems} ${
-          isScroll ? `${styles.navbarItemsOnScroll}` : ""
+          isScroll ? `${styles.navbarItemsOnScroll}` : ''
         }`}
       >
-        <a href="/">
+        <Link href="/">
           <Image src={HDLogo} alt="" />
-        </a>
+        </Link>
         <div className={styles.navLinks}>
-          <Link
+          {/* <Link
             className={atHome ? styles.selected : styles.unselected}
             href="/"
             onClick={() => {
@@ -65,7 +66,7 @@ const NavbarDesktop = () => {
             }}
           >
             About Us
-          </Link>
+          </Link> */}
           {/* <button
           className={isLight ? styles.lightPill : styles.darkPill}
           onClick={toggleLight}
@@ -79,13 +80,13 @@ const NavbarDesktop = () => {
             />
           </div>
         </button> */}
-          <a href="https://mlh.io/seasons/2023/events" target="_blank">
+          <Link href="https://mlh.io/seasons/2023/events" target="_blank">
             <Image
-              className={`${isScroll ? `${styles.adjustMLH}` : ""}`}
+              className={`${isScroll ? `${styles.adjustMLH}` : ''}`}
               src={badge}
               alt="MLH Banner"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
