@@ -27,7 +27,7 @@ const Footer = () => (
       <div className={styles.iceCreamText}>
         <div className={styles.text}>SPRINKLE IN YOUR FLAIR</div>
         <a
-          href="https://hackdavis.typeform.com/hacker2023?utm_source=xxxxx"
+          href="https://hackdavis.typeform.com/hacker2023?utm_source=WEBSITE"
           target="_blank"
           rel="noreferrer"
         >
