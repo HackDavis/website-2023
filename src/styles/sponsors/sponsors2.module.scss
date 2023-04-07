@@ -1,88 +1,86 @@
 .sponsorsSection {
-    background-color: #173A52;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    padding-top: 200px;
-    // padding-bottom: 100px;
+  background-color: #173a52;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding-top: 200px;
+  // padding-bottom: 100px;
 }
 
-.heartButton{
-    padding: 15px 15px 8px 15px;
-    // margin-left: 15px;
-    background: #FFC53D;
-    opacity: 1;
-    border-radius: 100px;
-    left: 0;
-    z-index: 10;
-    width: 50px;
-    margin: auto;
-    // filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
-    box-shadow: 0px 19.44px 86.4px rgba(0, 0, 0, 0.75);
-    
-    // border: 2px yellow solid;
+.heartButton {
+  padding: 15px 15px 8px 15px;
+  // margin-left: 15px;
+  background: #ffc53d;
+  opacity: 1;
+  border-radius: 100px;
+  left: 0;
+  width: 50px;
+  margin: auto;
+  // filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
+  box-shadow: 0px 19.44px 86.4px rgba(0, 0, 0, 0.75);
+
+  // border: 2px yellow solid;
 }
 
 .support {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 60px;
-    /* or 120% */
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  /* or 120% */
 
-    text-align: center;
-    letter-spacing: 0.02em;
+  text-align: center;
+  letter-spacing: 0.02em;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .sponsorsContainer {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .sponsorsRow {
-    overflow: hidden;
-    white-space: nowrap;
-    //padding: 5px 70px 5px 20px;
-    background: transparent;
-    height: 30vw;
-    width: 100vw;
-    //border-radius:15px;
-    position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  //padding: 5px 70px 5px 20px;
+  background: transparent;
+  height: 30vw;
+  width: 100vw;
+  //border-radius:15px;
+  position: relative;
 }
 
 .horizontalScroll {
-    //position: absolute;
-    display: inline-block;
-    flex-direction: row;
-    justify-content: space-between;
-    // width: 100%;
-    // height: 100%;
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    // animation: primary 3s linear infinite;
-    // animation: primary 3s linear infinite;
-    .logo {
-        margin-right: 5vw;
-        // margin-right: auto;
-        width: 20vw;
-        height: auto;
-        vertical-align: middle;
-    }
+  //position: absolute;
+  display: inline-block;
+  flex-direction: row;
+  justify-content: space-between;
+  // width: 100%;
+  // height: 100%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  // animation: primary 3s linear infinite;
+  // animation: primary 3s linear infinite;
+  .logo {
+    margin-right: 5vw;
+    // margin-right: auto;
+    width: 20vw;
+    height: auto;
+    vertical-align: middle;
+  }
 }
 
 .row2 {
-    .logo {
-        margin-right: 25vw;
-    }
+  .logo {
+    margin-right: 25vw;
+  }
 }
 
 // .horizontalScroll:hover {
@@ -90,30 +88,28 @@
 // }
 
 .primary {
-    animation: primary 10s linear infinite;
+  animation: primary 10s linear infinite;
 }
 .secondary {
-    animation: secondary 10s linear infinite;
+  animation: secondary 10s linear infinite;
 }
 
-
-
 @keyframes primary {
-    from {
-        left: 0%;
-    }
-    to {
-        left: -100%;
-    }
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
 }
 
 @keyframes secondary {
-    from {
-        left: 100%;
-    }
-    to {
-        left: 0%;
-    }
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
 }
 
 // .sponsorsRow1, .sponsorsRow2 {
@@ -129,9 +125,3 @@
 //     top: 0%;
 //     animation: primary 3s linear infinite;
 // }
-
-
-
-
-
-

@@ -2,86 +2,85 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 @keyframes wave {
-    0% {
-        transform: rotate(-0deg);
-    }
-    50% {
-        transform: rotate(40deg);
-    }
-    100% {
-        transform: rotate(-0deg);
-    }
+  0% {
+    transform: rotate(-0deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(-0deg);
+  }
 }
 
 @keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-    }
-    70% {
-        transform: translateX(2%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
+  0% {
+    transform: translateX(-100%);
+  }
+  70% {
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes vertical-replace {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    10% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-    80% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-    90% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
+  80% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  90% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
 
-    // 80% {
-    //   opacity: 1;
-    //   transform: translateY(0);
-    // }
+  // 80% {
+  //   opacity: 1;
+  //   transform: translateY(0);
+  // }
 
-    100% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
 }
 
 .cloudBgContainer {
-    margin: 0;
-    width: 100vw;
-    position: relative;
-    background: #123041;
-    color: #ffffff;
-    text-align: right;
-    font-family: "Proxima Nova", sans-serif;
-    // overflow-x: hidden;
-    // overflow-y: visible;
+  margin: 0;
+  width: 100vw;
+  position: relative;
+  background: #123041;
+  color: #ffffff;
+  text-align: right;
+  font-family: "Proxima Nova", sans-serif;
+  // overflow-x: hidden;
+  // overflow-y: visible;
 }
 
 .cloud {
-    overflow-x: hidden;
-    width: 100vw;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 .cloudBg {
-    position: absolute;
-    //border: 2px solid red;
-    z-index: 0;
-    left: 0%;
-    // top: 30%;
-    bottom: 7%;
-    width: 100%;
-    height: 90%;
-    animation: backAndForth 3s infinite ease-in-out;
+  position: absolute;
+  //border: 2px solid red;
+  left: 0%;
+  // top: 30%;
+  bottom: 7%;
+  width: 100%;
+  height: 90%;
+  animation: backAndForth 3s infinite ease-in-out;
 }
 
 .mainAnimationSection {
@@ -94,9 +93,9 @@
     margin: auto;
     padding-right: 64px;
 
-    @include mrwd(1190px) {
-        justify-content: flex-end;
-    }
+  @include mrwd(1190px) {
+    justify-content: flex-end;
+  }
 
     @include mrwd(991px) {
         flex-direction: column-reverse;
@@ -230,37 +229,37 @@
 }
 
 .fadedButton {
-    background: #ffc53d28;
-    // opacity: 0.15;
-    width: fit-content;
-    border-radius: 100px;
-    color: #ffc53d;
+  background: #ffc53d28;
+  // opacity: 0.15;
+  width: fit-content;
+  border-radius: 100px;
+  color: #ffc53d;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
 
-    padding-right: 20px;
+  padding-right: 20px;
 
-    transition: 0.4s;
+  transition: 0.4s;
 }
 
 .sponsorButton {
-    background: #ffc53d;
-    width: fit-content;
-    border-radius: 100px;
+  background: #ffc53d;
+  width: fit-content;
+  border-radius: 100px;
 
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
 
-    padding-left: 20px;
+  padding-left: 20px;
 
-    transition: 0.4s;
+  transition: 0.4s;
 }
 
 .heartButton {
@@ -274,7 +273,7 @@
     // filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
     box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
 
-    // border: 2px yellow solid;
+  // border: 2px yellow solid;
 }
 
 .starterPack {
@@ -312,23 +311,23 @@
 }
 
 .slideshow {
-    margin: 0 auto;
-    overflow: hidden;
-    max-width: 500px;
-    border: 2px solid red;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 500px;
+  border: 2px solid red;
 }
 
 .slideshowSlider {
-    white-space: nowrap;
-    transition: ease 1000ms;
+  white-space: nowrap;
+  transition: ease 1000ms;
 }
 
 .slide {
-    display: inline-block;
+  display: inline-block;
 
-    height: 400px;
-    width: 100%;
-    border-radius: 40px;
+  height: 400px;
+  width: 100%;
+  border-radius: 40px;
 }
 
 // @media screen and (min-width: 1200px) {
