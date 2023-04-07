@@ -9,13 +9,13 @@ import styles from '@/styles/mainSection/mainSection.module.scss';
 // import cloudBg from '@/images/cloudBg.svg';
 // import CowCone from '@/images/cowCone.svg';
 import CowCone from './cowCone';
-import Clouds from './clouds';
+// import Clouds from './clouds';
 // import cowHand from '@/images/cowHand.svg';
 // import Clouds from './clouds';
 // import Carousel from './carousel';
 
 const MainSection = () => {
-  const [sponsor, setSponsor] = useState(false);
+  // const [sponsor, setSponsor] = useState(false);
   const words = ['create', 'design', 'ideate', 'hack', 'build'];
 
   const [activeWordIndex, setActiveWordIndex] = useState(0);
@@ -28,9 +28,9 @@ const MainSection = () => {
     return () => clearInterval(intervalId);
   }, [activeWordIndex]);
 
-  const toggleSponsor = () => {
-    setSponsor(!sponsor);
-  };
+  // const toggleSponsor = () => {
+  //   setSponsor(!sponsor);
+  // };
 
   return (
     <div className={styles.cloudBgContainer}>
@@ -73,11 +73,7 @@ const MainSection = () => {
               Register Now
             </a>
 
-            <button
-              
-              className={styles.sponsorButton }
-              type="button"
-            >
+            <button className={styles.sponsorButton} type="button">
               <div className={styles.heartButton}>
                 <Image src={heart} alt="" />
               </div>
