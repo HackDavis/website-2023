@@ -32,13 +32,12 @@ const MainSection = () => {
               <div className={styles.calendar}>
                 <Image src={calendar} alt="" />
                 <strong>
-                  May 20, 2023 @
+                  May 20, 2023 @{' '}
                   <a
                     href="https://goo.gl/maps/MTxJ6FxKH3k9DQxA6"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    {' '}
                     UCenter
                   </a>
                 </strong>
