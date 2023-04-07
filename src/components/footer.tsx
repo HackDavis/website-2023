@@ -26,7 +26,13 @@ const Footer = () => (
       <Image src={sprinkles} className={styles.iceCreamSprinkles} alt="" />
       <div className={styles.iceCreamText}>
         <div className={styles.text}>SPRINKLE IN YOUR FLAIR</div>
-        <button type="button">Register Now</button>
+        <a
+          href="https://hackdavis.typeform.com/hacker2023?utm_source=xxxxx"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button type="button">Register Now</button>
+        </a>
       </div>
     </div>
 

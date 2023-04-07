@@ -89,7 +89,11 @@
   //width: 100px;
   box-shadow: 0px 9px 35px rgba(0, 0, 0, 0.2);
   
+  &:hover {
+    cursor: pointer;
+  }
 }
+
 
 #footer-content {
   font-size: 20px;
