@@ -1,0 +1,96 @@
+@use "/src/styles/mixins" as *;
+
+.navbarCont {
+  background: #023142;
+  transition: box-shadow 200ms linear;
+  .navbarItems {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+    padding: 10px 0;
+    transition: height 200ms linear;
+    .showLogo {
+      animation: fadeIn 200ms;
+    }
+    .badge {
+      position: relative;
+      top: 10px;
+      transition: top 200ms linear;
+    }
+    .hamburger {
+      cursor: pointer;
+      background-color: transparent;
+    }
+  }
+  .navbarItemsOnScroll {
+    height: 70px;
+  }
+}
+
+.showShadow {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.5);
+}
+
+.navMenu {
+  background-color: #123041;
+  @include fontFactory(
+    var(--proxima-nova),
+    16px,
+    500,
+    var(--color-teal-1),
+    0.02rem,
+    1
+  );
+  position: absolute;
+  width: 100%;
+  // transform: translateY(-112px);
+  transition: 200ms;
+  top: -112px;
+  transform: scaleY(1);
+  z-index: -1;
+
+  ul {
+    text-align: right;
+    padding: 10px 40px;
+    list-style-type: none;
+    li {
+      margin-bottom: 20px;
+      .selected {
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 2px white solid;
+      }
+
+      .unselected {
+        font-weight: normal;
+        text-decoration: none;
+        color: #9ee7e5;
+      }
+    }
+  }
+}
+.navMenuAnimation {
+  top: 100px;
+  z-index: -2;
+}
+.navMenuOnScroll {
+  top: 70px;
+  transition: top 200ms linear;
+}
+#openMenu {
+  display: block;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,116 @@
+@use "/src/styles/mixins" as *;
+@import url("https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;500;700&display=swap");
+
+.navbarCont {
+  background: #023142;
+  display: flex;
+  justify-content: center;
+  transition: box-shadow 200ms linear;
+  .navbarItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    max-width: 1226px;
+    width: 100%;
+    margin: 0 100px;
+    transition: height 200ms linear;
+
+    .navLinks {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      > a {
+        @include fontFactory(
+          var(--proxima-nova),
+          16px,
+          500,
+          var(--color-teal-1),
+          0.02rem,
+          1
+        );
+        text-decoration: none;
+      }
+      .selected {
+        color: #ffffff;
+        font-weight: 700;
+        border-bottom: 2px white solid;
+      }
+      .unselected {
+        font-weight: normal;
+        text-decoration: none;
+        border-bottom: 2px transparent solid;
+      }
+      // "About" link
+      > a:nth-of-type(2) {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      // MLH logo
+      > a > img {
+        position: relative;
+        top: 10px;
+        transition: top 200ms linear;
+      }
+      .adjustMLH {
+        top: 25px;
+      }
+    }
+  }
+  .navbarItemsOnScroll {
+    height: 70px;
+  }
+}
+.showShadow {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.5);
+}
+
+// .lightPill {
+//   display: flex;
+//   align-items: center;
+//   width: 60px;
+//   height: 34px;
+//   border-radius: 34px;
+//   background-color: #9ee7e5;
+//   transition: 0.4s;
+//   cursor: pointer;
+// }
+
+// .darkPill {
+//   display: flex;
+//   align-items: center;
+//   width: 60px;
+//   height: 34px;
+//   border-radius: 34px;
+//   background-color: #123041;
+//   transition: 0.4s;
+//   cursor: pointer;
+// }
+
+// .darkCircle {
+//   height: 26px;
+//   width: 26px;
+//   border-radius: 34px;
+//   background-color: #123041;
+//   margin-left: 5px;
+//   transition: 0.4s;
+// }
+
+// .lightCircle {
+//   height: 26px;
+//   width: 26px;
+//   border-radius: 34px;
+//   background-color: #9ee7e5;
+//   margin-left: 30px;
+//   transition: 0.4s;
+// }
+
+// .moonIcon {
+//   padding: 7px;
+//   cursor: pointer;
+// }
+
+// .sunIcon {
+//   padding: 5px;
+//   cursor: pointer;
+// }

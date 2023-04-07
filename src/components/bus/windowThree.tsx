@@ -9,7 +9,7 @@ const WindowThree = () => (
     <div className={styles.left}>
       <div className={styles.info}>
         <strong>
-          36<span className={styles.space}> </span>
+          24<span className={styles.space}> </span>
           <span>hours</span>
         </strong>
         <strong>

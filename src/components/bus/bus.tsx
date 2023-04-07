@@ -9,22 +9,18 @@ import WindowFour from './windowFour';
 import Bottom from './bottom';
 
 const Bus = () => (
-  <>
-    <div style={{ height: 900 }} />
-    <div className={styles.background}>
-      <div className={styles.wrapper}>
-        <div className={styles.container}>
-          <WindowOne />
-          <WindowTwo />
-          <WindowThree />
-          <WindowFour />
-          <Bottom />
-        </div>
-        <Image src={banner} alt="banner" className={styles.banner} />
+  <div className={styles.background}>
+    <div className={styles.wrapper}>
+      <div className={styles.container}>
+        <WindowOne />
+        <WindowTwo />
+        <WindowThree />
+        <WindowFour />
+        <Bottom />
       </div>
+      <Image src={banner} alt="banner" className={styles.banner} />
     </div>
-    <div style={{ height: 900 }} />
-  </>
+  </div>
 );
 
 export default Bus;

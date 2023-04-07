@@ -1,4 +1,4 @@
-import styles from '@/styles/navbar.module.scss';
+import styles from '@/styles/navbar/navbar.module.scss';
 import NavbarMobile from './navbarMobile';
 import NavbarDesktop from './navbarDesktop';
 

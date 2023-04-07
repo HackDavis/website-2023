@@ -2,13 +2,13 @@
 
 .background {
   position: relative;
-  background-color: #043142;
+  // background-color: #043142;
   padding-bottom: 63px;
   // overflow: hidden;
   contain: paint;
   
   @include lg {
-    padding-bottom: 150px;
+    padding-bottom: 125px;
   }
 }
 
@@ -16,7 +16,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding-top: 16px;
 
   @include lg {
     margin-left: -49px;
