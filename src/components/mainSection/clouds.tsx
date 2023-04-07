@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import cloudBg from '@/images/cloudBg.svg';
-import styles from '@/styles/clouds.module.scss';
+import styles from '@/styles/mainSection/clouds.module.scss';
 
 const Clouds = () => (
   <div className={styles.container}>

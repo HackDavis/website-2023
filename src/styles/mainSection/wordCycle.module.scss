@@ -1,0 +1,31 @@
+@use "/src/styles/mixins" as *;
+
+.words {
+  display: block;
+  margin-bottom: 13px;
+
+  @include mrwd(991px) {
+    margin-bottom: 5px;
+  }
+}
+
+.enter {
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.exit {
+  opacity: 1;
+}
+
+.enterActive {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.exitActive {
+  opacity: 0;
+  transform: translateY(-35px);
+  transition: all 400ms cubic-bezier(0.56, 0, 0.83, 0.16);
+}

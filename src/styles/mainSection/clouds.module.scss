@@ -1,7 +1,9 @@
 .container {
+  position: relative;
+  pointer-events: none;
   > * {
     position: absolute;
-    top: 50px;
+    top: -80px;
     left: 0;
   }
   > img {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from '@/styles/carousel.module.scss';
+import styles from '@/styles/mainSection/carousel.module.scss';
 
 const words = ['word1', 'word2', 'word3', 'word4', 'word5'];
 
