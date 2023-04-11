@@ -81,8 +81,8 @@
   color: #ffffff;
   text-decoration: none;
 
-  padding: 1.4% 3.5%;
-  padding: 15px 40px;
+  //padding: 1.5% 3.5%;
+  padding: 17px 40px;
   background-color: #173a52;
   border-radius: 100px;
   //border: solid 2px red;
@@ -243,7 +243,7 @@ div#copyright {
   }
 }
 
-@media (max-width: 580px) and (min-width: 380px) {
+@media (max-width: 740px) and (min-width: 380px) {
   .text {
     margin-bottom: 0%;
 
