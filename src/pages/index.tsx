@@ -50,7 +50,7 @@ export default function Home() {
         <Faq />
         <Sponsors2 />
       </div>
-      <div style={{ backgroundColor: 'var(--color-teal-5)' }}>
+      <div style={{ backgroundColor: 'var(--color-teal-4)' }}>
         <Cta />
         <Footer />
       </div>
