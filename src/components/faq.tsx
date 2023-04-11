@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, ReactElement } from 'react';
 import Collapsible from 'react-collapsible';
 import styles from '@/styles/faq.module.scss';
 import plusHorizontal from '@/images/plusHorizontal.svg';
@@ -13,7 +13,7 @@ const AccordionItem = ({
   setCurrIndex,
 }: {
   question: string;
-  answer: string;
+  answer: ReactElement;
   accordionIndex: number;
   currIndex: number;
   setCurrIndex: (index: number) => void;
@@ -129,7 +129,7 @@ const Faq = () => {
       who ensure that our hackers have a great experience at our event! Our
       mentor and volunteer applications will open in late April, so keep an eye
       out! If you&apos;re interested in making a tax-deductible contribution to
-      HackDavis, please get in touch at team@hackdavis.io
+      HackDavis, please get in touch at <a href="mailto:team@hackdavis.io">team@hackdavis.io</a>
     </div>,
     <div key={5}>
       We want people to build projects with a meaningful impact and hope to
