@@ -6,6 +6,7 @@ import Sponsors2 from '@/components/sponsors/sponsors2';
 import Bus from '@/components/bus/bus';
 import Clouds from '@/components/mainSection/clouds';
 import Head from 'next/head';
+import Cta from '@/components/cta';
 
 // Landing page
 export default function Home() {
@@ -32,17 +33,27 @@ export default function Home() {
         style={{
           position: 'relative',
           backgroundColor: '#023142',
-          contain: 'paint',
           paddingTop: 50,
+          zIndex: 1,
         }}
       >
         <Clouds />
         <MainSection />
         <Bus />
       </div>
-      <Faq />
-      <Sponsors2 />
-      <Footer />
+      <div
+        style={{
+          position: 'relative',
+          zIndex: 1,
+        }}
+      >
+        <Faq />
+        <Sponsors2 />
+      </div>
+      <div style={{ backgroundColor: 'var(--color-teal-5)' }}>
+        <Cta />
+        <Footer />
+      </div>
     </>
   );
 }
