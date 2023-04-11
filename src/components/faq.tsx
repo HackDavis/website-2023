@@ -129,7 +129,8 @@ const Faq = () => {
       who ensure that our hackers have a great experience at our event! Our
       mentor and volunteer applications will open in late April, so keep an eye
       out! If you&apos;re interested in making a tax-deductible contribution to
-      HackDavis, please get in touch at <a href="mailto:team@hackdavis.io">team@hackdavis.io</a>
+      HackDavis, please get in touch at{' '}
+      <a href="mailto:team@hackdavis.io">team@hackdavis.io</a>
     </div>,
     <div key={5}>
       We want people to build projects with a meaningful impact and hope to
