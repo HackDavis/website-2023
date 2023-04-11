@@ -35,6 +35,7 @@ export default function Home() {
           backgroundColor: '#023142',
           paddingTop: 50,
           zIndex: 1,
+          contain: 'paint',
         }}
       >
         <Clouds />
