@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;500;600;700&display=swap");
 
 .footerCont {
-  background-color: #173a52;
-  height: 100%;
-  padding-top: 150px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .footerstyle {
@@ -13,7 +14,7 @@
   display: block;
   width: 100%;
   bottom: 0;
-  background-color: #173a52;
+  // background-color: #173a52;
   color: #d5d5d5;
   text-align: center;
   padding: 20px;

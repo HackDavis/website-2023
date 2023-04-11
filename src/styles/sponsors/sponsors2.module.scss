@@ -1,12 +1,12 @@
 @use "/src/styles/mixins" as *;
 
 .sponsorsSection {
-  background-color: #033B54;
+  background-color: var(--color-teal-4);
   margin: 0;
   padding: 0;
   border: 0;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 180px;
 
   @include lg {
     padding-top: 200px;
