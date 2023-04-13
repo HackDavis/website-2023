@@ -8,8 +8,7 @@ import badge from '@/images/MLHBadge.svg';
 import Link from 'next/link';
 
 const NavbarDesktop = () => {
-  const [atHome, setAtHome] = useState(false);
-  const [atMerch, setAtMerch] = useState(false);
+  // const [atHome, setAtHome] = useState(true);
   // const [atAbout, setAtAbout] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
 
@@ -48,26 +47,26 @@ const NavbarDesktop = () => {
           <Image src={HDLogo} alt="" />
         </Link>
         <div className={styles.navLinks}>
-          <Link
+          {/* <Link
             className={atHome ? styles.selected : styles.unselected}
             href="/"
             onClick={() => {
               setAtHome(true);
-              setAtMerch(false);
+              setAtAbout(false);
             }}
           >
             Home
           </Link>
           <Link
-            className={atMerch ? styles.selected : styles.unselected}
-            href="https://merch.hackdavis.io"
+            className={atAbout ? styles.selected : styles.unselected}
+            href="/about"
             onClick={() => {
               setAtHome(false);
-              setAtMerch(true);
+              setAtAbout(true);
             }}
           >
-            Merch
-          </Link>
+            About Us
+          </Link> */}
           {/* <button
           className={isLight ? styles.lightPill : styles.darkPill}
           onClick={toggleLight}
