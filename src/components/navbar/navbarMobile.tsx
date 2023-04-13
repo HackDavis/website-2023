@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import styles from '@/styles/navbar/navbarMobile.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
-// import Hamburger from '@/images/hamburger.svg';
+import Hamburger from '@/images/hamburger.svg';
 import Badge from '@/images/MLHBadge.svg';
 import HDLogo from '@/images/HDLogo.svg';
 
 const NavbarMobile = () => {
-  // const [open, setOpen] = useState(false);
-  // const [atHome, setAtHome] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [atHome, setAtHome] = useState(true);
+  const [atMerch, setAtMerch] = useState(true);
   // const [atAbout, setAtAbout] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
   const setNavbarLogo = () => {
@@ -57,7 +58,7 @@ const NavbarMobile = () => {
           </Link>
         )}
         {/* hamburger */}
-        {/* <button
+        <button
           className={styles.hamburger}
           onClick={() => {
             setOpen(!open);
@@ -65,10 +66,10 @@ const NavbarMobile = () => {
           type="button"
         >
           <Image src={Hamburger} alt="hamborger" />
-        </button> */}
+        </button>
       </div>
 
-      {/* <div
+      <div
         className={`${styles.navMenu} ${
           open ? `${styles.navMenuAnimation}` : ""
         } ${open && isScroll ? styles.navMenuOnScroll : ""}`}
@@ -81,7 +82,7 @@ const NavbarMobile = () => {
               href="/"
               onClick={() => {
                 setAtHome(true);
-                setAtAbout(false);
+                setAtMerch(false);
                 setOpen(false);
               }}
             >
@@ -90,19 +91,19 @@ const NavbarMobile = () => {
           </li>
           <li>
             <Link
-              className={atAbout ? styles.selected : styles.unselected}
-              href="/about"
+              className={atMerch ? styles.selected : styles.unselected}
+              href="https://merch.hackdavis.io"
               onClick={() => {
                 setAtHome(false);
-                setAtAbout(true);
+                setAtMerch(true);
                 setOpen(false);
               }}
             >
-              About Us
+              Merch
             </Link>
           </li>
         </ul>
-      </div> */}
+      </div>
     </div>
   );
 };
