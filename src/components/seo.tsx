@@ -65,6 +65,7 @@ const Seo = () => (
     <meta property="og:image" content="/preview.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@hack_davis" />
     <meta property="twitter:domain" content="hackdavis.io" />
     <meta property="twitter:url" content="https://hackdavis.io" />
     <meta name="twitter:title" content="HackDavis 2023 | May 2023" />
