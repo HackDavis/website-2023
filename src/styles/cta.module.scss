@@ -3,6 +3,7 @@
 .container {
   position: relative;
   background-color: var(--color-teal-4);
+  overflow-x: hidden;
   z-index: 2;
 }
 
