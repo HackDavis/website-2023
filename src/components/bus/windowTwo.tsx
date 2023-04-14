@@ -10,8 +10,7 @@ const WindowTwo = () => (
       <div className={styles.handle} />
       <div className={styles.info}>
         <h2>
-          create for
-          <span>social good</span>
+          create for <span>social good</span>
         </h2>
         <p>
           With the rapid advancement of technology, it is important to use its

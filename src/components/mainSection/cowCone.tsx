@@ -5,7 +5,11 @@ import cowCone from '@/images/cowCone.svg';
 
 const CowCone = () => (
   <div className={styles.container}>
-    <Image src={cowCone} alt="" className={styles.cowCone} />
+    <Image
+      src={cowCone}
+      alt="cow behind an ice cream cone"
+      className={styles.cowCone}
+    />
     {/* <div className={styles.cowHandAnimate}>
       <Image src={cowHand} alt="" className={styles.cowHandImg} />
     </div> */}
