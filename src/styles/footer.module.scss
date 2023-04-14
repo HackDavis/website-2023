@@ -1,288 +1,68 @@
 @use "/src/styles/mixins" as *;
-@import url("https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;500;600;700&display=swap");
 
-.footerCont {
+.container {
+  display: flex;
   position: fixed;
+  flex-direction: column;
+  align-items: center;
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.footerstyle {
-  font-family: "Proxima Nova", sans-serif;
-  position: relative;
-  display: block;
-  width: 100%;
-  bottom: 0;
-  // background-color: #173a52;
-  color: #d5d5d5;
-  text-align: center;
   padding: 20px;
-  margin-top: 60px;
-  padding-bottom: 60px;
-}
-
-.iceCreamCont {
-  position: relative;
-  margin-top: -3em;
-  margin: auto;
-  max-width: 100%;
-  max-height: 100%;
-  //margin: auto;
-  //overflow: hidden;
-}
-
-.iceCreamImg {
-  width: 100%;
-  height: auto;
-}
-
-.iceCreamImgMobile {
-  display: none;
-}
-.iceCreamSprinkles {
-  display: none;
-}
-
-.iceCreamText {
-  font-family: "Proxima Nova", sans-serif;
-  text-align: center;
-
-  position: relative;
-  margin-top: -37%;
-  margin-bottom: 400px;
-  margin-bottom: 25em;
-  margin-bottom: 28%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  //margin: auto;
-
-}
-
-.text {
-  font-size: 3.5vw;
-  font-weight: 700;
-  line-height: 2.6vw;
-  letter-spacing: 0.08em;
-  color: #173a52;
-  
-  margin: 2.7%;
-  margin-bottom: 1%;
-}
-
-.iceCreamText button {
-  font-size: 2vw;
-  font-weight: 600;
-  line-height: 1.04vw;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  text-decoration: none;
-
-  //padding: 1.5% 3.5%;
-  padding: 17px 40px;
-  background-color: #173a52;
-  border-radius: 100px;
-  //border: solid 2px red;
-  //width: 100px;
-  box-shadow: 0px 9px 35px rgba(0, 0, 0, 0.2);
-  
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-
-#footer-content {
-  font-size: 20px;
-}
-
-#footer-content > a {
-  color: rgba(255, 255, 255, 0.95);
-  transition: all 0.2s ease;
-}
-
-#footer-content > a:hover {
-  opacity: 0.75;
-}
-
-.smallbutton1 {
-  width: 20px;
-  margin: 10px;
-}
-
-.smallbutton1:hover {
-  opacity: 0.75;
-}
-
-.picture {
-  width: auto;
-  height: 100px;
-  margin: 20px;
-  margin-bottom: 40px;
-}
-
-div#copyright {
-  margin-top: 20px;
-  margin-bottom: -18px;
-}
-
-#copyright span {
-  color: rgba(249, 250, 252, 0.75);
-  font-size: 12px;
-  font-weight: normal;
-  font-family: "Proxima Nova", sans-serif;
-}
-
-.icon {
-  font-size: 20px;
-  color: white;
-  width: 25px;
-}
-
-.logoCont {
-  display: inline-block;
-  text-align: center;
-  width: 60px;
-  height: auto;
-  margin-bottom: 20px;
 }
 
 .logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.links {
+  display: flex;
+  @include cgap(10px);
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon {
   display: inline-block;
-  width: 60px;
-  height: 60px;
-}
+  color: white;
+  margin: 10px 10px 0;
+  height: 20px;
+  width: 20px;
 
-@media (min-width: 1100px) {
-  .iceCreamCont {
-    margin-top: -4.375em;
-  }
-}
-
-@media (min-width: 768px) {
-
-  .icon {
-    font-size: 30px;
-    width: 40px;
+  @include lg {
+    margin: 20px 20px 0;
+    height: 30px;
+    width: 30px;
   }
 
-  .logoCont {
-    width: 80px;
+  &:hover {
+    color: #c3c8ce;
   }
 
-  .logo {
-    width: 80px;
-    height: 80px;
-  }
-  #copyright span {
-    font-size: 0.9em;
-  }
-}
-
-@media (max-width: 380px) {
-  .footerCont 
-  .iceCreamCont {
-    position: relative;
-    max-height: 100px;
-    margin-top: 30%;
-    padding-bottom: 500px;
-  }
-
-  .iceCreamImgMobile {
-    display: block;
-    margin: auto;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    //margin: auto;
+  > svg {
+    display: inline-block;
     width: 100%;
-  
-  }
-  .iceCreamSprinkles {
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    width: 100%;
+    height: 100%;
+    transition: color 0.2s ease;
 
-    top: 12%;
-    // width: 90%;
-    margin-top: 7%;
-    padding: 2%;
-
-  }
-  .iceCreamImg {
-    display: none;
-  }
-
-  .iceCreamText {
-    padding-top: 160px;
-  }
-
-  .iceCreamText button {
-    font-size: 17px;
-    padding: 20px 40px;
-  }
-
-  .text {
-    padding: 0;
-    //padding-bottom: 15px;
-    margin: 0;
-    max-width: 250px;
-    line-height: 38px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-
-    font-size: 25px;
-    word-wrap: break-word;
-
-    max-width: 200px;
-  }
-}
-
-@media (max-width: 740px) and (min-width: 380px) {
-  .text {
-    margin-bottom: 0%;
-
-  }
-  .iceCreamText  {
-    gap: 1.5vw;
-    button {
-      font-size: 2vw;
-      //margin-top: 0px;
-      padding: 10px 20px;
+    &:hover {
+      color: #c3c8ce;
     }
-  }  
+  }
 }
 
-// @media (max-width: 400px) {
-//   .iceCreamSprinkles {
-//     top: 12%;
-//     // width: 90%;
-//     margin-top: 7%;
-//     padding: 2%;
-//   }
+.copyright {
+  color: #d5d5d5;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Proxima Nova", sans-serif;
+  text-align: center;
 
-//     .text {
-//     //margin: 1%;
-//     font-size: 25px;
-//     word-wrap: break-word;
-
-//     max-width: 200px;
-//   }
-// }
-
-// @media (max-width: 734px) {
-//   .text {
-//     //margin: 1%;
-//     font-size: 25px;
-//     word-wrap: break-word;
-
-//     max-width: 200px;
-//   }
-// }
-
+  @include lg {
+    font-size: 16px;
+  }
+}

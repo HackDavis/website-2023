@@ -1,6 +1,4 @@
-import React from 'react';
 import styles from '@/styles/footer.module.scss';
-// import "../../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -10,67 +8,61 @@ import {
   faInstagram,
   faDiscord,
 } from '@fortawesome/free-brands-svg-icons';
-
 import Image from 'next/image';
-import LogoIcon from '@/images/HDLogoWhite.svg';
+import hdLogo from '@/images/HDLogoWhite.svg';
 
 const Footer = () => (
-  <div className={styles.footerCont}>
-    <footer className={styles.footerstyle}>
-      <div id={styles['footer-content']}>
-        <div className={styles.logoCont}>
-          <Image className={styles.logo} src={LogoIcon} alt="" />
-        </div>
-        <br></br>
-        <a className={styles.smallbutton1} href="mailto:team@hackdavis.io">
-          <FontAwesomeIcon icon={faEnvelope} style={{ color: '#ffffff' }} />
-        </a>
-        <a
-          className={styles.smallbutton1}
-          href="https://medium.com/@HackDavis"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faMedium} style={{ color: '#ffffff' }} />
-        </a>
-        <a
-          className={styles.smallbutton1}
-          href="https://www.facebook.com/HackDavis"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faFacebookF} style={{ color: '#ffffff' }} />
-        </a>
-        <a
-          className={styles.smallbutton1}
-          href="https://twitter.com/hack_davis"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faTwitter} style={{ color: '#ffffff' }} />
-        </a>
-        <a
-          className={styles.smallbutton1}
-          href="https://www.instagram.com/hackdavis"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faInstagram} style={{ color: '#ffffff' }} />
-        </a>
-        <a
-          className={styles.smallbutton1}
-          href="https://discord.gg/wc6QQEc"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faDiscord} style={{ color: '#ffffff' }} />
-        </a>
-      </div>
-      <div id={styles.copyright}>
-        <span>&copy; 2023 HackDavis • Made with ☕️ & 💛 in Davis</span>
-      </div>
-    </footer>
-  </div>
+  <footer className={styles.container}>
+    <Image className={styles.logo} src={hdLogo} alt="HackDavis logo" />
+    <div className={styles.links}>
+      <a className={styles.icon} href="mailto:team@hackdavis.io">
+        <FontAwesomeIcon icon={faEnvelope} />
+      </a>
+      <a
+        className={styles.icon}
+        href="https://medium.com/@HackDavis"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon icon={faMedium} />
+      </a>
+      <a
+        className={styles.icon}
+        href="https://www.facebook.com/HackDavis"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon icon={faFacebookF} />
+      </a>
+      <a
+        className={styles.icon}
+        href="https://twitter.com/hack_davis"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon icon={faTwitter} />
+      </a>
+      <a
+        className={styles.icon}
+        href="https://www.instagram.com/hackdavis"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon icon={faInstagram} />
+      </a>
+      <a
+        className={styles.icon}
+        href="https://discord.gg/wc6QQEc"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon icon={faDiscord} />
+      </a>
+    </div>
+    <p className={styles.copyright}>
+      &copy; 2023 HackDavis • Made with ☕️ & 💛 in Davis
+    </p>
+  </footer>
 );
 
 export default Footer;

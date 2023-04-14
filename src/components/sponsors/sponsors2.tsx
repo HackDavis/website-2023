@@ -9,7 +9,7 @@ const Sponsors2 = () => (
     <div className={styles.heartButton}>
       <Image src={heart} height={21.88} width={25.08} alt="" />
     </div>
-    <div className={styles.support}>support for social good.</div>
+    <h2 className={styles.support}>support for social good.</h2>
     <div className={styles.sponsorsContainer}>
       <Row1 />
       <Row2 />

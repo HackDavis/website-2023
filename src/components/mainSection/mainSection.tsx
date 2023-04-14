@@ -14,7 +14,7 @@ const MainSection = () => (
         <div className={styles.mainSection}>
           <h1 className={styles.tagline}>
             <WordCycle />
-            <span className={styles.socialGood}>social good</span>
+            <span className={styles.socialGood}> social good</span>
           </h1>
           <div className={styles.event}>
             <h2 className={styles.hackdavis}>
