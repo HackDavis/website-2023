@@ -1,5 +1,5 @@
-import { DriverFroggy } from '@/assets/driver';
-import styles from '@/styles/bus/driver.module.scss';
+import { DriverFroggy } from '@/assets/truck/driver';
+import styles from '@/styles/truck/driver.module.scss';
 
 const Driver = () => (
   <div className={styles.container}>

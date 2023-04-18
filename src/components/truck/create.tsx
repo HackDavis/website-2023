@@ -7,8 +7,8 @@ import {
   CreatePipeHorizontal,
   CreatePipeVertical,
   CreateSnow,
-} from '@/assets/create';
-import styles from '@/styles/bus/create.module.scss';
+} from '@/assets/truck/create';
+import styles from '@/styles/truck/create.module.scss';
 
 const Create = () => (
   <div className={styles.container}>

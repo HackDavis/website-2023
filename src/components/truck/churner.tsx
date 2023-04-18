@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/bus/churner.module.scss';
+import styles from '@/styles/truck/churner.module.scss';
 import {
   ChurnerBackground,
   ChurnerGlassReflection,
@@ -9,7 +9,7 @@ import {
   ChurnerPipeGroup3,
   ChurnerPropellerMiddle,
   ChurnerPropellerWings,
-} from '@/assets/churner';
+} from '@/assets/truck/churner';
 
 const Churner = () => (
   <div className={styles.container}>

@@ -1,5 +1,5 @@
-import { FlairBackground, FlairDuckyAndCherry } from '@/assets/flair';
-import styles from '@/styles/bus/flair.module.scss';
+import { FlairBackground, FlairDuckyAndCherry } from '@/assets/truck/flair';
+import styles from '@/styles/truck/flair.module.scss';
 
 const Flair = () => (
   <div className={styles.container}>

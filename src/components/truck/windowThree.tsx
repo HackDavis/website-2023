@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/bus/windowThree.module.scss';
+import styles from '@/styles/truck/windowThree.module.scss';
 import Flair from './flair';
 
 const WindowThree = () => (

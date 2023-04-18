@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from '@/styles/bus/bus.module.scss';
 import Image from 'next/image';
 import banner from '@/images/banner.svg';
+import styles from '@/styles/truck/truck.module.scss';
 import WindowOne from './windowOne';
 import WindowTwo from './windowTwo';
 import WindowThree from './windowThree';
 import WindowFour from './windowFour';
 import Bottom from './bottom';
 
-const Bus = () => (
+const Truck = () => (
   <div className={styles.background}>
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -23,4 +23,4 @@ const Bus = () => (
   </div>
 );
 
-export default Bus;
+export default Truck;

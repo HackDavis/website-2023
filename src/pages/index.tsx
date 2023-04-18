@@ -3,7 +3,7 @@ import MainSection from '@/components/mainSection/mainSection';
 import Faq from '@/components/faq';
 import Footer from '@/components/footer';
 import Sponsors2 from '@/components/sponsors/sponsors2';
-import Bus from '@/components/bus/bus';
+import Truck from '@/components/truck/bus';
 import Clouds from '@/components/mainSection/clouds';
 import Cta from '@/components/cta';
 import Seo from '@/components/seo';
@@ -25,7 +25,7 @@ export default function Home() {
       >
         <Clouds />
         <MainSection />
-        <Bus />
+        <Truck />
       </div>
       <div
         style={{

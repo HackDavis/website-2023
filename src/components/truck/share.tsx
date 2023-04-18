@@ -1,5 +1,5 @@
-import styles from '@/styles/bus/share.module.scss';
-import { ShareBackground } from '@/assets/share';
+import styles from '@/styles/truck/share.module.scss';
+import { ShareBackground } from '@/assets/truck/share';
 
 const Share = () => (
   <div className={styles.wrapper}>

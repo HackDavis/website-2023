@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/bus/windowOne.module.scss';
+import styles from '@/styles/truck/windowOne.module.scss';
 import Churner from './churner';
 
 const WindowOne = () => (

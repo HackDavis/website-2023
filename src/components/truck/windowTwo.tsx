@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/bus/windowTwo.module.scss';
+import styles from '@/styles/truck/windowTwo.module.scss';
 import Create from './create';
 
 const WindowTwo = () => (

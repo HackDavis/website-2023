@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/bus/windowFour.module.scss';
+import styles from '@/styles/truck/windowFour.module.scss';
 import Share from './share';
 import Driver from './driver';
 

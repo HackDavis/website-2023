@@ -1,9 +1,9 @@
-import styles from '@/styles/bus/bottom.module.scss';
+import styles from '@/styles/truck/bottom.module.scss';
 import {
   TruckBottomPiece,
   TruckBottomPieceLarge,
   TruckBottomWheel,
-} from '@/assets/truckBottom';
+} from '@/assets/truck/truckBottom';
 
 const Bottom = () => (
   <div className={styles.container}>
