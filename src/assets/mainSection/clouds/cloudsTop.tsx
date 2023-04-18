@@ -1,4 +1,4 @@
-export const MainSectionClouds = ({ className }: { className: string }) => (
+export const CloudsTop = ({ className }: { className: string }) => (
   <svg
     width="1416"
     height="728"
