@@ -60,12 +60,13 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
+  // justify-content: flex-end;
   z-index: 100;
   max-width: 1290px;
   margin: auto;
   padding-right: 64px;
 
-  @include mrwd(1190px) {
+  @include mrwd(1170px) {
     justify-content: flex-end;
   }
 
