@@ -1,15 +1,12 @@
-import Image from 'next/image';
-import arrowUp from '@/images/arrowUp.svg';
-import heart from '@/images/heart.svg';
-import calendar from '@/images/calendar.svg';
 import styles from '@/styles/mainSection/mainSection.module.scss';
-import CowCone from './cowCone';
+import { Calendar, Heart, UpArrow } from '@/assets/mainSection/misc';
+import Cow from './cow';
 import WordCycle from './wordCycle';
 
 const MainSection = () => (
   <>
     <div className={styles.mainAnimationSection}>
-      <CowCone />
+      <Cow />
       <div className={styles.landing}>
         <div className={styles.mainSection}>
           <h1 className={styles.tagline}>
@@ -21,7 +18,7 @@ const MainSection = () => (
               Hack<b>Davis</b>{' '}
             </h2>
             <div className={styles.calendar}>
-              <Image src={calendar} alt="" />
+              <Calendar />
               <strong>
                 <a
                   href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MW40NHJuYzFqN2xrajQxcTRrdDVnazQ4aHEgY18wODYxOGRjNTgwZmVmZjJkOGUxMzFmNDVhNGU0ODE3ZjQwMzM3NzdlZTRiOWFlZTVmY2I5NGE0MmEwNDVlNzA4QGc&tmsrc=c_08618dc580feff2d8e131f45a4e4817f4033777ee4b9aee5fcb94a42a045e708%40group.calendar.google.com"
@@ -56,7 +53,7 @@ const MainSection = () => (
 
           <a href="mailto:team@hackdavis.io" className={styles.sponsorButton}>
             <div className={styles.heartButton}>
-              <Image src={heart} alt="" />
+              <Heart />
             </div>
             Sponsor
           </a>
@@ -70,7 +67,7 @@ const MainSection = () => (
             rel="noreferrer"
           >
             <strong style={{ marginRight: 10 }}>Starter Pack</strong>
-            <Image src={arrowUp} alt="" />{' '}
+            <UpArrow />
           </a>
         </div>
       </div>
