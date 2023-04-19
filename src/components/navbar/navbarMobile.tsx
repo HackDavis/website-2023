@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Badge from '@/images/mlhBadge.svg';
 import HDLogo from '@/images/HDLogo.svg';
-import { Hamburger } from '@/assets/navbar';
+// import { Hamburger } from '@/assets/navbar';
 
 const NavbarMobile = () => {
   // const [open, setOpen] = useState(false);
