@@ -1,9 +1,7 @@
 import React, { useState, ReactElement } from 'react';
 import Collapsible from 'react-collapsible';
 import styles from '@/styles/faq.module.scss';
-import plusHorizontal from '@/images/plusHorizontal.svg';
-import plusVertical from '@/images/plusVertical.svg';
-import Image from 'next/image';
+import { PlusHorizontal, PlusVertical } from '@/assets/faq';
 
 const AccordionItem = ({
   question,
@@ -41,13 +39,13 @@ const AccordionItem = ({
             <span>{question}</span>
             <div className={styles.plus}>
               <div className={styles.plusHorizontal}>
-                <Image src={plusHorizontal} alt="plus" />
+                <PlusHorizontal />
                 <div
                   className={`${
                     currIndex === accordionIndex ? styles.plusVerticalOpen : ''
                   }  ${styles.plusVertical}`}
                 >
-                  <Image src={plusVertical} alt="plus" />
+                  <PlusVertical />
                 </div>
               </div>
             </div>
