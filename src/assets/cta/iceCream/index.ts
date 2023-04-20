@@ -1,0 +1,1 @@
+export { IceCreamSprinkles } from './iceCreamSprinkles';

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HDLogo from '@/images/HDLogo.svg';
 // import moon from '../images/moon.svg';
 // import sun from '../images/sun.svg';
-import badge from '@/images/MLHBadge.svg';
+import badge from '@/images/mlhBadge.svg';
 import Link from 'next/link';
 
 const NavbarDesktop = () => {

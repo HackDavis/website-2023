@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import styles from '@/styles/navbar/navbarMobile.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
-// import Hamburger from '@/images/hamburger.svg';
-import Badge from '@/images/MLHBadge.svg';
+import Badge from '@/images/mlhBadge.svg';
 import HDLogo from '@/images/HDLogo.svg';
+// import { Hamburger } from '@/assets/navbar';
 
 const NavbarMobile = () => {
   // const [open, setOpen] = useState(false);
@@ -53,7 +53,7 @@ const NavbarMobile = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Image className={styles.badge} src={Badge} alt="MLH Logo" />
+            <Image className={styles.badge} src={Badge} alt="MLH Banner" />
           </Link>
         )}
         {/* hamburger */}
@@ -64,7 +64,7 @@ const NavbarMobile = () => {
           }}
           type="button"
         >
-          <Image src={Hamburger} alt="hamborger" />
+          <Hamburger />
         </button> */}
       </div>
 

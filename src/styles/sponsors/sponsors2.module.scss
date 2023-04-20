@@ -24,12 +24,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
   box-shadow: 0px 19.44px 86.4px rgba(0, 0, 0, 0.75);
+  
+  svg, img {
+    width: 25px;
+    height: auto;
+  }
+
   @include lg {
     width: 108px;
     height: 108px;
-    img {
+    
+    svg, img {
       width: 45.15px;
       height: 39.38px;
     }
