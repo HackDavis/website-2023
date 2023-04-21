@@ -221,10 +221,16 @@
   padding: 15px 40px;
   text-decoration: none;
   text-align: center;
-  background-color: #ffc53d;
+  background-color: var(--color-ducky);
   border-radius: 100px;
   margin-right: 28px;
+  transition: all 0.2s ease;
   filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
+
+  &:hover {
+    background-color: rgba(255, 197, 61, 0.2);
+    color: var(--color-ducky);
+  }
 
   @include mrwd(991px) {
     padding: 11px 20px;
@@ -248,6 +254,7 @@
   gap: 20px;
   position: relative;
   text-decoration: none;
+  transition: all 0.2s ease;
 
   @include mrwd(991px) {
     font-size: 18px;
@@ -295,7 +302,7 @@
 
   // border: 2px yellow solid;
   position: absolute;
-  transition: transform 400ms;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 
   @include mrwd(991px) {
     padding: 11px 9px 6px 10px;
