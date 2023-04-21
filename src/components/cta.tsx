@@ -1,12 +1,11 @@
 import styles from '@/styles/cta.module.scss';
-import iceCreamSprinkles from '@/images/iceCreamSprinkles.svg';
-import Image from 'next/image';
+import { IceCreamSprinkles } from '@/assets/cta/iceCream';
 
 const Cta = () => (
   <>
     <section className={styles.container}>
       <div className={styles.top}>
-        <Image src={iceCreamSprinkles} alt="" />
+        <IceCreamSprinkles />
       </div>
       <div className={styles.block}>
         <p>

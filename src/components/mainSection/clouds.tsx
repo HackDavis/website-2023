@@ -1,6 +1,6 @@
-import { MainSectionClouds } from '@/assets/mainSection';
+import { CloudsTop } from '@/assets/mainSection/clouds/cloudsTop';
 import styles from '@/styles/mainSection/clouds.module.scss';
 
-const Clouds = () => <MainSectionClouds className={styles.cloud} />;
+const Clouds = () => <CloudsTop className={styles.cloud} />;
 
 export default Clouds;
