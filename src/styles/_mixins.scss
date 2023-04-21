@@ -72,3 +72,17 @@
     margin-top: $distance;
   }
 }
+
+// devices with hover enabled (mouse, trackpad)
+@mixin hover {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
+// devices with no hover capabilities (phone, tablet)
+@mixin touch {
+  @media (hover: none) {
+    @content;
+  }
+}
