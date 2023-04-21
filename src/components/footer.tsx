@@ -9,11 +9,11 @@ import {
   faDiscord,
 } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
-import hdLogo from '@/images/HDLogoWhite.svg';
+import hdLogoDark from '@/images/hdLogoDark.svg';
 
 const Footer = () => (
   <footer className={styles.container}>
-    <Image className={styles.logo} src={hdLogo} alt="HackDavis logo" />
+    <Image className={styles.logo} src={hdLogoDark} alt="HackDavis logo" />
     <div className={styles.links}>
       <a className={styles.icon} href="mailto:team@hackdavis.io">
         <FontAwesomeIcon icon={faEnvelope} />

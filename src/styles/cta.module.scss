@@ -61,13 +61,18 @@
   }
 
   a {
-    @include fontFactory(var(--proxima-nova), 20px, 700, white, 0.02rem, 1);
+    @include fontFactory(var(--proxima-nova), 20px, 700, var(--color-teal-5), 0.02rem, 1);
     display: inline-block;
     text-decoration: none;
-    background-color: var(--color-teal-4);
+    background-color: var(--color-ducky);
     padding: 15px 40px;
     border-radius: 100px;
-    filter: drop-shadow(0px 9px 35px rgba(0, 0, 0, 0.2));
+    transform: translateY(0px);
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
   }
 }
 

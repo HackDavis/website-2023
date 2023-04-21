@@ -29,8 +29,15 @@ const WindowThree = () => (
           target="_blank"
           rel="noreferrer"
         >
-          <button type="button">View 2022 Winners</button>
+          View 2022 Winners
         </a>
+        {/* <a
+          href="https://hackdavis2022.devpost.com/project-gallery"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button type="button">View 2022 Winners</button>
+        </a> */}
       </div>
       <div className={styles.handle} />
     </div>
