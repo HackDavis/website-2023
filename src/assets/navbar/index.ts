@@ -1,1 +1,5 @@
-export { Hamburger } from './hamburger';
+export { HamburgerTop } from './hamburgerTop';
+
+export { HamburgerMiddle } from './hamburgerMiddle';
+
+export { HamburgerBottom } from './hamburgerBottom';

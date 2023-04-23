@@ -4,12 +4,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Badge from '@/images/mlhBadge.svg';
 import HDLogo from '@/images/HDLogo.svg';
-// import { Hamburger } from '@/assets/navbar';
+import {
+  HamburgerBottom,
+  HamburgerMiddle,
+  HamburgerTop,
+} from '@/assets/navbar';
 
 const NavbarMobile = () => {
-  // const [open, setOpen] = useState(false);
-  // const [atHome, setAtHome] = useState(true);
-  // const [atAbout, setAtAbout] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [atHome, setAtHome] = useState(true);
+  const [atAbout, setAtAbout] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
   const setNavbarLogo = () => {
     if (window.scrollY > 0) {
@@ -30,8 +34,8 @@ const NavbarMobile = () => {
   return (
     <div
       className={`${styles.navbarCont} ${
-        isScroll ? `${styles.showShadow}` : ''
-      }`}
+        isScroll && !open ? `${styles.showShadow}` : ''
+      } ${open ? `${styles.openMenuColor}` : ''} `}
     >
       <div
         className={`${styles.navbarItems} ${
@@ -53,26 +57,54 @@ const NavbarMobile = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Image className={styles.badge} src={Badge} alt="MLH Banner" />
+            <Image
+              className={`${styles.badge}  ${
+                open ? `${styles.removeBadge}` : ''
+              }`}
+              src={Badge}
+              alt="MLH Banner"
+            />
           </Link>
         )}
         {/* hamburger */}
-        {/* <button
+        <button
           className={styles.hamburger}
           onClick={() => {
             setOpen(!open);
           }}
           type="button"
         >
-          <Hamburger />
-        </button> */}
+          <div>
+            <div
+              className={`${styles.hamburgerTop} ${
+                open ? `${styles.openHamburgerTop}` : ''
+              } `}
+            >
+              <HamburgerTop />
+            </div>
+            <div
+              className={`${styles.hamburgerMiddle} ${
+                open ? `${styles.openHamburgerMiddle}` : ''
+              } `}
+            >
+              <HamburgerMiddle />
+            </div>
+            <div
+              className={`${styles.hamburgerBottom} ${
+                open ? `${styles.openHamburgerBottom}` : ''
+              } `}
+            >
+              <HamburgerBottom />
+            </div>
+          </div>
+        </button>
       </div>
 
-      {/* <div
+      <div
         className={`${styles.navMenu} ${
-          open ? `${styles.navMenuAnimation}` : ""
-        } ${open && isScroll ? styles.navMenuOnScroll : ""}`}
-        id={open ? styles.openMenu : ""}
+          open ? `${styles.navMenuAnimation}` : ''
+        } ${open && isScroll ? styles.navMenuOnScroll : ''}`}
+        id={open ? styles.openMenu : ''}
       >
         <ul>
           <li>
@@ -102,7 +134,8 @@ const NavbarMobile = () => {
             </Link>
           </li>
         </ul>
-      </div> */}
+        <div className={`${open ? `${styles.fadeBackground}` : ''}`}></div>
+      </div>
     </div>
   );
 };
