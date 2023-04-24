@@ -19,7 +19,7 @@
     left: 290px;
     transform-origin: 10% 75%;
     transform: rotate(-5deg);
-    animation: wave 5s infinite ease-in-out 1s;
+    animation: wave 5s infinite ease-in-out 0.5s;
 
     @include mrwd(991px) {
       width: 21.4px;
@@ -88,10 +88,10 @@
     transform: rotate(35deg);
   }
   42% {
-    transform: rotate(0deg);
+    transform: rotate(15deg);
   }
   95% {
-    transform: rotate(0deg);
+    transform: rotate(15deg);
   }
   100% {
     transform: rotate(-5deg);
