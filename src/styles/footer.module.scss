@@ -28,7 +28,6 @@
 
 .icon {
   display: inline-block;
-  color: white;
   color: var(--color-teal-5);
   margin: 10px 10px 0;
   height: 20px;
@@ -53,11 +52,10 @@
 }
 
 .copyright {
-  color: #d5d5d5;
   color: var(--color-teal-5);
   font-size: 14px;
   font-weight: normal;
-  font-family: "Proxima Nova", sans-serif;
+  font-family: var(--proxima-nova), sans-serif;
   text-align: center;
 
   @include lg {
