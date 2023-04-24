@@ -24,7 +24,7 @@
     @include mrwd(991px) {
       width: 21.4px;
       top: 75px;
-      left: 150px;
+      left: 250px;
     }
   }
 
@@ -40,6 +40,7 @@
 
     @include mrwd(991px) {
       margin-bottom: -109px;
+      left: 100px;
     }
   }
 
