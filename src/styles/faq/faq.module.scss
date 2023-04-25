@@ -1,8 +1,9 @@
 @use "/src/styles/mixins" as *;
+
 .faqContainer {
   padding: 200px 50px;
-  background: linear-gradient(0deg, rgba(0, 82, 113, 0) 0%, #005271 100%);
   display: flex;
+  background-color: var(--color-teal-4);
   justify-content: center;
   @include mrwd(991px) {
     padding: 66px 20px;
@@ -19,9 +20,9 @@
       @include fontFactory(var(--proxima-nova), 50px, 700, white, 0.02rem, 1.2);
     }
     @include mrwd(991px) {
+      border-radius: 10px;
       flex-direction: column;
-      padding: 45px 20px 30px 20px;
-      min-width: 300px;
+      padding: 45px 20px;
       h2 {
         margin-bottom: 40px;
         margin-right: 0;
@@ -30,66 +31,9 @@
     }
   }
 }
-.question {
-  @include fontFactory(var(--proxima-nova), 24px, 700, white, 0.02rem, 1.75);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  border-bottom: 3px solid #ade5e4;
-  transition: all 200ms linear;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  max-width: 544px;
-  cursor: pointer;
-  @include mrwd(991px) {
-    font-size: 14px;
-    line-height: 1.75;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-  .plus {
-    img, svg {
-      display: block;
-      width: 16.48px;
-      height: 16.48px;
-      @include mrwd(991px) {
-        width: 12.14px;
-        height: 12.14px;
-      }
-    }
-    .plusHorizontal {
-      position: relative;
-    }
-    .plusVertical {
-      position: absolute;
-      top: 0;
-      transition: all 200ms linear;
-    }
-    .plusVerticalOpen {
-      transform: rotate(90deg);
-    }
-  }
-}
-.openQuestion {
-  border-bottom: 3px solid transparent;
-}
 
-.answer {
-  @include fontFactory(var(--proxima-nova), 16px, 500, white, 0.02rem, 1.75);
-  border-bottom: 3px solid #ade5e4;
+.questionList {
   list-style: none;
-  max-width: 544px;
-  padding-bottom: 27px;
-  @include mrwd(991px) {
-    font-size: 12px;
-    line-height: 1.75;
-    padding-bottom: 12px;
-  }
-  a {
-    color: white;
-  }
-  strong {
-    font-weight: 700;
-  }
+  margin-left: 0;
+  padding-left: 0;
 }
