@@ -8,10 +8,9 @@ const MainSection = () => (
     <div className={styles.mainAnimationSection}>
       <div className={styles.left}>
         <div className={`${styles.starterPack} ${styles.links}`}>
-          <div className={styles.yellowCircle} ></div>
+          <div className={styles.yellowCircle}></div>
           <div>
-
-            New Hacker? Get started with our {' '}
+            New Hacker? Get started with our{' '}
             <a
               href="https://hackdavis.notion.site/HackDavis-2023-Starter-Pack-33c778742f5745c7833a07255cbcc1d7"
               target="_blank"
@@ -23,7 +22,6 @@ const MainSection = () => (
           </div>
         </div>
         <Cow />
-
       </div>
       <div className={styles.landing}>
         <div className={styles.mainSection}>
@@ -77,11 +75,8 @@ const MainSection = () => (
           </a>
         </div>
         <div className={styles.applications}>
-
           <div className={styles.links}>
-            <div className={styles.text}> 
-              Register to {' '}
-            </div>
+            <div className={styles.text}>Register to </div>
             <a
               href="https://hackdavis.typeform.com/volunteer2023"
               target="_blank"
@@ -92,14 +87,12 @@ const MainSection = () => (
             </a>
           </div>
           <div className={styles.links}>
-            <div className={styles.text}>
-              Apply to {' '}
-            </div>
+            <div className={styles.text}>Apply to </div>
             <a
               href="https://hackdavis.typeform.com/mentor2023"
               target="_blank"
               rel="noreferrer"
-              >
+            >
               <strong style={{ marginRight: 10 }}>Mentor</strong>
               <UpArrow />
             </a>
