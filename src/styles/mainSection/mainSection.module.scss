@@ -191,6 +191,11 @@
       transition: border-bottom 200ms linear;
       padding-bottom: 5px;
       border-bottom: 2px solid transparent;
+
+      @include mrwd(991px) {
+        border-bottom-color: white;
+      border-bottom: 2px solid #ffffff;
+      }
     }
     a:hover {
       border-bottom-color: white;
@@ -313,6 +318,10 @@
   height: 10px;
   border-radius: 50%;
   background-color: var(--color-ducky);
+  @include mrwd(991px) {
+    display: none;
+  }
+
 }
 
 .starterPack {
@@ -333,10 +342,10 @@
     left: 100px;
   }
   @include mrwd(991px) {
-    top: 270px;
+    top: 0px;
     left: -20px;
-    white-space: nowrap;
-    width: fit-content;
+    margin-top: 10px;
+    width: 100px;
     
   }
 }
@@ -356,6 +365,17 @@
 .links {
   @include fontFactory(var(--proxima-nova), 18px, 400, white, 0.02rem, 1);
   margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  .text {
+    @include mrwd(991px) {
+      display: none;
+    }
+  }
+
   strong {
     font-weight: 700;
   }
@@ -376,8 +396,6 @@
     @include mrwd(991px) {
       display: inline-block;
       margin-top: 7px;
-      border-bottom-color: white;
-      border-bottom: 2px solid #ffffff;
     }
   }
 
@@ -386,7 +404,7 @@
     // padding: 5px 15px;
     align-self: end;
     width: fit-content;
-    max-width: 586px;
+    max-width: 286px;
     font-size: 16px;
   }
 }
