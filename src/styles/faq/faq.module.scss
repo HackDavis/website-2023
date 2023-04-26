@@ -1,0 +1,39 @@
+@use "/src/styles/mixins" as *;
+
+.faqContainer {
+  padding: 200px 50px;
+  display: flex;
+  background-color: var(--color-teal-4);
+  justify-content: center;
+  @include mrwd(991px) {
+    padding: 66px 20px;
+  }
+  .faqContent {
+    border-radius: 20px;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 1340px;
+    background-color: #005271;
+    h2 {
+      @include fontFactory(var(--proxima-nova), 50px, 700, white, 0.02rem, 1.2);
+    }
+    @include mrwd(991px) {
+      border-radius: 10px;
+      flex-direction: column;
+      padding: 45px 20px;
+      h2 {
+        margin-bottom: 40px;
+        margin-right: 0;
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+.questionList {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
