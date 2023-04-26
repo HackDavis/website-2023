@@ -7,7 +7,6 @@
   height: auto;
   z-index: 1;
   margin-right: -35px;
-  margin-top: 10px;
   animation: slideIn 1.5s forwards;
   
   // cow hand
@@ -25,7 +24,7 @@
     @include mrwd(991px) {
       width: 21.4px;
       top: 75px;
-      left: 250px;
+      left: 150px;
     }
   }
 
@@ -41,7 +40,6 @@
 
     @include mrwd(991px) {
       margin-bottom: -109px;
-      left: 100px;
     }
   }
 
@@ -49,7 +47,7 @@
     min-width: 343px;
     max-width: 343px;
     height: auto;
-    margin-left: -180px;
+    margin-left: -120px;
     margin-right: 0;
   }
 }

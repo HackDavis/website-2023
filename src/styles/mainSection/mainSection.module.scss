@@ -55,18 +55,26 @@
   }
 }
 
+.wrapper {
+  padding-left: 64px;
+
+  @include mrwd(991px) {
+    padding-left: 0;
+  }
+}
+
 .mainAnimationSection {
   display: flex;
+  position: relative;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  // justify-content: flex-end;
   z-index: 100;
   max-width: 1290px;
   margin: auto;
   padding-right: 64px;
 
-  @include mrwd(1170px) {
+  @include mrwd(1222px) {
     justify-content: flex-end;
   }
 
@@ -92,13 +100,13 @@
     margin-left: 0;
     min-width: 0;
     padding-bottom: 0;
+    margin-bottom: 15px;
   }
 }
 
 .mainSection {
   display: flex;
   flex-direction: column;
-  // z-index: 100;
 
   @include mrwd(991px) {
     flex-direction: column-reverse;
@@ -194,7 +202,7 @@
 
       @include mrwd(991px) {
         border-bottom-color: white;
-      border-bottom: 2px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
       }
     }
     a:hover {
@@ -214,10 +222,6 @@
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 26px;
-
-  @include mrwd(991px) {
-    // padding-top: 43px;
-  }
 }
 
 .yellowButton {
@@ -273,7 +277,7 @@
   background: #ffc53d;
   width: fit-content;
   border-radius: 100px;
-  color: #122F40;
+  color: #122f40;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -285,27 +289,22 @@
     padding: 11px 60px 11px 20px;
   }
 
-  // transition: 0.4s;
   .heartButton {
-      transform: translateX(108px);
+    transform: translateX(108px);
 
-      @include mrwd(991px) {
-        transform: translateX(110px);
-      }
+    @include mrwd(991px) {
+      transform: translateX(110px);
+    }
   }
 }
 
 .heartButton {
   padding: 16px 14px 9px 14px;
-  // margin-left: 15px;
   background: #ffc53d;
   opacity: 1;
   border-radius: 100px;
   left: 0;
-  // filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
   box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
-
-  // border: 2px yellow solid;
   position: absolute;
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 
@@ -313,40 +312,36 @@
     padding: 11px 9px 6px 10px;
   }
 }
+
 .yellowCircle {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: var(--color-ducky);
+  margin-right: 15px;
+
   @include mrwd(991px) {
     display: none;
   }
-
 }
 
 .starterPack {
-  position: relative;
-  top: 500px;
-  left: 15px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 26px;
+  align-items: center;
+  justify-content: center;
   z-index: 10;
   width: fit-content;
   background: rgba(0, 0, 0, 0.33);
   border-radius: 10px;
-  padding: 15px 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
+  padding: 15px 20px;
 
-  @include mrwd(1210px) {
-    left: 100px;
-  }
   @include mrwd(991px) {
-    top: 0px;
-    left: -20px;
-    margin-top: 10px;
-    width: 100px;
-    
+    position: static;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
   }
 }
 
@@ -356,20 +351,14 @@
   justify-content: flex-end;
 
   @include mrwd(991px) {
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
+    margin-left: 20px;
     padding-top: 0;
   }
 }
 
 .links {
   @include fontFactory(var(--proxima-nova), 18px, 400, white, 0.02rem, 1);
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-
   .text {
     @include mrwd(991px) {
       display: none;
@@ -386,7 +375,6 @@
     transition: border-bottom 200ms;
     border-bottom: 2px solid transparent;
     padding-bottom: 5px;
-    margin-top: 5px;
     align-self: center;
     &:hover {
       border-bottom-color: white;
@@ -400,8 +388,6 @@
   }
 
   @include mrwd(991px) {
-    // margin-right: 0;
-    // padding: 5px 15px;
     align-self: end;
     width: fit-content;
     max-width: 286px;
@@ -427,138 +413,3 @@
   width: 100%;
   border-radius: 40px;
 }
-
-// @media screen and (min-width: 1200px) {
-//     .container2 {
-//         margin-left: auto;
-//     }
-// }
-
-// @media screen and (max-width: 1400px) {
-//     // .cowConeContainer {
-//     //     margin-bottom: -18%;
-//     // }
-
-//     .cowHandAnimate {
-//         left: 53%;
-//     }
-//     // .container2 {
-//     //     margin-left: ;
-//     // }
-// }
-// @media screen and (max-width: 800px) {
-//     .landing {
-//         // padding: 0 40px;
-//         justify-content: space-between;
-//         flex-direction: column;
-//     }
-
-//     .cowCone {
-//         // width: 100%;
-//         position: relative;
-//         // max-width: 100%;
-//         //margin-right: 100px
-//     }
-
-//     .cowConeContainer {
-//         align-items: flex-start;
-//         // margin-bottom: -19vmin;
-//         // margin: -15% 10% -25% -10%;
-//         //margin-right: auto;
-//         padding-right: 5%;
-//         //margin-left: auto;
-//     }
-
-//     .cloud {
-//         width: 100%;
-//     }
-
-//     .cloudBg {
-//         bottom: 15%;
-//         height: 100%;
-//         left: 0%;
-//         bottom: 0;
-//         width: 100%;
-//     }
-
-//     .mainAnimationSection {
-//         // display: flex;
-//         flex-direction: column-reverse;
-//         justify-content: flex-start;
-//         margin: 0;
-//         overflow: visible;
-//     }
-
-//     .cowHandAnimate {
-//         left: 49%;
-//     }
-
-//     .landing {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: flex-end;
-
-//         margin-left: auto;
-//         padding: 0 40px;
-//         // margin: 0 20px 0 0;
-//     }
-
-//     .mainSection {
-//         display: flex;
-//         flex-direction: column;
-//         font-size: 18px;
-//         // justify-content: flex-end;
-//         align-items: flex-end;
-//     }
-//     .event {
-//         font-size: 16px;
-//         padding-top: 45px;
-
-//         .hackdavis {
-//             margin-bottom: 0px;
-//             font-size: 20px;
-//         }
-//     }
-//     .tagline {
-//         text-align: left;
-//         align-self: flex-start;
-//         font-size: 30px;
-//         padding-top: 85px;
-
-//         .socialGood {
-//             font-size: 45px;
-//         }
-//     }
-
-//     .container2 {
-//         margin-left: default;
-//     }
-
-//     .mainButton {
-//         font-size: 17px;
-//         flex-direction: row;
-//         justify-content: flex-end;
-//         padding-top: 40px;
-//     }
-
-//     .yellowButton {
-//         padding: 12px 20px;
-//         font-size: 17px;
-//         min-width: fit-content;
-//     }
-
-//     .fadedButton {
-//         gap: 10px;
-//         font-size: 17px;
-//     }
-
-//     .sponsorButton {
-//         gap: 10px;
-//         font-size: 17px;
-//     }
-
-//     .heartButton {
-//         padding: 13px 13px 6px 13px;
-//         // padding: 15px 15px 11px 15px;
-//     }
-// }
