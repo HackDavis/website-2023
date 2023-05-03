@@ -22,26 +22,39 @@ const Sponsors = () => (
     </div>
     <h2 className={styles.support}>support for social good.</h2>
     <div className={styles.sponsorsContainer}>
-      <Marquee iterations={2} duration={50}>
-        <Logo imgSrc={chevron} alt="Chevron Logo" />
-        <Logo imgSrc={cs} alt="UC Davis Computer Science Logo" />
-        <Logo imgSrc={globalAffairs} alt="UC Davis Global Affairs Logo" />
+      <Marquee duration={50}>
+        <Logo imgSrc={chevron} url="#" alt="Chevron Logo" />
+        <Logo imgSrc={cs} url="#" alt="UC Davis Computer Science Logo" />
+        <Logo
+          imgSrc={globalAffairs}
+          url="#"
+          alt="UC Davis Global Affairs Logo"
+        />
         <Logo
           imgSrc={iet}
+          url="#"
           alt="UC Davis Information and Educational Technology Logo"
         />
       </Marquee>
-      <Marquee reverse iterations={2} duration={70}>
-        <Logo imgSrc={dataLab} alt="UC Davis DataLab Logo" />
-        <Logo imgSrc={ssc} alt="UC Davis Student Startup Center Logo" />
-        <Logo imgSrc={ls} alt="UC Davis College of Letters and Science Logo" />
-        <Logo imgSrc={asucd} alt="Associated Students, UC Davis (ASUCD) Logo" />
-        <Logo imgSrc={cfc} alt="UC Davis Club Finance Council Logo" />
+      <Marquee reverse duration={70}>
+        <Logo imgSrc={dataLab} url="#" alt="UC Davis DataLab Logo" />
+        <Logo imgSrc={ssc} url="#" alt="UC Davis Student Startup Center Logo" />
+        <Logo
+          imgSrc={ls}
+          url="#"
+          alt="UC Davis College of Letters and Science Logo"
+        />
+        <Logo
+          imgSrc={asucd}
+          url="#"
+          alt="Associated Students, UC Davis (ASUCD) Logo"
+        />
+        <Logo imgSrc={cfc} url="#" alt="UC Davis Club Finance Council Logo" />
       </Marquee>
-      <Marquee iterations={2}>
-        <Logo imgSrc={pocky} alt="Pocky Logo" />
-        <Logo imgSrc={yakult} alt="Yakult Logo" />
-        <Logo imgSrc={pepsi} alt="Pepsi Logo" />
+      <Marquee iterations={2} duration={50}>
+        <Logo imgSrc={pocky} url="#" alt="Pocky Logo" />
+        <Logo imgSrc={yakult} url="#" alt="Yakult Logo" />
+        <Logo imgSrc={pepsi} url="#" alt="Pepsi Logo" />
       </Marquee>
     </div>
   </div>

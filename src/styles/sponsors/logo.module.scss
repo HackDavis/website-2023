@@ -1,23 +1,42 @@
 @use "/src/styles/mixins" as *;
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 140px;
-  height: 140px;
-  padding: 20px;
   background-color: var(--color-teal-3);
   border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
 
-  @include lg {
-    width: 200px;
-    height: 200px;
-    padding: 36px;
+  @include hover {
+    &:hover {
+      // cursor: pointer;
+      transform: scale(1.05);
+    }
   }
 
-  > img {
+  > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 245px;
+    height: 140px;
+    padding: 20px 40px;
+
+    @include lg {
+      width: 350px;
+      height: 200px;
+      padding: 30px 60px;
+    }
+  }
+
+  img {
     width: 100%;
     height: auto;
+    max-height: 100%;
+
+    &.tall {
+      width: auto;
+      height: 100%;
+      max-height: initial;
+      max-width: 100%;
+    }
   }
 }
