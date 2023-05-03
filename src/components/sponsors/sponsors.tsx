@@ -10,7 +10,7 @@ import asucd from '@/images/sponsors/asucd.png';
 import pocky from '@/images/sponsors/pocky.svg';
 import yakult from '@/images/sponsors/yakult.png';
 import pepsi from '@/images/sponsors/pepsi.png';
-import cfc from '@/images/sponsors/cfc.jpg';
+import cfc from '@/images/sponsors/cfc.png';
 import styles from '@/styles/sponsors/sponsors.module.scss';
 import Marquee from './marquee';
 import Logo from './logo';
