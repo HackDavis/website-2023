@@ -201,13 +201,18 @@
       border-bottom: 2px solid transparent;
 
       @include mrwd(991px) {
+        @include touch {
+          border-bottom: 2px solid #ffffff;
+          border-bottom-color: white;
+        }
+      }
+    }
+
+    @include hover {
+      a:hover {
         border-bottom-color: white;
         border-bottom: 2px solid #ffffff;
       }
-    }
-    a:hover {
-      border-bottom-color: white;
-      border-bottom: 2px solid #ffffff;
     }
 
     @include mrwd(991px) {
@@ -236,9 +241,18 @@
   transition: all 0.2s ease;
   filter: drop-shadow(0px 9px 75px rgba(0, 0, 0, 0.75));
 
-  &:hover {
-    background-color: rgba(255, 197, 61, 0.2);
-    color: var(--color-ducky);
+  @include hover {
+    &:hover {
+      background-color: rgba(255, 197, 61, 0.2);
+      color: var(--color-ducky);
+    }
+  }
+
+  @include touch {
+    &:active {
+      background-color: rgba(255, 197, 61, 0.2);
+      color: var(--color-ducky);
+    }
   }
 
   @include mrwd(991px) {
@@ -270,30 +284,23 @@
     padding-top: 11px;
     padding-bottom: 11px;
   }
-}
 
-.sponsorButton:hover {
-  cursor: pointer;
-  background: #ffc53d;
-  width: fit-content;
-  border-radius: 100px;
-  color: #122f40;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-  padding: 14px 60px 15px 20px;
-
-  @include mrwd(991px) {
-    padding: 11px 60px 11px 20px;
-  }
-
-  .heartButton {
-    transform: translateX(108px);
+  &:hover {
+    cursor: pointer;
+    background: #ffc53d;
+    color: #122f40;
+    padding: 14px 60px 15px 20px;
 
     @include mrwd(991px) {
-      transform: translateX(110px);
+      padding: 11px 60px 11px 20px;
+    }
+
+    .heartButton {
+      transform: translateX(108px);
+
+      @include mrwd(991px) {
+        transform: translateX(110px);
+      }
     }
   }
 }
@@ -376,9 +383,12 @@
     border-bottom: 2px solid transparent;
     padding-bottom: 5px;
     align-self: center;
-    &:hover {
-      border-bottom-color: white;
-      border-bottom: 2px solid #ffffff;
+
+    @include hover {
+      &:hover {
+        border-bottom-color: white;
+        border-bottom: 2px solid #ffffff;
+      }
     }
 
     @include mrwd(991px) {
@@ -394,6 +404,7 @@
     font-size: 16px;
   }
 }
+
 .slideshow {
   margin: 0 auto;
   overflow: hidden;
@@ -408,7 +419,6 @@
 
 .slide {
   display: inline-block;
-
   height: 400px;
   width: 100%;
   border-radius: 40px;

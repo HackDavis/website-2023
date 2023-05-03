@@ -45,8 +45,10 @@
     height: 100%;
     transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
     
-    &:hover {
-      opacity: 0.5;
+    @include hover {
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 }
