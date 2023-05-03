@@ -1,0 +1,61 @@
+@use "/src/styles/mixins" as *;
+
+.marquee {
+  --gap: 20px;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
+  max-width: 1340px;
+  margin: auto;
+  margin-bottom: var(--gap);
+  mask-image: linear-gradient(
+    var(--mask-direction, to right),
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 80%,
+    hsl(0 0% 0% / 0)
+  );
+
+  &:hover .marqueeGroup {
+    // animation-play-state: paused;
+  }
+  
+  @include lg {
+    --gap: 30px;
+  }
+}
+
+.marqueeGroup {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: var(--gap);
+  min-width: 100%;
+  animation: scroll 20s linear infinite;
+
+  > * {
+    margin-right: var(--gap);
+  }
+
+  > *:last-child {
+    margin-right: 0;
+  }
+
+  &.reverse {
+    animation-direction: reverse;
+    animation-delay: -3s;
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(var(--scroll-start));
+  }
+  to {
+    transform: translateX(var(--scroll-end));
+  }
+}

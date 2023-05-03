@@ -1,0 +1,62 @@
+@use "/src/styles/mixins" as *;
+
+.sponsorsSection {
+  background-color: var(--color-teal-4);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding-bottom: 180px;
+}
+
+.heartButton {
+  background: #ffc53d;
+  opacity: 1;
+  border-radius: 100px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 19.44px 86.4px rgba(0, 0, 0, 0.75);
+  
+  svg, img {
+    width: 25px;
+    height: auto;
+  }
+
+  @include lg {
+    width: 108px;
+    height: 108px;
+    
+    svg, img {
+      width: 45.15px;
+      height: 39.38px;
+    }
+  }
+}
+
+.support {
+  @include fontFactory(var(--proxima-nova), 24px, 700, white, 0.02rem, 1.25);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-style: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  
+  @include lg {
+    @include fontFactory(var(--proxima-nova), 50px, 700, white, 0.02rem, 120%);
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+.sponsorsContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

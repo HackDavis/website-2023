@@ -1,12 +1,16 @@
 import Image, { StaticImageData } from 'next/image';
-import styles from '@/styles/sponsors/sponsors2.module.scss';
+import React from 'react';
+import styles from '@/styles/sponsors/logo.module.scss';
 
-const Logo = ({imgSrc}:{imgSrc: StaticImageData}) => {
-    return (
-    <div className={styles.logoContainer}>
-      <Image src={imgSrc} alt="" className={styles.logo} />
-    </div>
-    )
+interface LogoOptions {
+  imgSrc: StaticImageData;
+  alt: string;
 }
+
+const Logo = ({ imgSrc, alt }: LogoOptions) => (
+  <li className={styles.container}>
+    <Image src={imgSrc} alt={alt} className={styles.logo} />
+  </li>
+);
 
 export default Logo;
