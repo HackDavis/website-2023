@@ -343,11 +343,13 @@
   background: rgba(0, 0, 0, 0.33);
   border-radius: 10px;
   padding: 15px 20px;
-
+  animation: slideIn 1.5s forwards;
+  
   @include mrwd(991px) {
     position: static;
     padding-bottom: 10px;
     margin-bottom: 16px;
+    animation: none;
   }
 }
 
@@ -421,4 +423,20 @@
   height: 400px;
   width: 100%;
   border-radius: 40px;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  40% {
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
