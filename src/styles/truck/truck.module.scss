@@ -31,15 +31,17 @@
   top: 0;
   padding-top: 92px;
   margin-bottom: 280px;
-  width: 96px;
+  min-height: 500px;
+  height: 90vh;
+  max-height: 661px;
+  width: auto;
   
   @include lg {
     display: block;
   }
-  
+
   @include xl {
-    width: 112px;
-    height: 753px;
+    max-height: 753px;
   }
 }
 
