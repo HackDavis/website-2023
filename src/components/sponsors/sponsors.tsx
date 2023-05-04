@@ -23,38 +23,54 @@ const Sponsors = () => (
     <h2 className={styles.support}>support for social good.</h2>
     <div className={styles.sponsorsContainer}>
       <Marquee duration={50}>
-        <Logo imgSrc={chevron} url="#" alt="Chevron Logo" />
-        <Logo imgSrc={cs} url="#" alt="UC Davis Computer Science Logo" />
+        <Logo imgSrc={chevron} url="http://chevron.com/" alt="Chevron Logo" />
+        <Logo
+          imgSrc={cs}
+          url="http://cs.ucdavis.edu/"
+          alt="UC Davis Computer Science Logo"
+        />
         <Logo
           imgSrc={globalAffairs}
-          url="#"
+          url="http://globalaffairs.ucdavis.edu/"
           alt="UC Davis Global Affairs Logo"
         />
         <Logo
           imgSrc={iet}
-          url="#"
+          url="http://iet.ucdavis.edu/"
           alt="UC Davis Information and Educational Technology Logo"
         />
       </Marquee>
       <Marquee reverse duration={70}>
-        <Logo imgSrc={dataLab} url="#" alt="UC Davis DataLab Logo" />
-        <Logo imgSrc={ssc} url="#" alt="UC Davis Student Startup Center Logo" />
+        <Logo
+          imgSrc={dataLab}
+          url="http://datalab.ucdavis.edu/"
+          alt="UC Davis DataLab Logo"
+        />
+        <Logo
+          imgSrc={ssc}
+          url="http://startup.ucdavis.edu/"
+          alt="UC Davis Student Startup Center Logo"
+        />
         <Logo
           imgSrc={ls}
-          url="#"
+          url="http://ls.ucdavis.edu/"
           alt="UC Davis College of Letters and Science Logo"
         />
         <Logo
           imgSrc={asucd}
-          url="#"
+          url="http://asucd.ucdavis.edu/"
           alt="Associated Students, UC Davis (ASUCD) Logo"
         />
-        <Logo imgSrc={cfc} url="#" alt="UC Davis Club Finance Council Logo" />
+        <Logo
+          imgSrc={cfc}
+          url="http://csi.ucdavis.edu/cfc"
+          alt="UC Davis Club Finance Council Logo"
+        />
       </Marquee>
       <Marquee iterations={2} duration={50}>
-        <Logo imgSrc={pocky} url="#" alt="Pocky Logo" />
-        <Logo imgSrc={yakult} url="#" alt="Yakult Logo" />
-        <Logo imgSrc={pepsi} url="#" alt="Pepsi Logo" />
+        <Logo imgSrc={pocky} url="http://pocky.com/" alt="Pocky Logo" />
+        <Logo imgSrc={yakult} url="http://yakultusa.com/" alt="Yakult Logo" />
+        <Logo imgSrc={pepsi} url="http://pepsi.com/" alt="Pepsi Logo" />
       </Marquee>
     </div>
   </div>
