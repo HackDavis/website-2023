@@ -2,7 +2,7 @@ import Navbar from '@/components/navbar/navbar';
 import MainSection from '@/components/mainSection/mainSection';
 import Faq from '@/components/faq/faq';
 import Footer from '@/components/footer';
-import Sponsors2 from '@/components/sponsors/sponsors2';
+import Sponsors from '@/components/sponsors/sponsors';
 import Truck from '@/components/truck/truck';
 import Clouds from '@/components/mainSection/clouds';
 import Cta from '@/components/cta';
@@ -34,7 +34,7 @@ export default function Home() {
         }}
       >
         <Faq />
-        <Sponsors2 />
+        <Sponsors />
       </div>
       <div style={{ backgroundColor: 'var(--color-cow)' }}>
         <Cta />
