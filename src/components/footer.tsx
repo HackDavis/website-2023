@@ -23,6 +23,7 @@ const Footer = () => (
         href="https://medium.com/@HackDavis"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="@HackDavis on Medium"
       >
         <FontAwesomeIcon icon={faMedium} />
       </a>
@@ -31,6 +32,7 @@ const Footer = () => (
         href="https://www.facebook.com/HackDavis"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="HackDavis on Facebook"
       >
         <FontAwesomeIcon icon={faFacebookF} />
       </a>
@@ -39,6 +41,7 @@ const Footer = () => (
         href="https://twitter.com/hack_davis"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="@hack_davis on Twitter"
       >
         <FontAwesomeIcon icon={faTwitter} />
       </a>
@@ -47,6 +50,7 @@ const Footer = () => (
         href="https://www.instagram.com/hackdavis"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="@hackdavis on Instagram"
       >
         <FontAwesomeIcon icon={faInstagram} />
       </a>
@@ -55,6 +59,7 @@ const Footer = () => (
         href="https://discord.gg/wc6QQEc"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="HackDavis Discord server"
       >
         <FontAwesomeIcon icon={faDiscord} />
       </a>
