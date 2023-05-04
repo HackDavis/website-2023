@@ -16,7 +16,7 @@ import Marquee from './marquee';
 import Logo from './logo';
 
 const Sponsors = () => (
-  <div className={styles.sponsorsSection}>
+  <section id="sponsors" className={styles.sponsorsSection}>
     <div className={styles.heartButton}>
       <Heart />
     </div>
@@ -73,7 +73,7 @@ const Sponsors = () => (
         <Logo imgSrc={pepsi} url="http://pepsi.com/" alt="Pepsi Logo" />
       </Marquee>
     </div>
-  </div>
+  </section>
 );
 
 export default Sponsors;

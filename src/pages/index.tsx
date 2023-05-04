@@ -14,28 +14,30 @@ export default function Home() {
     <>
       <Seo />
       <Navbar />
-      <div
-        style={{
-          position: 'relative',
-          backgroundColor: '#023142',
-          paddingTop: 50,
-          zIndex: 1,
-          contain: 'paint',
-        }}
-      >
-        <Clouds />
-        <MainSection />
-        <Truck />
-      </div>
-      <div
-        style={{
-          position: 'relative',
-          zIndex: 1,
-        }}
-      >
-        <Faq />
-        <Sponsors />
-      </div>
+      <main>
+        <div
+          style={{
+            position: 'relative',
+            backgroundColor: '#023142',
+            paddingTop: 50,
+            zIndex: 1,
+            contain: 'paint',
+          }}
+        >
+          <Clouds />
+          <MainSection />
+          <Truck />
+        </div>
+        <div
+          style={{
+            position: 'relative',
+            zIndex: 1,
+          }}
+        >
+          <Faq />
+          <Sponsors />
+        </div>
+      </main>
       <div style={{ backgroundColor: 'var(--color-cow)' }}>
         <Cta />
         <Footer />

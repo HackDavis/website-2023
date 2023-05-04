@@ -5,7 +5,7 @@ import WordCycle from './wordCycle';
 
 const MainSection = () => (
   <>
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper}>
       <div className={styles.mainAnimationSection}>
         <Cow />
         <aside className={styles.starterPack}>
@@ -103,7 +103,7 @@ const MainSection = () => (
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </>
 );
 
