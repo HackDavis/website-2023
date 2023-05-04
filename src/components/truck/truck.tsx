@@ -9,7 +9,7 @@ import WindowFour from './windowFour';
 import Bottom from './bottom';
 
 const Truck = () => (
-  <div className={styles.background}>
+  <section id="info" className={styles.background}>
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <WindowOne />
@@ -20,7 +20,7 @@ const Truck = () => (
       </div>
       <Image src={banner} alt="banner" className={styles.banner} />
     </div>
-  </div>
+  </section>
 );
 
 export default Truck;

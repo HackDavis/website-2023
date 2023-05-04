@@ -7,8 +7,8 @@ const Faq = () => {
   const [openedIndex, setOpenedIndex] = useState(-1);
 
   return (
-    <div className={styles.faqContainer}>
-      <section className={styles.faqContent}>
+    <section id="faq" className={styles.faqContainer}>
+      <div className={styles.faqContent}>
         <h2>FAQ</h2>
         <ul className={styles.questionList}>
           {questionsAndAnswers.map(({ question, answer }, index) => (
@@ -22,8 +22,8 @@ const Faq = () => {
             />
           ))}
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
