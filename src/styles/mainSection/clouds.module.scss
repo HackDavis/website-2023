@@ -1,6 +1,7 @@
+@use "/src/styles/mixins" as *;
+
 .container {
   position: relative;
-  // animation: backAndForth 10s infinite ease-in-out;
 
   > * {
     position: absolute;
@@ -16,26 +17,59 @@
   // large
   > :first-child {
     width: 779px;
-    // visibility: hidden;
+    animation: leftToRight15 15s ease-in-out infinite;
+
+    @include mrwd(991px) {
+      width: 582px;
+      top: 420px;
+    }
   }
-  
+
   // medium 1
   > :nth-child(2) {
-    visibility: hidden;
+    width: 363px;
+    top: 477px;
+    right: -1200px;
+    animation: rightToLeft12 10s ease-in-out infinite;
+    
+    @include mrwd(991px) {
+      width: auto;
+      height: 262px;
+      top: 120px;
+      right: -320px;
+    }
   }
-  
+
   // medium 2
   > :nth-child(3) {
-    fill: var(--color-teal-3);
+    width: 363px;
+    top: 280px;
+    left: 260px;
+    animation: leftToRight15 12s ease-in-out infinite;
+    
+    @include mrwd(991px) {
+      width: 180px;
+      top: 580px;
+      left: 180px;
+    }
   }
 
   // small
   > :nth-child(4) {
-    visibility: hidden;
+    width: 252px;
+    top: 365px;
+    right: 1020px;
+    animation: rightToLeft12 15s ease-in-out infinite;
+    
+    @include mrwd(991px) {
+      width: 150px;
+      top: 300px;
+      right: 330px;
+    }
   }
 }
 
-@keyframes backAndForth {
+@keyframes leftToRight10 {
   0% {
     transform: translateX(-10%);
   }
@@ -44,5 +78,65 @@
   }
   100% {
     transform: translateX(-10%);
+  }
+}
+
+@keyframes rightToLeft10 {
+  0% {
+    transform: translateX(10%);
+  }
+  50% {
+    transform: translate(-10%);
+  }
+  100% {
+    transform: translateX(10%);
+  }
+}
+
+@keyframes leftToRight12 {
+  0% {
+    transform: translateX(-12%);
+  }
+  50% {
+    transform: translate(12%);
+  }
+  100% {
+    transform: translateX(-12%);
+  }
+}
+
+@keyframes rightToLeft12 {
+  0% {
+    transform: translateX(12%);
+  }
+  50% {
+    transform: translate(-12%);
+  }
+  100% {
+    transform: translateX(12%);
+  }
+}
+
+@keyframes leftToRight15 {
+  0% {
+    transform: translateX(-15%);
+  }
+  50% {
+    transform: translate(15%);
+  }
+  100% {
+    transform: translateX(-15%);
+  }
+}
+
+@keyframes rightToLeft15 {
+  0% {
+    transform: translateX(15%);
+  }
+  50% {
+    transform: translate(-15%);
+  }
+  100% {
+    transform: translateX(15%);
   }
 }

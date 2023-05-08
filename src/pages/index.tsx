@@ -19,7 +19,7 @@ export default function Home() {
           style={{
             position: 'relative',
             backgroundColor: '#023142',
-            paddingTop: 50,
+            // paddingTop: 50,
             zIndex: 1,
             contain: 'paint',
           }}
