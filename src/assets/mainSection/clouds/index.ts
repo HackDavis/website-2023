@@ -1,9 +1,3 @@
-export { CloudsTop } from './cloudsTop';
-
-export { CloudAirLines1 } from './cloudAirLines1';
-
-export { CloudAirLines2 } from './cloudAirLines2';
-
 export { CloudLarge } from './cloudLarge';
 
 export { CloudMedium1 } from './cloudMedium1';

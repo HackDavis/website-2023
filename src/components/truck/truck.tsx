@@ -7,20 +7,28 @@ import WindowTwo from './windowTwo';
 import WindowThree from './windowThree';
 import WindowFour from './windowFour';
 import Bottom from './bottom';
+import Clouds from './clouds';
 
 const Truck = () => (
-  <section id="info" className={styles.background}>
-    <div className={styles.wrapper}>
-      <div className={styles.container}>
-        <WindowOne />
-        <WindowTwo />
-        <WindowThree />
-        <WindowFour />
-        <Bottom />
+  <>
+    <Clouds />
+    <section id="info" className={styles.background}>
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          <WindowOne />
+          <WindowTwo />
+          <WindowThree />
+          <WindowFour />
+          <Bottom />
+        </div>
+        <Image
+          src={banner}
+          alt="create for social good banner"
+          className={styles.banner}
+        />
       </div>
-      <Image src={banner} alt="banner" className={styles.banner} />
-    </div>
-  </section>
+    </section>
+  </>
 );
 
 export default Truck;

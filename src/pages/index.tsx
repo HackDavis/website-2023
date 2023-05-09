@@ -4,7 +4,6 @@ import Faq from '@/components/faq/faq';
 import Footer from '@/components/footer';
 import Sponsors from '@/components/sponsors/sponsors';
 import Truck from '@/components/truck/truck';
-import Clouds from '@/components/mainSection/clouds';
 import Cta from '@/components/cta';
 import Seo from '@/components/seo';
 
@@ -24,7 +23,6 @@ export default function Home() {
             contain: 'paint',
           }}
         >
-          <Clouds />
           <MainSection />
           <Truck />
         </div>

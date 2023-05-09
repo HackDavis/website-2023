@@ -1,0 +1,45 @@
+@use "/src/styles/mixins" as *;
+
+.container {
+  position: relative;
+
+  > * {
+    position: absolute;
+  }
+
+  > div {
+    padding-top: 300px;
+    mask-image: initial;
+    max-width: 2160px;
+    left: 0;
+    right: 0;
+    height: 2000px;
+
+    svg {
+      width: auto;
+      height: 100%;
+    }
+
+    @include lg {
+      padding-top: 500px;
+    }
+
+    @include xl {
+      height: 2200px;
+    }
+
+    @include rwd(1440px) {
+      height: 2500px;
+    }
+
+    @include rwd(2160px) {
+      mask-image: linear-gradient(
+        var(--mask-direction, to right),
+        hsl(0 0% 0% / 0),
+        hsl(0 0% 0% / 1) 5%,
+        hsl(0 0% 0% / 1) 95%,
+        hsl(0 0% 0% / 0)
+      );
+    }
+  }
+}
