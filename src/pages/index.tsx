@@ -17,7 +17,7 @@ export default function Home() {
         <div
           style={{
             position: 'relative',
-            backgroundColor: '#023142',
+            backgroundColor: 'var(--color-teal-5)',
             // paddingTop: 50,
             zIndex: 1,
             contain: 'paint',

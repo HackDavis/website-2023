@@ -1,7 +1,7 @@
 @use "/src/styles/mixins" as *;
 
 .navbarCont {
-  background: #023142;
+  background: var(--color-teal-5);
   transition: box-shadow 200ms linear;
   .navbarItems {
     height: 100px;

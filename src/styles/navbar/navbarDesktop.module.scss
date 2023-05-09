@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;500;700&display=swap");
 
 .navbarCont {
-  background: #023142;
+  background: var(--color-teal-5);
   display: flex;
   justify-content: center;
   transition: box-shadow 200ms linear;
