@@ -1,6 +1,7 @@
 @use "/src/styles/mixins" as *;
 
 .container {
+  // visibility: hidden;
   position: relative;
   min-width: 657px;
   max-width: 657px;

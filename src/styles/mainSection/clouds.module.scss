@@ -1,17 +1,75 @@
-.cloud {
-  position: absolute;
-  pointer-events: none;
-  width: 1100px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  animation: backAndForth 10s infinite ease-in-out;
+@use "/src/styles/mixins" as *;
+
+.container {
+  position: relative;
+
+  > * {
+    position: absolute;
+    pointer-events: none;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  // large
+  > :first-child {
+    width: 779px;
+    animation: leftToRight15 15s ease-in-out infinite;
+
+    @include mrwd(991px) {
+      width: 582px;
+      top: 420px;
+    }
+  }
+
+  // medium 1
+  > :nth-child(2) {
+    width: 363px;
+    top: 477px;
+    right: -1200px;
+    animation: rightToLeft12 10s ease-in-out infinite;
+    
+    @include mrwd(991px) {
+      width: auto;
+      height: 262px;
+      top: 120px;
+      right: -320px;
+    }
+  }
+
+  // medium 2
+  > :nth-child(3) {
+    width: 363px;
+    top: 280px;
+    left: 260px;
+    animation: leftToRight15 12s ease-in-out infinite;
+    
+    @include mrwd(991px) {
+      width: 180px;
+      top: 580px;
+      left: 180px;
+    }
+  }
+
+  // small
+  > :nth-child(4) {
+    width: 252px;
+    top: 365px;
+    right: 1020px;
+    animation: rightToLeft12 15s ease-in-out infinite;
+    
+    @include mrwd(991px) {
+      width: 150px;
+      top: 300px;
+      right: 330px;
+    }
+  }
 }
 
-@keyframes backAndForth {
+@keyframes leftToRight10 {
   0% {
     transform: translateX(-10%);
   }
@@ -20,5 +78,65 @@
   }
   100% {
     transform: translateX(-10%);
+  }
+}
+
+@keyframes rightToLeft10 {
+  0% {
+    transform: translateX(10%);
+  }
+  50% {
+    transform: translate(-10%);
+  }
+  100% {
+    transform: translateX(10%);
+  }
+}
+
+@keyframes leftToRight12 {
+  0% {
+    transform: translateX(-12%);
+  }
+  50% {
+    transform: translate(12%);
+  }
+  100% {
+    transform: translateX(-12%);
+  }
+}
+
+@keyframes rightToLeft12 {
+  0% {
+    transform: translateX(12%);
+  }
+  50% {
+    transform: translate(-12%);
+  }
+  100% {
+    transform: translateX(12%);
+  }
+}
+
+@keyframes leftToRight15 {
+  0% {
+    transform: translateX(-15%);
+  }
+  50% {
+    transform: translate(15%);
+  }
+  100% {
+    transform: translateX(-15%);
+  }
+}
+
+@keyframes rightToLeft15 {
+  0% {
+    transform: translateX(15%);
+  }
+  50% {
+    transform: translate(-15%);
+  }
+  100% {
+    transform: translateX(15%);
   }
 }
