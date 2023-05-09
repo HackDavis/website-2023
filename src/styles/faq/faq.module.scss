@@ -3,7 +3,6 @@
 .faqContainer {
   padding: 200px 50px;
   display: flex;
-  background-color: var(--color-teal-4);
   justify-content: center;
   @include mrwd(991px) {
     padding: 66px 20px;
