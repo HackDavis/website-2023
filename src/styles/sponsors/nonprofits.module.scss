@@ -1,0 +1,32 @@
+@use "/src/styles/mixins" as *;
+
+.nonprofitsSection {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding-bottom: 180px;
+}
+
+.support {
+  @include fontFactory(var(--proxima-nova), 24px, 700, white, 0.02rem, 1.25);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-style: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  
+  @include lg {
+    @include fontFactory(var(--proxima-nova), 50px, 700, white, 0.02rem, 120%);
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+.nonprofitsContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

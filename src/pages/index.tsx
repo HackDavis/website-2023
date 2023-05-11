@@ -7,6 +7,7 @@ import Truck from '@/components/truck/truck';
 import Cta from '@/components/cta';
 import Seo from '@/components/seo';
 import { useEffect } from 'react';
+import NonProfits from '@/components/sponsors/nonprofits';
 
 // Landing page
 export default function Home() {
@@ -52,6 +53,7 @@ export default function Home() {
         >
           <Faq />
           <Sponsors />
+          <NonProfits />
         </div>
       </main>
       <div style={{ backgroundColor: 'var(--color-cow)' }}>
