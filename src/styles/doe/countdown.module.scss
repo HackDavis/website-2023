@@ -1,0 +1,40 @@
+@use "/src/styles/mixins" as *;
+
+.container {
+  @include fontFactory(var(--proxima-nova), 90px, 500, white, 0, 1);
+  width: 1179px;
+  background: #005271;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 20px;
+  padding: 40px 0;
+  border: 10px solid var(--color-teal-1);
+
+  .clock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    @include cgap(25px);
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.05rem;
+      color: var(--color-teal-1);
+    }
+  }
+}
+.sticks {
+  width: 1059px;
+  height: 50px;
+  border-left: solid white 3px;
+  border-right: solid white 3px;
+  margin: auto;
+}
