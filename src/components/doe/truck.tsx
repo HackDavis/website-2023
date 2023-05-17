@@ -6,6 +6,7 @@ import Bottom from '@/components/truck/bottom';
 import Clouds from '@/components/truck/clouds';
 import Countdown from './countdown';
 import Window from './window';
+import Schedule from './schedule';
 
 const Truck = () => (
   <>
@@ -21,6 +22,7 @@ const Truck = () => (
               borderRadius: '20px 20px 0 0',
             }}
           >
+            <Schedule />
             <Window />
             <Bottom />
           </div>
