@@ -1,4 +1,3 @@
-import { UpArrow } from '@/assets/mainSection/misc';
 import WordCycle from '@/components/mainSection/wordCycle';
 import Clouds from '@/components/mainSection/clouds';
 import styles from '@/styles/doe/mainSection.module.scss';
@@ -20,6 +19,7 @@ const MainSection = () => (
               <h2 className={styles.hackdavis}>
                 Hack<b>Davis</b>{' '}
               </h2>
+              <strong>May 20-21, 2023</strong>
             </div>
           </div>
 
@@ -44,20 +44,6 @@ const MainSection = () => (
                 Get Help
               </a>
             </div>
-            <aside className={styles.starterPack}>
-              <div className={styles.yellowCircle} />
-              <span style={{ marginRight: 0 }} className={styles.links}>
-                New Hacker? Get started with our{' '}
-                <a
-                  href="https://hackdavis.notion.site/HackDavis-2023-Starter-Pack-33c778742f5745c7833a07255cbcc1d7"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <strong style={{ marginRight: 10 }}> Starter Pack</strong>
-                  <UpArrow />
-                </a>
-              </span>
-            </aside>
           </div>
         </div>
       </div>

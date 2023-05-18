@@ -48,6 +48,7 @@ const Live = () => {
             position: 'relative',
             backgroundColor: 'var(--color-teal-4)',
             zIndex: 1,
+            paddingTop: 100,
           }}
         >
           <Sponsors />

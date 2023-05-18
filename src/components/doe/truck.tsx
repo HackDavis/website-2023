@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import banner from '@/images/banner.svg';
+import banner from '@/images/doe/banner.svg';
 import styles from '@/styles/doe/truck.module.scss';
 import Bottom from '@/components/doe/bottom';
 import Clouds from '@/components/truck/clouds';

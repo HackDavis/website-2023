@@ -57,11 +57,15 @@
 
 .wrapper {
   padding-top: 50px;
+
+  @include mrwd(991px) {
+    padding-top: 30px;
+  }
 }
 
 .mainAnimationSection {
   position: relative;
-  flex-direction: row;
+  flex-direction: column;
   z-index: 100;
   max-width: 1290px;
   margin: auto;
@@ -71,7 +75,7 @@
   }
 
   @include mrwd(991px) {
-    flex-direction: column-reverse;
+    max-width: 420px;
     align-items: center;
     padding-left: 16px;
     padding-right: 16px;
@@ -84,9 +88,11 @@
   text-align: center;
   flex-direction: column;
   padding-bottom: 41px;
+  margin: auto;
 
   @include mrwd(991px) {
-    margin-left: 0;
+    max-width: 400px;
+    // margin-left: 0;
     min-width: 0;
     padding-bottom: 0;
     margin-bottom: 15px;
@@ -96,15 +102,11 @@
 .mainSection {
   display: flex;
   flex-direction: column;
-
-  @include mrwd(991px) {
-    flex-direction: column-reverse;
-  }
 }
 
 .tagline {
   @include fontFactory(var(--proxima-nova), 40px, 700, white, 0.02rem, 1.15);
-  margin-bottom: 58px;
+  margin-bottom: 40px;
 
   .socialGood {
     display: inline-block;
@@ -124,10 +126,10 @@
       right: 30%;
     }
   }
+
   @include mrwd(991px) {
     font-size: 30px;
-    text-align: left;
-    margin-bottom: 43px;
+    margin-bottom: 26px;
 
     .socialGood {
       font-size: 45px;
@@ -137,16 +139,25 @@
 }
 
 .event {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 
   @include mrwd(991px) {
-    margin-bottom: 35px;
+    margin-bottom: 38px;
+  }
+
+  strong {
+    @include fontFactory(var(--proxima-nova), 20px, 400, white, 0.02rem, 1);
+
+    @include mrwd(991px) {
+      font-size: 16px;
+    }
   }
 }
 
 .hackdavis {
   @include fontFactory(var(--proxima-nova), 30px, 300, white, 0.05rem, 1);
   text-transform: uppercase;
+  margin-bottom: 20px;
 
   b {
     font-weight: 700;
@@ -154,6 +165,7 @@
 
   @include mrwd(991px) {
     font-size: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -209,14 +221,20 @@
 }
 
 .buttons {
-  > div {
-    display: flex;
-    margin-bottom: 26px;
-  }
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 26px;
+
+  > div {
+    display: flex;
+    margin-bottom: 26px;
+    
+    @include mrwd(991px) {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
 }
 
 .yellowButton {
@@ -245,9 +263,10 @@
   }
 
   @include mrwd(991px) {
-    padding: 11px 20px;
+    padding: 15px 20px;
     font-size: 18px;
-    margin-right: 18px;
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 }
 
@@ -268,8 +287,12 @@
 
   @include mrwd(991px) {
     font-size: 18px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 50px;
+    padding: 15px 0;
+    justify-content: center;
   }
 
   &:hover {
@@ -279,14 +302,15 @@
     padding: 15px 60px 15px 18px;
 
     @include mrwd(991px) {
-      padding: 11px 60px 11px 20px;
+      padding: 15px 0;
     }
 
     .discordIcon {
       transform: translateX(110px);
 
       @include mrwd(991px) {
-        transform: translateX(110px);
+        left: calc(100% - 50px);
+        transform: translateX(0px);
       }
     }
   }
@@ -304,6 +328,10 @@
   background-color: var(--color-ducky);
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   box-shadow: 0px 9px 75px rgba(0, 0, 0, 0.75);
+
+  @include mrwd(991px) {
+    transition: left 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
 
   > svg {
     width: 25px;
@@ -350,7 +378,7 @@
   background: rgba(0, 0, 0, 0.33);
   border-radius: 10px;
   padding: 15px 20px;
-  
+
   @include mrwd(991px) {
     position: static;
     padding-bottom: 10px;

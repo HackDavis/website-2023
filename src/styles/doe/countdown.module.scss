@@ -1,12 +1,12 @@
 @use "/src/styles/mixins" as *;
 
 .wrapper {
-  padding: 0 12px;
+  padding: 0 15px;
   position: relative;
   z-index: 1;
   
   @include lg {
-    padding: 0 40px;
+    padding: 0 82.12px;
   }
 }
 
