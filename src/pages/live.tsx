@@ -6,7 +6,8 @@ import NonProfits from '@/components/sponsors/nonprofits';
 import Sponsors from '@/components/sponsors/sponsors';
 import React, { useEffect } from 'react';
 import Countdown from '@/components/doe/countdown';
-import Footer from '@/components/doe/footer';
+import Cta from '@/components/doe/cta';
+import Footer from '@/components/footer';
 
 const Live = () => {
   useEffect(() => {
@@ -54,6 +55,7 @@ const Live = () => {
         </div>
       </main>
       <div style={{ backgroundColor: 'var(--color-cow)' }}>
+        <Cta />
         <Footer />
       </div>
     </>
