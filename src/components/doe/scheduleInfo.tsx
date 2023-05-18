@@ -242,4 +242,13 @@ const sundayEvents: Event[] = [
 
 const allDayEvents: Event[] = [{}];
 
-export { saturdayEvents, sundayEvents };
+const noFoodSaturdayEvents = saturdayEvents.filter(
+  (event) => event.type !== 'Food'
+);
+const noFoodSundayEvents = sundayEvents.filter(
+  (event) => event.type !== 'Food'
+);
+
+export { noFoodSaturdayEvents as saturdayEvents };
+
+export { noFoodSundayEvents as sundayEvents };

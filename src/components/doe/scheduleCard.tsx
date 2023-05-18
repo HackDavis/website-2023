@@ -20,7 +20,8 @@ const getTimeString = (time: Date) =>
 
 const checkEventTime = (start: Date, duration: number, type: string) => {
   // TODO: Change currentTime back to the actual current time after done testing.
-  const currentTime = new Date('May 20, 2023 12:00 GMT-7:00').getTime();
+  // const currentTime = new Date('May 20, 2023 12:00 GMT-7:00').getTime();
+  const currentTime = Date.now();
   const eventStartTime = start.getTime();
   const eventEndTime = start.getTime() + duration * 60000;
 
