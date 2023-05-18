@@ -7,6 +7,7 @@ import Clouds from '@/components/truck/clouds';
 import Countdown from './countdown';
 import Window from './window';
 import Schedule from './schedule';
+import Quickstart from './quickstart';
 
 const Truck = () => (
   <>
@@ -22,6 +23,7 @@ const Truck = () => (
               borderRadius: '20px 20px 0 0',
             }}
           >
+            <Quickstart />
             <Schedule />
             <Window />
             <Bottom />

@@ -61,7 +61,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'Intro to Figma',
     description: 'Hosted by Design Interactive',
-    location: 'Ballroom A',
+    location: 'ARC Ballroom A',
     type: 'Workshop',
   },
   {
@@ -69,7 +69,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'Pitching your Project',
     description: 'Hosted by Women in Computer Science',
-    location: 'Ballroom B',
+    location: 'ARC Ballroom B',
     type: 'Workshop',
   },
   {
@@ -84,7 +84,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'UI Hacks',
     description: 'Hosted by Design Interactive',
-    location: 'Ballroom A',
+    location: 'ARC Ballroom A',
     type: 'Workshop',
   },
   {
@@ -92,7 +92,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'Black and Latinx in Tech Career Panel',
     description: 'Hosted by ColorStack at UC Davis',
-    location: 'Ballroom B',
+    location: 'ARC Ballroom B',
     type: 'Workshop',
   },
   {
@@ -108,7 +108,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'Ethics in Computer Science',
     description: 'Hosted by Davis Computer Science Club',
-    location: 'Ballroom A',
+    location: 'ARC Ballroom A',
     type: 'Workshop',
   },
   {
@@ -116,7 +116,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'Building and Strengthening Your Resume, Cover Letter, and LinkedIn',
     description: 'Hosted by Davis Undergraduate Engineering Network',
-    location: 'Ballroom B',
+    location: 'ARC Ballroom B',
     type: 'Workshop',
   },
   {
@@ -130,7 +130,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'Intro to HTML/CSS',
     description: 'Hosted by #include @ Davis',
-    location: 'Ballroom A',
+    location: 'ARC Ballroom A',
     type: 'Workshop',
   },
   {
@@ -138,7 +138,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'Crash Course to Business Development',
     description: 'Hosted by Student Startup Center',
-    location: 'Ballroom B',
+    location: 'ARC Ballroom B',
     type: 'Workshop',
   },
   {
@@ -153,7 +153,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'Webscraping and its Practical Application in Industry',
     description: 'Hosted by CodeLab',
-    location: 'Ballroom A',
+    location: 'ARC Ballroom A',
     type: 'Workshop',
   },
   {
@@ -161,7 +161,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'Build Your Chat-GPT Plugin',
     description: 'Hosted by Sriya Maram and Rush Shahani',
-    location: 'Ballroom B',
+    location: 'ARC Ballroom B',
     type: 'Workshop',
   },
   {
@@ -169,7 +169,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'Deploying Your Angular App to GitHub Pages',
     description: 'Hosted by Meziah Ruby',
-    location: 'Ballroom A',
+    location: 'ARC Ballroom A',
     type: 'Workshop',
   },
   {
@@ -177,7 +177,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'Best Design Practices',
     description: 'Hosted by #include @ Davis',
-    location: 'Ballroom B',
+    location: 'ARC Ballroom B',
     type: 'Workshop',
   },
   {
@@ -185,7 +185,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'Intro to Product Management',
     description: 'AggieWorks',
-    location: 'Ballroom A',
+    location: 'ARC Ballroom A',
     type: 'Workshop',
   },
   {
@@ -200,7 +200,7 @@ const saturdayEvents: Event[] = [
     duration: 60,
     name: 'Unity Programming Basics',
     description: 'Game Development and Arts Club',
-    location: 'Ballroom A',
+    location: 'ARC Ballroom A',
     type: 'Workshop',
   },
 ];
@@ -233,7 +233,7 @@ const sundayEvents: Event[] = [
     type: 'Other',
   },
   {
-    start: sundayDate('01:45'),
+    start: sundayDate('13:45'),
     duration: 45,
     name: 'Closing Ceremony',
     type: 'Other',

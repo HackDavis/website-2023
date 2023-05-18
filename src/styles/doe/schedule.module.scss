@@ -1,0 +1,117 @@
+@use '/src/styles/mixins' as *;
+.container {
+  background-color: #123041;
+  padding: 40px 40px 0 40px;
+  border-radius: 20px;
+  margin-bottom: 42px;
+  h2 {
+    @include fontFactory(var(--proxima-nova), 40px, 700, white, 0rem, 1);
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  .filters {
+    @include fontFactory(var(--proxima-nova), 18px, 700, white, 0rem, 1);
+    list-style: none;
+    padding: 10px;
+    background-color: #2a4554;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    li {
+      display: inline;
+      margin-left: 10px;
+      button {
+        padding: 8px 16px;
+        border-radius: 4px;
+        background-color: transparent;
+      }
+    }
+    // "All"
+    li:first-of-type {
+      margin-left: 0;
+      > button {
+        color: white;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+
+        &.selected {
+          color: #2d4e63;
+          background-color: white;
+        }
+      }
+    }
+    // "Workshops"
+    li:nth-of-type(2) > button {
+      color: var(--color-teal-1);
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+
+      &.selected {
+        color: #2e4e63;
+        background-color: var(--color-teal-1);
+      }
+    }
+    // "Activities"
+    li:nth-of-type(3) > button {
+      color: var(--color-ducky);
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+      &.selected {
+        color: #2d4e63;
+        background-color: var(--color-ducky);
+      }
+    }
+    // "Menu"
+    li:nth-of-type(4) > button {
+      color: #c2e567;
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+      &.selected {
+        color: #2d4e63;
+        background-color: #c2e567;
+      }
+    }
+  }
+  .scheduleContainer {
+    display: flex;
+    justify-content: space-between;
+    .boxShadow {
+      mask-image: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(0 0% 0% / 1) 16px,
+        hsl(0 0% 0% / 1) 95%,
+        hsl(0 0% 0% / 0)
+      );
+    }
+    .scheduleCards {
+      padding-top: 16px;
+      overflow-y: auto;
+      height: 600px;
+      width: 450px;
+
+      &::-webkit-scrollbar {
+        width: 9px;
+        margin-left: 24px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #294454;
+        border-radius: 100px;
+        margin-top: 16px;
+        margin-bottom: 12px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--color-cow);
+        border-radius: 100px;
+        opacity: 0.75;
+      }
+    }
+  }
+  .day {
+    @include fontFactory(var(--proxima-nova), 24px, 700, white, 0.07rem, 1);
+    span {
+      font-weight: 400;
+      color: var(--color-teal-1);
+    }
+  }
+}
