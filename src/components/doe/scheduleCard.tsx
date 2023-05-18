@@ -4,7 +4,6 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { Event } from './scheduleInfo';
 
 interface ScheduleCardOptions {
-  key: string;
   event: Event;
 }
 
@@ -36,7 +35,7 @@ const checkEventTime = (start: Date, duration: number, type: string) => {
   return '';
 };
 
-const ScheduleCard = ({ key, event }: ScheduleCardOptions) => {
+const ScheduleCard = ({ event }: ScheduleCardOptions) => {
   const { start, duration, name, description, location, type, truncate } =
     event;
 
@@ -50,7 +49,7 @@ const ScheduleCard = ({ key, event }: ScheduleCardOptions) => {
   const eventPeriod = checkEventTime(start, duration, type);
 
   return (
-    <li key={key} className={`${styles.container} ${styles[eventPeriod]}`}>
+    <li className={`${styles.container} ${styles[eventPeriod]}`}>
       <strong className={styles.headline}>{headline}</strong>
       <h4 className={`${styles[type.toLowerCase()]}`}>{name}</h4>
       {description ? <p>{description}</p> : null}

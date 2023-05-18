@@ -1,0 +1,71 @@
+@use "/src/styles/mixins" as *;
+
+.container {
+  height: 50px;
+  background-color: white;
+
+  @include lg {
+    height: 70px;
+  }
+
+  > * {
+    position: absolute;
+  }
+
+  // bottom piece without wheels, mobile
+  > :first-child {
+    width: 640px;
+    height: auto;
+    bottom: -183px;
+    right: -250px;
+
+    @include lg {
+      display: none;
+    }
+  }
+
+  // bottom piece without wheels, desktop
+  > :nth-child(2) {
+    display: none;
+
+    @include lg {
+      display: block;
+      width: 132%;
+      height: auto;
+      bottom: -88px;
+      left: -2%;
+    }
+  }
+
+  // front wheel
+  > :nth-child(3) {
+    width: 84.27px;
+    height: auto;
+    right: 8px;
+    bottom: -58.5px;
+
+    @include lg {
+      display: block;
+      width: 21%;
+      height: auto;
+      bottom: -124.5px;
+      right: 50px;
+    }
+  }
+
+  // back wheel
+  > :nth-child(4) {
+    width: 84.27px;
+    height: auto;
+    bottom: -58.5px;
+    right: 270px;
+
+    @include lg {
+      display: block;
+      width: 21%;
+      height: auto;
+      bottom: -124.5px;
+      right: 72%;
+    }
+  }
+}

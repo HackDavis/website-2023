@@ -1,40 +1,78 @@
 @use "/src/styles/mixins" as *;
 
+.wrapper {
+  padding: 0 12px;
+  position: relative;
+  z-index: 1;
+  
+  @include lg {
+    padding: 0 40px;
+  }
+}
+
 .container {
-  @include fontFactory(var(--proxima-nova), 90px, 500, white, 0, 1);
-  width: 1179px;
-  background: #005271;
+  width: 100%;
+  max-width: 380px;
+  background: var(--color-teal-3);
   display: flex;
   justify-content: center;
   margin: auto;
-  border-radius: 20px;
-  padding: 40px 0;
-  border: 10px solid var(--color-teal-1);
+  border-radius: 10px;
+  padding: 18px;
+  border: 3px solid var(--color-teal-1);
+  
+  @include lg {
+    max-width: 1180px;
+    border-radius: 10px;
+    border-width: 7px;
+    padding: 40px;
+  }
+}
 
-  .clock {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.clock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  @include cgap(10px);
+  
+  @include lg {
     @include cgap(25px);
+  }
 
-    > div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  span {
+    @include fontFactory(var(--proxima-nova), 40px, 500, white, 0, 1);
+
+    @include lg {
+      font-size: 90px;
     }
-    
-    p {
+  }
+  
+  strong {
+    @include fontFactory(var(--proxima-nova), 12px, 400, var(--color-teal-1), 0.05rem, 1);
+    margin-top: 5px;
+
+    @include lg {
       font-size: 20px;
-      font-weight: 400;
-      letter-spacing: 0.05rem;
-      color: var(--color-teal-1);
     }
   }
 }
+
 .sticks {
-  width: 1059px;
-  height: 50px;
+  width: 90%;
+  max-width: 320px;
+  height: 10px;
   border-left: solid white 3px;
   border-right: solid white 3px;
   margin: auto;
+  
+  @include lg {
+    height: 50px;
+    max-width: 1060px;
+  }
 }

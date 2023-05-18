@@ -5,6 +5,8 @@ import Seo from '@/components/seo';
 import NonProfits from '@/components/sponsors/nonprofits';
 import Sponsors from '@/components/sponsors/sponsors';
 import React, { useEffect } from 'react';
+import Countdown from '@/components/doe/countdown';
+import Footer from '@/components/doe/footer';
 
 const Live = () => {
   useEffect(() => {
@@ -37,6 +39,7 @@ const Live = () => {
           }}
         >
           <MainSection />
+          <Countdown />
           <Truck />
         </div>
         <div
@@ -50,6 +53,9 @@ const Live = () => {
           <NonProfits />
         </div>
       </main>
+      <div style={{ backgroundColor: 'var(--color-cow)' }}>
+        <Footer />
+      </div>
     </>
   );
 };

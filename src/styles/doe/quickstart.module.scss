@@ -1,133 +1,178 @@
-@use '/src/styles/mixins' as *;
+@use "/src/styles/mixins" as *;
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
-  margin-bottom: 42px;
+  margin-bottom: 15px;
+
+  @include lg {
+    margin-bottom: 42px;
+  }
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  width: 608px;
-  .location {
-    @include fontFactory(
-      var(--proxima-nova),
-      24px,
-      700,
-      var(--color-teal-5),
-      0.02rem,
-      1
-    );
-    border: solid #ededed 5px;
+
+  @include lg {
+    width: 80%;
+    margin-left: 32px;
+    max-width: 608px;
+  }
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid #ededed 2px;
+  border-radius: 8px;
+  padding: 14px 18px;
+  text-align: center;
+  margin-bottom: 15px;
+  
+  @include lg {
+    flex-direction: row;
+    justify-content: center;
+    border-width: 5px;
     border-radius: 15px;
-    padding: 25px 0;
-    text-align: center;
+    padding: 25px;
+    font-size: 24px;
     margin-bottom: 28px;
-    svg {
+  }
+
+  svg {
+    width: 14px;
+    height: auto;
+    margin-bottom: 5px;
+    
+    @include lg {
       width: 18px;
-      height: auto;
+      margin-bottom: 0;
       margin-right: 20px;
     }
-   
+  }
+
+  strong {
+    @include fontFactory(var(--proxima-nova), 14px, 700, var(--color-teal-5), 0.02rem, 1.8);
+
+    @include lg {
+      font-size: 24px;
+      line-height: 1;
+    }
+
     span {
       font-weight: 500;
     }
   }
-  ul {
+  
+}
+
+.tiles {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include rgap(15px);
+  @include cgap(15px);
+  margin-bottom: 15px;
+
+  @include lg {
+    margin-bottom: 25px;
+  }
+
+  li {
+    width: calc(50% - 15px);
+  }
+
+  a {
     display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    @include rgap(28px);
-    @include cgap(28px);
-    margin-bottom: 28px;
+    min-width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 18px;
+    flex-direction: column;
+    text-decoration: none;
+    @include fontFactory(var(--proxima-nova), 14px, 700, var(--color-teal-5), 0.1rem, 1);
+    background-color: var(--color-ducky);
+    height: 125px;
+    border-radius: 8px;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
 
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-decoration: none;
-      @include fontFactory(
-        var(--proxima-nova),
-        17px,
-        700,
-        var(--color-teal-5),
-        0.1rem,
-        1
-      );
-      background-color: var(--color-ducky);
-      width: 290px;
-      height: 150px;
-      border-radius: 15px;
-      transform: scale(1);
-      transition: transform 200ms ease-in-out;
+    @include lg {
+      font-size: 17px;
+    }
 
+    @include hover {
       &:hover {
         transform: scale(1.02);
       }
+    }
 
-      > svg {
-        margin-bottom: 15px;
-      }
+    > svg {
+      margin-bottom: 15px;
     }
   }
-  article {
-    @include fontFactory(
-      var(--proxima-nova),
-      24px,
-      700,
-      var(--color-teal-5),
-      0.02rem,
-      1
-    );
-    border: solid #ededed 5px;
-    border-radius: 15px;
-    text-align: center;
-    padding: 25px 44px;
+}
 
-    p {
-      @include fontFactory(
-        var(--proxima-nova),
-        20px,
-        500,
-        var(--color-teal-5),
-        0.02rem,
-        1
-      );
-      margin-top: 8px;
+.socials {
+  border: solid #ededed 5px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px;
+  
+  @include lg {
+    padding: 25px;
+  }
+  
+  strong {
+    @include fontFactory(var(--proxima-nova), 16px, 700, var(--color-teal-5), 0.02rem, 1.5);
+
+    @include lg {
+      font-size: 24px;
     }
-    .links {
-      display: flex;
-      @include cgap(10px);
-      text-align: center;
-      flex-wrap: wrap;
-      justify-content: center;
-      .icon {
+  }
+  
+  p {
+    @include fontFactory(var(--proxima-nova), 14px, 500, var(--color-teal-5), 0.02rem, 1.5);
+    margin-bottom: 10px;
+
+    @include lg {
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+  }
+  
+  .links {
+    display: flex;
+    @include cgap(20px);
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .icon {
+      display: inline-block;
+      color: black;
+      height: 30px;
+      width: 30px;
+
+      @include lg {
+        height: 30px;
+        width: 30px;
+      }
+
+      > svg {
         display: inline-block;
-        color: var(--color-teal-5);
-        margin: 10px 10px 0;
-        height: 20px;
-        width: 20px;
-      
-        @include lg {
-          margin: 20px 20px 0;
-          height: 30px;
-          width: 30px;
-        }
-        
-        > svg {
-          display: inline-block;
-          width: 100%;
-          height: 100%;
-          transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-          
-          @include hover {
-            &:hover {
-              opacity: 0.5;
-            }
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+        @include hover {
+          &:hover {
+            opacity: 0.5;
           }
         }
       }

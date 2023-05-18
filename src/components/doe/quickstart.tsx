@@ -15,10 +15,12 @@ const Quickstart = () => (
       <Churner />
       <div className={styles.content}>
         <div className={styles.location}>
-          <FontAwesomeIcon icon={faLocationDot} /> University Credit Union
-          Center<span> @ UC Davis</span>
+          <FontAwesomeIcon icon={faLocationDot} />
+          <strong>
+            University Credit Union Center<span> @ UC Davis</span>
+          </strong>
         </div>
-        <ul>
+        <ul className={styles.tiles}>
           <li>
             <a href="#">
               <Map />
@@ -48,7 +50,7 @@ const Quickstart = () => (
             </a>
           </li>
         </ul>
-        <article>
+        <article className={styles.socials}>
           <strong>Let&apos;s stay in touch!</strong>
           <p>Follow us on social media</p>
           <div className={styles.links}>

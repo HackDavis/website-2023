@@ -8,27 +8,27 @@ const Countdown = () => {
   const ongoing = new Date() > start;
 
   const Timer = ({ hours, minutes, seconds }: CountdownRenderProps) => (
-    <>
+    <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.clock}>
           <div>
             <span>{ongoing ? hours : '24'}</span>
-            <p>HOURS</p>
+            <strong>HOURS</strong>
           </div>
-          <div>:</div>
+          <span>:</span>
           <div>
             <span>{ongoing ? minutes : '00'}</span>
-            <p>MINUTES</p>
+            <strong>MINUTES</strong>
           </div>
-          <div>:</div>
+          <span>:</span>
           <div>
             <span>{ongoing ? seconds : '00'}</span>
-            <p>SECONDS</p>
+            <strong>SECONDS</strong>
           </div>
         </div>
       </div>
       <div className={styles.sticks}></div>
-    </>
+    </div>
   );
 
   return (

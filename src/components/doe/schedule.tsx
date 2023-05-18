@@ -94,10 +94,7 @@ const Schedule = () => {
           <h3 className={styles.day}>
             SATURDAY <span>5/20</span>
           </h3>
-          <div
-            style={{ paddingRight: 24 }}
-            className={`${styles.scheduleCards} ${styles.boxShadow}`}
-          >
+          <div className={`${styles.scheduleCards} ${styles.boxShadow}`}>
             <ul>
               {filteredSaturdayEvents.map((event) => (
                 <ScheduleCard key={event.name} event={event} />
