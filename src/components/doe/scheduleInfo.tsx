@@ -240,8 +240,6 @@ const sundayEvents: Event[] = [
   },
 ];
 
-const allDayEvents: Event[] = [{}];
-
 const noFoodSaturdayEvents = saturdayEvents.filter(
   (event) => event.type !== 'Food'
 );
