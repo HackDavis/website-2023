@@ -215,7 +215,7 @@
   > h3 {
     margin-bottom: 18px;
   }
-  @include lg() {
+  @include lg {
     margin-top: 24px;
   }
 }
@@ -223,14 +223,15 @@
   li:last-child {
     margin-bottom: 0;
   }
-  @include lg() {
+  @include lg {
     > ul {
       display: flex;
       li {
+        width: 50%;
         margin-bottom: 0;
       }
       li:last-child {
-        margin-left: 16px;
+        margin-left: 32px;
       }
     }
   }
