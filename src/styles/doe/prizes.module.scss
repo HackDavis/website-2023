@@ -78,13 +78,11 @@
   padding: 0;
   padding-right: 12px;
   mask-image: linear-gradient(
-    hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / 1) 0,
     hsl(0 0% 0% / 1) calc(100% - 40px),
     hsl(0 0% 0% / 0)
   );
 
-  @include lg() {
+  @include lg {
     display: none;
   }
   
@@ -105,6 +103,7 @@
 }
 
 .prizesContainer {
+  display: none;
   height: 1088px;
   overflow-y: auto;
   list-style-type: none;
@@ -112,13 +111,11 @@
   padding: 0;
   padding-right: 12px;
   mask-image: linear-gradient(
-    hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / 1) 0,
     hsl(0 0% 0% / 1) calc(100% - 40px),
     hsl(0 0% 0% / 0)
   );
-  display: none;
-  @include lg() {
+
+  @include lg {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
