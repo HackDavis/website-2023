@@ -12,7 +12,7 @@ const Cta = () => (
           <strong>Sprinkle in your flair</strong>
         </p>
         <a
-          href="https://hackdavis.typeform.com/hacker2023?utm_source=WEBSITE"
+          href="https://hackdavis2023.devpost.com/"
           target="_blank"
           rel="noreferrer"
         >

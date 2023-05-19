@@ -1,0 +1,141 @@
+@use "/src/styles/mixins" as *;
+
+.container {
+  background-color: var(--color-teal-5);
+  padding: 15px 15px 0 15px;
+  border: 3px #ededed solid;
+  border-radius: 8px;
+  margin-bottom: 25px;
+
+  > h1 {
+    @include fontFactory(var(--proxima-nova), 32px, 700, white, 0, 1);
+    margin-bottom: 10px;
+  }
+
+  > strong {
+    display: block;
+    @include fontFactory(var(--proxima-nova), 16px, 400, white, 0, 1);
+    margin-bottom: 10px;
+
+    > b {
+      font-weight: 700;
+    }
+  }
+
+  @include lg {
+    padding: 40px 40px 0;
+    border-radius: 20px;
+    border-width: 5px;
+    margin-bottom: 80px;
+
+    > h1 {
+      font-size: 35px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    > strong {
+      font-size: 21px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.note {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 15px;
+
+  @include lg {
+    margin-bottom: 40px;
+  }
+
+  > div {
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-ducky);
+    margin-right: 12px;
+  }
+
+  > p {
+    @include fontFactory(var(--proxima-nova), 14px, 400, white, 0.02rem, 1);
+
+    @include lg {
+      font-size: 18px;
+    }
+  }
+}
+
+.prizesContainerMobile {
+  height: 1088px;
+  overflow-y: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 12px;
+  mask-image: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 0,
+    hsl(0 0% 0% / 1) calc(100% - 40px),
+    hsl(0 0% 0% / 0)
+  );
+
+  @include lg() {
+    display: none;
+  }
+  
+  &::-webkit-scrollbar {
+    width: 9px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #294454;
+    border-radius: 100px;
+    margin-bottom: 20px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-cow);
+    border-radius: 100px;
+  }
+}
+
+.prizesContainer {
+  height: 1088px;
+  overflow-y: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 12px;
+  mask-image: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 0,
+    hsl(0 0% 0% / 1) calc(100% - 40px),
+    hsl(0 0% 0% / 0)
+  );
+  display: none;
+  @include lg() {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &::-webkit-scrollbar {
+      width: 9px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #294454;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-cow);
+      border-radius: 100px;
+      opacity: 0.75;
+    }
+  }
+}

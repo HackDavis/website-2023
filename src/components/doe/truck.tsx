@@ -7,6 +7,7 @@ import Clouds from '@/components/truck/clouds';
 import Window from './window';
 import Schedule from './schedule';
 import Quickstart from './quickstart';
+import Prizes from './prizes';
 
 const Truck = () => (
   <>
@@ -16,6 +17,7 @@ const Truck = () => (
         <div className={styles.container}>
           <Quickstart />
           <Schedule />
+          <Prizes />
           <Window />
           <Bottom />
         </div>

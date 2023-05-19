@@ -27,7 +27,7 @@ const MainSection = () => (
             <div>
               <a
                 className={styles.yellowButton}
-                href="https://hackdavis.typeform.com/hacker2023?utm_source=WEBSITE"
+                href="https://hackdavis2023.devpost.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -36,7 +36,9 @@ const MainSection = () => (
 
               <a
                 href="https://discord.gg/ytge6dTe4s"
+                target="_blank"
                 className={styles.sponsorButton}
+                rel="noreferrer"
               >
                 <div className={styles.discordIcon}>
                   <FontAwesomeIcon icon={faDiscord} color="#122f40" />

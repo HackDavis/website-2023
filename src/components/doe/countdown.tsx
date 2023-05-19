@@ -1,6 +1,7 @@
 import React from 'react';
 import CountdownTimer, { CountdownRenderProps } from 'react-countdown';
 import styles from '@/styles/doe/countdown.module.scss';
+import ProgressBar from './progressBar';
 
 const Countdown = () => {
   const start = new Date('May 20, 2023, 11:00:00 GMT-0700');
@@ -9,6 +10,7 @@ const Countdown = () => {
 
   const Timer = ({ hours, minutes, seconds }: CountdownRenderProps) => (
     <div className={styles.wrapper}>
+      <ProgressBar />
       <div className={styles.container}>
         <div className={styles.clock}>
           <div>

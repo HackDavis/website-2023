@@ -22,13 +22,17 @@ const Quickstart = () => (
         </div>
         <ul className={styles.tiles}>
           <li>
-            <a href="#">
+            <a href="map2023.pdf" target="_blank" rel="noreferrer">
               <Map />
               <strong>EVENT MAP</strong>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="https://www.notion.so/hackdavis/HackDavis-Safety-42561065cd254194bc26bcf48432f36a?pvs=4"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Safety />
               <strong>SAFETY RESOURCES</strong>
             </a>
@@ -44,7 +48,11 @@ const Quickstart = () => (
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Spotify />
               <strong>HACKER JAMS</strong>
             </a>

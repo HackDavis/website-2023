@@ -1,0 +1,107 @@
+@use "/src/styles/mixins" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  
+  &.last-child {
+    margin-bottom: 0;
+  }
+
+  @include lg() {
+    margin-bottom: 20px;
+    width: 100%;
+    
+    &.highlight {
+      width: 100%;
+    }
+  }
+}
+
+.cardHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 20px;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+
+  &.highlight {
+    background-color: var(--color-ducky);
+  }
+
+  > h3 {
+    @include fontFactory(var(--proxima-nova), 16px, 700, var(--color-teal-5), 0, 1.25);
+  }
+
+  > svg {
+    position: relative;
+    top: 10px;
+    align-self: flex-end;
+    min-width: 63px;
+    min-height: 63px;
+    margin-left: 4px;
+  }
+
+  @include lg() {
+    > h3 {
+      font-size: 20px;
+    }
+  }
+}
+
+.prizeInfo {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-teal-3);
+  border-radius: 0 0 10px 10px;
+  padding: 20px 20px 0 20px;
+  
+  > p.sponsor {
+    @include fontFactory(var(--proxima-nova), 14px, 400, white, 0, 1.25);
+    margin-bottom: 10px;
+  
+    strong {
+      font-weight: 700;
+    }
+    
+    @include lg {
+      font-size: 16px;
+    }
+  }
+}
+
+.description {
+  @include fontFactory(var(--proxima-nova), 16px, 400, white, 0, 1.25);
+  display: flex;
+  margin-bottom: 10px;
+
+  strong {
+    font-weight: 700;
+  }
+
+  @include lg {
+    font-size: 20px;
+  }
+
+  > svg {
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: 10px;
+  }
+}
+
+.previewButton {
+  text-align: left;
+  background-color: transparent;
+  
+  @include hover {
+    &.description p { 
+      &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+      }  
+    }
+  }
+}

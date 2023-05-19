@@ -119,13 +119,15 @@
 }
 
 .socials {
-  border: solid #ededed 5px;
-  border-radius: 15px;
+  border: solid #ededed 2px;
+  border-radius: 8px;
   text-align: center;
   padding: 15px;
   
   @include lg {
     padding: 25px;
+    border-width: 5px;
+    border-radius: 15px;
   }
   
   strong {
