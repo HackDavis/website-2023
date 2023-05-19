@@ -13,6 +13,7 @@ const words = [
   'advocate',
   'hack',
   'strive',
+  'build',
 ];
 
 const WordCycle = () => {

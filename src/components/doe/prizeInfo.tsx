@@ -136,16 +136,23 @@ const prizeList: Prize[] = [
 
   {
     categoryName: 'Best Design',
+    prizePreview: [
+      <>
+        <strong>Cafe Basket, Mini Keurig, + more!</strong>
+      </>,
+    ],
     prizeFull: [
       <>
-        <strong>Cafe Basket</strong>
+        Cafe Basket includes a <strong>Mini Keurig Machine</strong>, Coffee
+        pods, Tea pods, Starbucks gift cards, Mini succulents/succulent, Mini
+        Lego set
       </>,
     ],
     criteria: 'No code required for this category!',
   },
   {
-    categoryName:
-      'Best Hardware Hack, sponsored by the UC Davis Student Startup Center',
+    categoryName: 'Best Hardware Hack',
+    sponsor: 'UC Davis Student Startup Center',
     prizeFull: [
       <>
         <strong>Drone Set</strong>

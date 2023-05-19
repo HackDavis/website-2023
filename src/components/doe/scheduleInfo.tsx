@@ -203,16 +203,24 @@ const saturdayEvents: Event[] = [
     location: 'ARC Ballroom A',
     type: 'Workshop',
   },
-];
-
-const sundayEvents: Event[] = [
   {
-    start: sundayDate('00:00'),
+    start: sundayDate('20:45'),
     duration: 60,
-    headline: 'MIDNIGHT SNACK',
+    headline: 'SNACK',
     name: 'Pepitos Paletas',
     type: 'Food',
   },
+  {
+    start: saturdayDate('20:45'),
+    duration: 60,
+    name: 'Bob Ross Painting',
+    description: 'Hosted by MLH!',
+    location: 'ARC Ballroom A',
+    type: 'Activity',
+  },
+];
+
+const sundayEvents: Event[] = [
   {
     start: sundayDate('08:30'),
     duration: 120,
