@@ -1,0 +1,50 @@
+@use "/src/styles/mixins" as *;
+
+.background {
+  position: relative;
+  padding-bottom: 59px;
+  contain: paint;
+  
+  @include lg {
+    padding-bottom: 125px;
+  }
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  
+  @include lg {
+    padding: 0 15px 0 82.12px;
+  }
+}
+
+.banner {
+  display: none;
+  position: sticky;
+  top: 0;
+  padding-top: 92px;
+  margin-bottom: 240px;
+  width: auto;
+  height: 576px;
+  
+  @include lg {
+    display: block;
+  }
+}
+
+.container {
+  position: relative;
+  background-color: white;
+  border-radius: 20px 20px 0 0;
+  padding: 10px;
+  max-width: 380px;
+
+  @include lg {
+    flex-basis: 1180px;
+    max-width: 1180px;
+    padding: 50px;
+  }
+}

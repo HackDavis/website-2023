@@ -1,0 +1,81 @@
+@use "/src/styles/mixins" as *;
+
+.container {
+  @include fontFactory(var(--proxima-nova), 16px, 400, white, 0.02rem, 1.25);
+
+  list-style: none;
+  // width: 423px;
+  background-color: #005271;
+  margin-bottom: 20px;
+  padding: 18px 20px;
+  border-radius: 10px;
+
+  .headline {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    display: block;
+    margin-bottom:15px;
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+  
+  .location {
+    svg {
+        margin-right: 8px;
+    }
+  }
+}
+
+.workshop {
+  color: var(--color-teal-1);
+}
+
+.activity {
+  color: var(--color-ducky);
+}
+
+.food {
+  color: #C2E567;
+}
+
+.other {
+    // Not sure what color to use here
+}
+.icon {
+    width: 10px;
+    height: auto;
+}
+.currentFoodEvent {
+  background-color: #C2E567;
+  color: #122f4c;
+  h4 {
+      color: #122f4c;
+  }
+}
+.currentWorkshopEvent {
+  background-color: #9EE7E5;
+  color: #122f4c;
+  h4 {
+      color: #122f4c;
+  }
+}
+.currentActivityEvent {
+  background-color: #FFC53D;
+  color: #122f4c;
+  h4 {
+      color: #122f4c;
+  }
+}
+.pastEvent {
+  opacity: 0.5;
+}

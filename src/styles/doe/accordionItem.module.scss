@@ -1,0 +1,62 @@
+@use "/src/styles/mixins" as *;
+
+.question {
+  @include fontFactory(var(--proxima-nova), 16px, 500, var(--color-ducky), 0.1rem, 1.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  transition: all 200ms ease;
+  padding-top: 23px;
+  padding-bottom: 17px;
+
+  cursor: pointer;
+  @include mrwd(991px) {
+    font-size: 14px;
+    // line-height: 1.75;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  h3 {
+    margin-right: 12px;
+  }
+  .plus {
+    img,
+    svg {
+      display: block;
+      width: 16.48px;
+      height: 16.48px;
+      @include mrwd(991px) {
+        width: 12.14px;
+        height: 12.14px;
+      }
+    }
+    .plusHorizontal {
+      position: relative;
+    }
+    .plusVertical {
+      position: absolute;
+      top: 0;
+      transition: all 200ms ease;
+    }
+    .plusVerticalOpen {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.answer {
+  @include fontFactory(var(--proxima-nova), 16px, 400, white, 0, 1.25);
+  list-style: none;
+  padding-bottom: 20px;
+  @include mrwd(991px) {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+  a {
+    color: white;
+  }
+  strong {
+    font-weight: 700;
+  }
+}

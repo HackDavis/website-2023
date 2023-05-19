@@ -9,6 +9,25 @@ import WindowFour from './windowFour';
 import Bottom from './bottom';
 import Clouds from './clouds';
 
+const TruckDoe = () => (
+  <>
+    <Clouds />
+    <section id="info" className={styles.background}>
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          <WindowFour />
+          <Bottom />
+        </div>
+        <Image
+          src={banner}
+          alt="create for social good banner"
+          className={styles.banner}
+        />
+      </div>
+    </section>
+  </>
+);
+
 const Truck = () => (
   <>
     <Clouds />
@@ -30,5 +49,7 @@ const Truck = () => (
     </section>
   </>
 );
+
+export { TruckDoe };
 
 export default Truck;
