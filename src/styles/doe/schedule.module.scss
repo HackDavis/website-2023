@@ -15,7 +15,7 @@
   }
 
   h2 {
-    @include fontFactory(var(--proxima-nova), 40px, 700, white, 0, 1);
+    @include fontFactory(var(--proxima-nova), 32px, 700, white, 0, 1);
     margin-bottom: 20px;
 
     @include lg {
