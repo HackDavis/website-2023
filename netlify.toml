@@ -7,6 +7,6 @@ package = "@netlify/plugin-nextjs"
 
 [[redirects]]
 from = "/"
-to = "/new-path"
+to = "/live"
 status = 307
 force = false
