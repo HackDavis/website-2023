@@ -1,6 +1,6 @@
 import styles from '@/styles/doe/schedule.module.scss';
 import { useState, useEffect } from 'react';
-import { saturdayEvents, sundayEvents } from './scheduleInfo';
+import { saturdayEvents, sundayEvents, allDayEvents } from './scheduleInfo';
 import ScheduleCard from './scheduleCard';
 
 type ScheduleFilter = 'all' | 'workshop' | 'activity' | 'food';
@@ -113,6 +113,16 @@ const Schedule = () => {
               ))}
             </ul>
           </div>
+        </div>
+      </div>
+      <div className={styles.allDay}>
+        <h3 className={styles.day}>Events Available 24/7</h3>
+        <div className={styles.eventScheduleCards}>
+          <ul>
+            {allDayEvents.map((event) => (
+              <ScheduleCard key={event.name} event={event} />
+            ))}
+          </ul>
         </div>
       </div>
     </section>

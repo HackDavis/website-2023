@@ -211,3 +211,27 @@
     color: var(--color-teal-1);
   }
 }
+.allDay {
+  > h3 {
+    margin-bottom: 18px;
+  }
+  @include lg() {
+    margin-top: 24px;
+  }
+}
+.eventScheduleCards {
+  li:last-child {
+    margin-bottom: 0;
+  }
+  @include lg() {
+    > ul {
+      display: flex;
+      li {
+        margin-bottom: 0;
+      }
+      li:last-child {
+        margin-left: 16px;
+      }
+    }
+  }
+}

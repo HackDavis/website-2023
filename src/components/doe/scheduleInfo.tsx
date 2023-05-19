@@ -42,6 +42,29 @@ const saturdayDate = (time: Timestamp) =>
 const sundayDate = (time: Timestamp) =>
   new Date(`May 21, 2023 ${time}:00 GMT-7:00`);
 
+const allDayEvents: Event[] = [
+  {
+    start: new Date(`Apr 20, 6969 04:20 GMT-7:00`),
+    duration: 1440,
+    headline: 'OPEN 24/7',
+    name: 'Badminton',
+    description: 'Student ID required for equipment',
+    location: 'Badminton Court',
+    type: 'Activity',
+    truncate: true,
+  },
+  {
+    start: new Date(`Apr 20, 6969 04:20 GMT-7:00`),
+    duration: 1440,
+    headline: 'OPEN 24/7',
+    name: 'Ping-pong',
+    description: 'Student ID required for equipment',
+    location: 'Ping-pong Court',
+    type: 'Activity',
+    truncate: true,
+  },
+];
+
 const saturdayEvents: Event[] = [
   {
     start: saturdayDate('10:00'),
@@ -251,3 +274,5 @@ const noFoodSundayEvents = sundayEvents.filter(
 export { noFoodSaturdayEvents as saturdayEvents };
 
 export { noFoodSundayEvents as sundayEvents };
+
+export { allDayEvents };
