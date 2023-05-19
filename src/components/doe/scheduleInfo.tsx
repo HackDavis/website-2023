@@ -227,7 +227,7 @@ const saturdayEvents: Event[] = [
     type: 'Workshop',
   },
   {
-    start: sundayDate('20:45'),
+    start: sundayDate('20:00'),
     duration: 60,
     headline: 'SNACK',
     name: 'Pepitos Paletas',
