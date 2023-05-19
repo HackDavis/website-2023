@@ -22,7 +22,7 @@ const Quickstart = () => (
         </div>
         <ul className={styles.tiles}>
           <li>
-            <a href="map2023.pdf" target="_blank" rel="noreferrer">
+            <a href="map2023.pdf" target="_blank" rel="noreferrer noopener">
               <Map />
               <strong>EVENT MAP</strong>
             </a>
@@ -31,7 +31,7 @@ const Quickstart = () => (
             <a
               href="https://www.notion.so/hackdavis/HackDavis-Safety-42561065cd254194bc26bcf48432f36a?pvs=4"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
             >
               <Safety />
               <strong>SAFETY RESOURCES</strong>
@@ -41,7 +41,7 @@ const Quickstart = () => (
             <a
               href="https://hackdavis.notion.site/HackDavis-2023-Starter-Pack-33c778742f5745c7833a07255cbcc1d7"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
             >
               <Notion />
               <strong>STARTER PACK</strong>
@@ -51,7 +51,7 @@ const Quickstart = () => (
             <a
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
             >
               <Spotify />
               <strong>HACKER JAMS</strong>
@@ -66,7 +66,7 @@ const Quickstart = () => (
               className={styles.icon}
               href="https://www.linkedin.com/company/hackdavis/"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
               aria-label="HackDavis LinkedIn page"
             >
               <FontAwesomeIcon icon={faLinkedin} />
@@ -75,7 +75,7 @@ const Quickstart = () => (
               className={styles.icon}
               href="https://www.instagram.com/hackdavis/"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
               aria-label="HackDavis Instagram page"
             >
               <FontAwesomeIcon icon={faInstagram} />
