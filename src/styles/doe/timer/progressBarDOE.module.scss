@@ -1,0 +1,52 @@
+@use "/src/styles/mixins" as *;
+
+.container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+  max-width: 380px;
+  margin: auto;
+
+  > svg {
+    width: 80px;
+    height: auto;
+    position: relative;
+
+    // @include lg {
+    //   width: 121px;
+    // }
+  }
+
+//   @include lg {
+//     max-width: 1180px;
+//     padding: 0 30px;
+//   }
+}
+
+.flag {
+  position: relative;
+  height: 75px;
+
+//   @include lg {
+//     height: 114px;
+//   }
+
+  svg:first-child {
+    height: 100%;
+  }
+
+  svg:last-child {
+    position: absolute;
+    left: 21.5px;
+    width: 22.2px;
+    height: auto;
+
+    // @include lg {
+    //   left: 22px;
+    //   width: 33.76px;
+    // }
+  }
+}
