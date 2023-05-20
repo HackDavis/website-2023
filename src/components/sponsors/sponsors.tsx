@@ -9,6 +9,8 @@ import adminit from '@/images/sponsors/adminit.png';
 import ssc from '@/images/sponsors/ssc.png';
 import ls from '@/images/sponsors/ls.png';
 import asucd from '@/images/sponsors/asucd.png';
+import som from '@/images/sponsors/som.png';
+import retool from '@/images/sponsors/retool.png';
 import pocky from '@/images/sponsors/pocky.svg';
 import yakult from '@/images/sponsors/yakult.png';
 import pepsi from '@/images/sponsors/pepsi.png';
@@ -82,6 +84,12 @@ const Sponsors = () => (
           url="http://csi.ucdavis.edu/cfc"
           alt="UC Davis Club Finance Council Logo"
         />
+        <Logo
+          imgSrc={som}
+          url="https://health.ucdavis.edu/medschool/"
+          alt="UC Davis School of Medicine Logo"
+        />
+        <Logo imgSrc={retool} url="https://retool.com/" alt="Retool Logo" />
       </Marquee>
       <Marquee reverse duration={70}>
         <Logo imgSrc={pepsi} url="http://pepsi.com/" alt="Pepsi Logo" />
