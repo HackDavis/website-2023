@@ -31,7 +31,7 @@ export const CountdownFallback = () => (
 );
 
 const Countdown = () => {
-  const start = new Date('May 20, 2023, 9:00:00 GMT-0700');
+  const start = new Date('May 20, 2023, 11:00:00 GMT-0700');
   const end = new Date('May 21, 2023, 11:00:00 GMT-0700');
   const ongoing = new Date() > start;
 
