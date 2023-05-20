@@ -1,13 +1,19 @@
 import Truck from '@/components/doe/truck';
 import MainSection from '@/components/doe/mainSection';
 import Navbar from '@/components/navbar/navbar';
-import Seo from '@/components/seo';
+import Seo from '@/components/doe/seo';
 import NonProfits from '@/components/sponsors/nonprofits';
 import Sponsors from '@/components/sponsors/sponsors';
 import React, { useEffect } from 'react';
-import Countdown from '@/components/doe/countdown';
 import Cta from '@/components/doe/cta';
 import Footer from '@/components/footer';
+import dynamic from 'next/dynamic';
+import { CountdownFallback } from '@/components/doe/countdown';
+
+const Countdown = dynamic(() => import('@/components/doe/countdown'), {
+  loading: () => <CountdownFallback />,
+  ssr: false,
+});
 
 const Live = () => {
   useEffect(() => {
