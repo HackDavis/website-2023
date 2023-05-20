@@ -2,7 +2,7 @@ import { Flag, FlagPole, MiniTruck } from '@/assets/doe';
 import styles from '@/styles/doe/timer/progressBarDOE.module.scss';
 import { useEffect, useState } from 'react';
 
-const ProgressBarDOE = () => {
+const ProgressBarDoe = () => {
   const end = new Date('May 21, 2023, 11:00:00 GMT-0700').getTime();
   const [progress, setProgress] = useState(
     Math.max(0, (1 - (end - Date.now()) / (24 * 60 * 60000)) * 100)
@@ -37,4 +37,4 @@ const ProgressBarDOE = () => {
   );
 };
 
-export default ProgressBarDOE;
+export default ProgressBarDoe;

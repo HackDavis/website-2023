@@ -1,10 +1,10 @@
 import WordCycle from '@/components/mainSection/wordCycle';
 import Clouds from '@/components/mainSection/clouds';
 import styles from '@/styles/doe/mainSection.module.scss';
-import { faDiscord } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const MainSection = () => (
+const MainSectionDoe = () => (
   <>
     <Clouds />
     <section className={styles.wrapper}>
@@ -53,4 +53,4 @@ const MainSection = () => (
   </>
 );
 
-export default MainSection;
+export default MainSectionDoe;
