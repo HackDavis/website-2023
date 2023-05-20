@@ -99,7 +99,7 @@ const saturdayEvents: Event[] = [
     start: saturdayDate('12:00'),
     duration: 30,
     headline: 'LUNCH',
-    name: 'Mr. Pickles?',
+    name: 'Mr. Pickles',
     type: 'Food',
   },
   {
@@ -157,6 +157,14 @@ const saturdayEvents: Event[] = [
     type: 'Workshop',
   },
   {
+    start: saturdayDate('14:30'),
+    duration: 60,
+    name: 'Coffee Chat',
+    description: 'Hosted by DataLab',
+    location: 'ARC Courtyard',
+    type: 'Workshop',
+  },
+  {
     start: saturdayDate('15:00'),
     duration: 60,
     name: 'Crash Course to Business Development',
@@ -168,7 +176,7 @@ const saturdayEvents: Event[] = [
     start: saturdayDate('15:30'),
     duration: 30,
     headline: 'AFTERNOON SNACK',
-    name: 'Yakult or Pocky',
+    name: 'Yakult and Pocky',
     type: 'Food',
   },
   {
@@ -272,15 +280,15 @@ const sundayEvents: Event[] = [
   },
 ];
 
-const noFoodSaturdayEvents = saturdayEvents.filter(
-  (event) => event.type !== 'Food'
-);
-const noFoodSundayEvents = sundayEvents.filter(
-  (event) => event.type !== 'Food'
-);
+// const noFoodSaturdayEvents = saturdayEvents.filter(
+//   (event) => event.type !== "Food"
+// );
+// const noFoodSundayEvents = sundayEvents.filter(
+//   (event) => event.type !== "Food"
+// );
 
-export { noFoodSaturdayEvents as saturdayEvents };
+export { saturdayEvents };
 
-export { noFoodSundayEvents as sundayEvents };
+export { sundayEvents };
 
 export { allDayEvents };
