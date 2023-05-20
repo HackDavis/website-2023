@@ -190,8 +190,8 @@ const saturdayEvents: Event[] = [
   {
     start: saturdayDate('17:00'),
     duration: 60,
-    name: 'Deploying Your Angular App to GitHub Pages',
-    description: 'Hosted by Meziah Ruby',
+    name: 'Developing Your Personal Website with Angular and GitHub',
+    description: 'Hosted by Meziah Ruby Cristobal',
     location: 'ARC Ballroom A',
     type: 'Workshop',
   },
