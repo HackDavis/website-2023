@@ -67,6 +67,14 @@ const allDayEvents: Event[] = [
 
 const saturdayEvents: Event[] = [
   {
+    start: saturdayDate('09:00'),
+    duration: 45,
+    name: 'Last Minute Team Mixer',
+    type: 'Activity',
+    description: 'One last opportunity to find teammates!',
+    location: 'Ballroom A',
+  },
+  {
     start: saturdayDate('10:00'),
     duration: 60,
     name: 'Opening Ceremony',
@@ -190,8 +198,8 @@ const saturdayEvents: Event[] = [
   {
     start: saturdayDate('17:00'),
     duration: 60,
-    name: 'Deploying Your Angular App to GitHub Pages',
-    description: 'Hosted by Meziah Ruby',
+    name: 'Developing Your Personal Website with Angular and GitHub',
+    description: 'Hosted by Meziah Ruby Cristobal',
     location: 'ARC Ballroom A',
     type: 'Workshop',
   },

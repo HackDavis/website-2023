@@ -232,6 +232,93 @@ const prizeList: Prize[] = [
     criteria:
       'GitHub is one of the best ways to collaborate, push code, get feedback, and show the world what you’ve built during a hackathon. To take it a step further, GitHub is now offering you access to industry tools, events & learning resources through something called GitHub Global Campus. Win this weekend’s Most Creative Use of GitHub prize category, first by signing up for GitHub Global Campus and second by using a GitHub repository to host your hackathon project’s code! Make sure your use of GitHub stands out with a detailed ReadMe page, meaningful pull requests and collaboration history, and even a GitHub pages deployment!',
   },
+  {
+    categoryName: 'Best Use of Retool',
+    prizeFull: [
+      <>
+        <strong>Ducky One 3 SF Pure White 65% mechanical keyboard</strong>
+      </>,
+    ],
+    criteria: (
+      <>
+        Register with a student account and use Retool to create your next hack
+        for Social Good. Each member of the winning team wins a Ducky One 3 SF
+        Pure White 65% mechanical keyboard
+      </>
+    ),
+  },
+  {
+    categoryName: 'Best Aggie Reuse Store Hack',
+    prizeFull: [
+      <>
+        <strong>Aggie Reuse Store Prize Basket</strong>
+      </>,
+    ],
+    criteria: (
+      <>
+        The Aggie Reuse Store received over 1,300 clothing items last quarter
+        and diverted over 1,000 pounds of waste. These numbers have been growing
+        every quarter, and they have become too large to be sustained by the
+        spreadsheet they use to keep track of inventory. The current system of
+        manually updating the spreadsheet to keep track of input and output is
+        very tedious for volunteers and is prone to human error. To increase
+        efficiency and sustainability, the Aggie Reuse Store would like to
+        implement an inventory tracking system with a user-friendly, streamlined
+        interface and an organized database for their data analytics team. How
+        can we upgrade the current system to meet the Aggie Reuse Store’s need
+        for an inventory tracking system?
+        <br />
+        <br />
+        The Aggie Reuse Store currently has no way of monitoring the store’s
+        foot traffic, so they don’t know how many students come in every week,
+        what time students tend to come in, and what days of the week are most
+        popular. Operating hours change from quarter to quarter, so they want to
+        use customer traffic data to know when the most optimal time to open is
+        and how to better staff their volunteers to support rush hour. How can
+        we collect, organize, and display the Aggie Reuse Store’s visitor data
+        in a user-friendly manner to better serve students?
+      </>
+    ),
+  },
+  {
+    categoryName: 'Best TreeDavis Hack',
+    prizeFull: [
+      <>
+        <strong>TreeDavis Prize Basket</strong>
+      </>,
+    ],
+    criteria: (
+      <>
+        Tree Davis has a program where they convert turf lawns into
+        Climate-Ready Landscapes. These are the installation of native,
+        drought-tolerant plants and trees that are more beneficial to the
+        environment than water-thirsty lawns. While it would be ideal to convert
+        as much lawn as possible, some is still needed for active recreation,
+        picnicking, etc. How can Tree Davis identify unneeded turf space that
+        can be converted to Climate-Ready Landscapes and gather other related
+        information, like amount, owner, and current use of space?
+        <br />
+        <br />
+        Some people see trees as nuisances and prefer to cut them down, without
+        recognizing their environmental benefits such as carbon sequestration,
+        air quality improvement, and urban cooling. While there are tools that
+        enumerate tree values, they are clunky and not easily accessible to
+        individuals. How could Tree Davis educate people about the benefits of
+        planting more trees and installing drought-tolerant landscapes, with the
+        goal of inspiring action in their own homes/spaces?
+      </>
+    ),
+  },
+  {
+    categoryName: 'Best American Wild Horse Campaign (AWHC) Hack',
+    prizeFull: [
+      <>
+        <strong>AWHC Prize Basket + Internship Opportunity</strong>
+      </>,
+    ],
+    criteria:
+      "The American Wild Horse Campaign (AWHC) is a nonprofit organization fighting to ensure the future of America's iconic wild horses and burros and the Western public lands where they roam. There are many horses in the wild to the point where locating all the wild horses proves to be a difficult task. AWHC plans to implement the Wild Horse Animal Identifier, or Wild Horse ANI, which utilizes machine learning to identify wild horses. However, machine learning needs a lot of visual data, specifically images of horses. How can we create an app which accurately uploads photos of horses whilst also promoting community engagement?",
+  },
 ];
 
 const leftColumnPrizes = prizeList.filter(
