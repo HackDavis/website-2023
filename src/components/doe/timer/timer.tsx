@@ -1,7 +1,7 @@
 import React from 'react';
 import CountdownTimer, { CountdownRenderProps } from 'react-countdown';
 import styles from '@/styles/doe/timer/timer.module.scss';
-import ProgressBarDoe from './progressBarDOE';
+import ProgressBarDoe from './progressBarDoe';
 
 const Countdown = () => {
   const start = new Date('May 20, 2023, 11:00:00 GMT-0700');

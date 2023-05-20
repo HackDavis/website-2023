@@ -1,4 +1,4 @@
-import MainSectionDoe from '@/components/doe/timer/mainSectionDOE';
+import MainSectionDoe from '@/components/doe/timer/mainSectionDoe';
 import Countdown from '@/components/doe/timer/timer';
 
 const Timer = () => (
