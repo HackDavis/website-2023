@@ -7,7 +7,7 @@ import styles from '@/styles/doe/mainSection.module.scss';
 const MainSectionDoe = () => (
   <>
     <Clouds />
-    <section className={styles.wrapper}>
+    <section style={{ paddingTop: 100 }} className={styles.wrapper}>
       <div className={styles.mainAnimationSection}>
         <div className={styles.landing}>
           <div className={styles.mainSection}>

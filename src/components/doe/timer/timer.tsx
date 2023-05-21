@@ -57,6 +57,7 @@ const Countdown = () => {
         </div>
       </div>
       <div className={styles.sticks}></div>
+      <div className={styles.truck} />
     </div>
   );
 
