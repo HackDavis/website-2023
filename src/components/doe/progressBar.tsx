@@ -25,10 +25,7 @@ const ProgressBar = () => {
 
   return (
     <div className={styles.container}>
-      <MiniTruck
-        style={{ left: `calc(${progress}% - ${progress * 1.15}px)` }}
-        // style={{ left: `calc(${progress}% - 32%)` }}
-      />
+      <MiniTruck style={{ left: `calc(${progress}% - 26%)` }} />
       <div className={styles.flag}>
         <FlagPole />
         <Flag style={{ bottom: `calc(${progress * 0.52}% + 13%)` }} />

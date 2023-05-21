@@ -11,13 +11,9 @@
   margin: auto;
 
   > svg {
-    width: 80px;
+    width: 21%;
     height: auto;
     position: relative;
-
-    @include lg {
-      width: 121px;
-    }
   }
 
   @include lg {
