@@ -1,20 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
 
-const minutesToNextQuarterHour = (time: number) => {
-  const nextInterval = new Date(time);
-
-  nextInterval.setMilliseconds(
-    Math.ceil(nextInterval.getMilliseconds() / 1000) * 1000
-  );
-  nextInterval.setSeconds(Math.ceil(nextInterval.getSeconds() / 60) * 60);
-  nextInterval.setMinutes(Math.ceil(nextInterval.getMinutes() / 15) * 15);
-
-  const difference = (nextInterval.getTime() - time) / 1000;
-
-  return difference;
-};
-
 const Seo = () => {
   const start = new Date('May 20, 2023, 11:00:00 GMT-0700');
   const difference = (start.getTime() - Date.now()) / 1000;
@@ -24,12 +10,7 @@ const Seo = () => {
       <title>HackDavis 2023 | May 2023</title>
       {difference > 0 ? (
         <meta httpEquiv="refresh" content={`${difference}`} />
-      ) : (
-        <meta
-          httpEquiv="refresh"
-          content={`${minutesToNextQuarterHour(Date.now())}`}
-        />
-      )}
+      ) : null}
       <meta
         name="description"
         content="HackDavis is UC Davis' annual hackathon for students, run by students."
