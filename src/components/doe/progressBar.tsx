@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 const ProgressBar = () => {
   const end = new Date('May 21, 2023, 11:00:00 GMT-0700').getTime();
   const [progress, setProgress] = useState(
-    Math.max(0, (1 - (end - Date.now()) / (24 * 60 * 60000)) * 100)
+    Math.min(100, (1 - (end - Date.now()) / (24 * 60 * 60000)) * 100)
   );
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const ProgressBar = () => {
         (1 - (end - now) / (24 * 60 * 60000)) * 100
       );
 
-      setProgress(percentDone);
+      setProgress(Math.min(100, percentDone));
     }, 60000);
 
     return () => clearInterval(interval);
