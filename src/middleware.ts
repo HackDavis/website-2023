@@ -6,8 +6,8 @@ import type { NextRequest } from 'next/server';
 const middleware = (request: NextRequest) => {
   const url = request.nextUrl.clone();
 
-  if (url.pathname === '/') {
-    url.pathname = '/live';
+  if (url.pathname === '/live') {
+    url.pathname = '/';
 
     return NextResponse.redirect(url);
   }

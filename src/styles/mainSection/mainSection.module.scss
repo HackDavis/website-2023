@@ -158,11 +158,12 @@
 
 .hackdavis {
   @include fontFactory(var(--proxima-nova), 30px, 300, white, 0.05rem, 1);
-  text-transform: uppercase;
+  
   margin-bottom: 15px;
 
   b {
     font-weight: 700;
+    text-transform: uppercase;
   }
 
   @include mrwd(991px) {
@@ -296,10 +297,10 @@
     }
 
     .heartButton {
-      transform: translateX(108px);
+      transform: translateX(165px);
 
       @include mrwd(991px) {
-        transform: translateX(110px);
+        transform: translateX(160px);
       }
     }
   }

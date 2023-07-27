@@ -4,11 +4,11 @@ const nextConfig = {
   // eslint-disable-next-line require-await
   redirects: async () => [
     {
-      source: '/',
-      destination: '/live',
+      source: '/live',
+      destination: '/',
       permanent: false,
     },
   ],
-};
+}
 
 module.exports = nextConfig;

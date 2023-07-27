@@ -31,7 +31,10 @@ const MainSection = () => (
               <span className={styles.socialGood}> social good</span>
             </h1>
             <div className={styles.event}>
-              <h2 className={styles.hackdavis}>
+              <div className={styles.hackdavis}>
+                Keep an eye out for <b>HackDavis 2024</b>!!
+              </div>
+              {/* <h2 className={styles.hackdavis}>
                 Hack<b>Davis</b>{' '}
               </h2>
               <div className={styles.calendar}>
@@ -54,25 +57,25 @@ const MainSection = () => (
                     UCenter
                   </a>
                 </strong>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div className={styles.buttons}>
-            <a
+            {/* <a
               className={styles.yellowButton}
               href="https://hackdavis.typeform.com/hacker2023?utm_source=WEBSITE"
               target="_blank"
               rel="noreferrer"
             >
               Register Now
-            </a>
+            </a> */}
 
             <a href="mailto:team@hackdavis.io" className={styles.sponsorButton}>
               <div className={styles.heartButton}>
                 <Heart />
               </div>
-              Sponsor
+              Sponsor 2024
             </a>
           </div>
           <div className={styles.applications}>
