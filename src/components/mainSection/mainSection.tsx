@@ -1,5 +1,5 @@
 import styles from '@/styles/mainSection/mainSection.module.scss';
-import { Calendar, Heart, UpArrow } from '@/assets/mainSection/misc';
+import { Heart, UpArrow } from '@/assets/mainSection/misc';
 import Cow from './cow';
 import WordCycle from './wordCycle';
 import Clouds from './clouds';
