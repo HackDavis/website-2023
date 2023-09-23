@@ -229,6 +229,8 @@
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 26px;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .yellowButton {
