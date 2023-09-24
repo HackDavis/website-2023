@@ -15,6 +15,7 @@
     align-items: center;
     width: 1340px;
     background-color: #005271;
+    // gap: 30px;
     h2 {
       @include fontFactory(var(--proxima-nova), 50px, 700, white, 0.02rem, 1.2);
     }

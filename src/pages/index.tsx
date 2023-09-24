@@ -8,6 +8,7 @@ import Cta from '@/components/cta';
 import Seo from '@/components/seo';
 import { useEffect } from 'react';
 import NonProfits from '@/components/sponsors/nonprofits';
+import Team from '@/components/faq/team';
 
 // Landing page
 export default function Home() {
@@ -51,6 +52,7 @@ export default function Home() {
             zIndex: 1,
           }}
         >
+          <Team />
           <Faq />
           <Sponsors />
           <NonProfits />
