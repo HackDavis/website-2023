@@ -14,38 +14,34 @@ const teamDescriptions = [
         <br />
         <strong>Qualifications:</strong>
         <br />
-        <ul>
-          <li>Basic knowledge of HTML, CSS, and JavaScript.</li>
-          <li>Familiarity with React.js is a plus.</li>
-          <li>
-            Strong desire to learn and grow in the field of web development.
-          </li>
-          <li>Excellent problem-solving skills and attention to detail.</li>
-          <li>
-            Ability to work well in a team and take constructive feedback
-            positively.
-          </li>
-          <li>
-            Passion for technology and a proactive approach to keeping up with
-            industry trends.
-          </li>
-        </ul>
+        Basic knowledge of HTML, CSS, and JavaScript.
+        <br />
+        Familiarity with React.js is a plus.
+        <br />
+        Strong desire to learn and grow in the field of web development.
+        <br />
+        Excellent problem-solving skills and attention to detail.
+        <br />
+        Ability to work well in a team and take constructive feedback
+        positively.
+        <br />
+        Passion for technology and a proactive approach to keeping up with
+        industry trends.
+        <br />
         <br />
         <strong>Why Join Us:</strong>
         <br />
-        <ul>
-          <li>
-            Opportunity to work on diverse and exciting web development
-            projects.
-          </li>
-          <li>Gain hands-on experience and improve your technical skills.</li>
-          <li>Collaborate with a team of motivated developers.</li>
-          <li>Add impressive projects to your resume.</li>
-          <li>Create valuable connections in the tech industry.</li>
-          <li>
-            Personal and professional growth in a student-run organization.
-          </li>
-        </ul>
+        Opportunity to work on diverse and exciting web development projects.
+        <br />
+        Gain hands-on experience and improve your technical skills.
+        <br />
+        Collaborate with a team of motivated developers.
+        <br />
+        Add impressive projects to your resume.
+        <br />
+        Create valuable connections in the tech industry.
+        <br />
+        Personal and professional growth in a student-run organization.
       </>
     ),
   },
@@ -64,28 +60,20 @@ const teamDescriptions = [
         <br />
         <strong>Qualifications:</strong>
         <br />
-        <ul>
-          <li>
-            Strong organizational skills with a passion for attention to detail.
-          </li>
-          <li>
-            Quick decision-making abilities, particularly in high-pressure
-            situations.
-          </li>
-          <li>
-            A proactive and responsible approach to tackling challenges with
-            enthusiasm and a willingness to learn and grow.
-          </li>
-          <li>
-            Thrive in a team setting, fostering a spirit of collaboration and
-            mutual support.
-          </li>
-          <li>Excellent communication skills.</li>
-          <li>
-            A passion for learning and developing organizational and leadership
-            skills.
-          </li>
-        </ul>
+        Strong organizational skills with a passion for attention to detail.
+        <br />
+        Quick decision-making abilities, particularly in high-pressure
+        situations.
+        <br />
+        A proactive and responsible approach to tackling challenges with
+        enthusiasm and a willingness to learn and grow.
+        <br />
+        Thrive in a team setting, fostering a spirit of collaboration and mutual
+        support.
+        <br />
+        Excellent communication skills.
+        <br />A passion for learning and developing organizational and
+        leadership skills.
       </>
     ),
   },
@@ -110,29 +98,25 @@ const teamDescriptions = [
             </ul>
             <br /> */}
         <strong>Qualifications:</strong>
-        <ul>
-          <li>
-            Enthusiasm for marketing and a strong desire to learn and grow in
-            the field.
-          </li>
-          <li>Creative mindset with the ability to think strategically.</li>
-          <li>
-            Strong organizational skills and a high level of responsibility.
-          </li>
-          <li>Effective time management abilities.</li>
-          <li>
-            Basic understanding of social media platforms and their dynamics.
-          </li>
-        </ul>
+        <br />
+        Enthusiasm for marketing and a strong desire to learn and grow in the
+        field.
+        <br />
+        Creative mindset with the ability to think strategically.
+        <br />
+        Strong organizational skills and a high level of responsibility.
+        <br />
+        Effective time management abilities.
+        <br />
+        Basic understanding of social media platforms and their dynamics.
+        <br />
         <br />
         <strong>Bonus Skills:</strong>
-        <ul>
-          <li>Prior experience in social media advertising is a plus.</li>
-          <li>
-            Photography skills are a bonus, to generate better quality content
-            for all events including the Day of Event hackathon
-          </li>
-        </ul>
+        <br />
+        Prior experience in social media advertising is a plus.
+        <br />
+        Photography skills are a bonus, to generate better quality content for
+        all events including the Day of Event hackathon
       </>
     ),
   },
@@ -148,24 +132,17 @@ const teamDescriptions = [
         <br />
         <br />
         <strong>Qualifications:</strong>
-        <ul>
-          <li>
-            Confidence and an ability to think on your feet in negotiations.
-          </li>
-          <li>A natural talent for building and maintaining relationships.</li>
-          <li>
-            Proactive mindset, always on the lookout for new sponsorship
-            opportunities.
-          </li>
-          <li>
-            Strong organizational skills and the ability to manage multiple
-            sponsorship commitments efficiently.
-          </li>
-          <li>
-            A genuine desire to learn and adapt, exploring new outreach and
-            networking strategies.
-          </li>
-        </ul>
+        <br />
+        Confidence and an ability to think on your feet in negotiations.
+        <br />A natural talent for building and maintaining relationships.
+        <br />
+        Proactive mindset, always on the lookout for new sponsorship
+        opportunities.
+        <br />
+        Strong organizational skills and the ability to manage multiple
+        sponsorship commitments efficiently.
+        <br />A genuine desire to learn and adapt, exploring new outreach and
+        networking strategies.
       </>
     ),
   },
@@ -182,25 +159,18 @@ const teamDescriptions = [
         <br />
         <br />
         <strong>Qualifications:</strong>
-        <ul>
-          <li>
-            Strong financial acumen with an interest in budgeting and financial
-            planning.
-          </li>
-          <li>
-            Good understanding of cash flow management and financial
-            forecasting.
-          </li>
-          <li>
-            Fundraising experience or a willingness to learn and engage with
-            donors and sponsors effectively.
-          </li>
-          <li>Exceptional communication skills, both written and verbal.</li>
-          <li>
-            A can-do attitude, with the ability to adapt and excel in a
-            fast-paced environment.
-          </li>
-        </ul>
+        <br />
+        Strong financial acumen with an interest in budgeting and financial
+        planning.
+        <br />
+        Good understanding of cash flow management and financial forecasting.
+        <br />
+        Fundraising experience or a willingness to learn and engage with donors
+        and sponsors effectively.
+        <br />
+        Exceptional communication skills, both written and verbal.
+        <br />A can-do attitude, with the ability to adapt and excel in a
+        fast-paced environment.
       </>
     ),
   },
@@ -208,41 +178,31 @@ const teamDescriptions = [
     team: 'External',
     description: (
       <>
-        As our External Outreach Coordinator, you will be a driving force behind
-        our external engagement efforts, using your initiative to learn,
-        proactive approach, and personable energy. Familiarity with HackDavis or
-        hackathons is not mandatory, but is a plus, as you will be connecting
-        with clubs on campus, organizations off-campus, industry leaders, our
-        alumni community, and current students, all while confidently and
-        effectively communicating our mission.
+        As our External Affairs Director, you&apos;ll be the representative of
+        HackDavis to external organizations, showcasing your organizational
+        skills and enthusiastic demeanor. Your attention to detail,
+        communication skills, and talent for relationship building will play a
+        vital role in coordinating the workshops and events.
         <br />
         <br />
         <strong>Qualifications:</strong>
-        <ul>
-          <li>
-            Spearhead the planning and execution of external events, showcasing
-            your organizational skills and attention to detail.
-          </li>
-          <li>
-            A proactive and personable demeanor, radiating energy and
-            enthusiasm.
-          </li>
-          <li>Strong communication skills, both written and verbal.</li>
-          <li>Confidence in connecting with diverse groups and individuals.</li>
-          <li>
-            Initiative to learn and develop organizational and communication
-            skills.
-          </li>
-          <li>
-            Outreach to clubs on-campus, students and alumni, and off-campus
-            industry leaders; being able to network and foster meaningful
-            connections
-          </li>
-          <li>
-            Familiarity with HackDavis or hackathons is preferred but not
-            mandatory.
-          </li>
-        </ul>
+        <br />
+        Spearhead the planning and execution of external events, demonstrating
+        your organizational skills and attention to detail.
+        <br />
+        A proactive and personable demeanor, radiating energy and enthusiasm.
+        <br />
+        Strong communication skills, both written and verbal.
+        <br />
+        Confidence in connecting with diverse groups and individuals.
+        <br />
+        Initiative to learn and develop organizational and communication skills.
+        <br />
+        Outreach to clubs on-campus, students and alumni, and off-campus
+        industry leaders; being able to network and foster meaningful
+        connections
+        <br />
+        Familiarity with HackDavis or hackathons is preferred but not mandatory.
       </>
     ),
   },
@@ -251,7 +211,7 @@ const teamDescriptions = [
     description: (
       <>
         Are you a creative, innovative, and proactive designer with a passion
-        for human-centered design? Join our team and help us create
+        for human-centered design? Join the Design team and help us create
         brand-consistent, minimal, and aesthetically pleasing designs that
         captivate and excite our audience. Your creative talent will play a
         pivotal role in shaping the future of HackDavis. We are looking for
@@ -259,45 +219,41 @@ const teamDescriptions = [
         <br />
         <br />
         <strong>Brand Designer:</strong>
-        <ul>
-          <li>Craft the brand identity for the Hackathon season.</li>
-          <li>Storytelling and experimental design.</li>
-          <li>
-            Proficiency in illustration using Figma and Adobe Illustrator.
-          </li>
-        </ul>
+        <br />
+        Craft the brand identity for the Hackathon season.
+        <br />
+        Storytelling and experimental design.
+        <br />
+        Proficiency in illustration using Figma and Adobe Illustrator.
+        <br />
         <br />
         <strong>Product Designer:</strong>
-        <ul>
-          <li>
-            Design products that aim to delight and leave an impression,
-            including apparel, stickers, and branded items.
-          </li>
-          <li>Detail-oriented with a focus on product specs.</li>
-          <li>Conduct market research to inform design decisions.</li>
-        </ul>
+        <br />
+        Design products that aim to delight and leave an impression, including
+        apparel, stickers, and branded items.
+        <br />
+        Detail-oriented with a focus on product specs.
+        <br />
+        Conduct market research to inform design decisions.
+        <br />
         <br />
         <strong>Content Designer:</strong>
-        <ul>
-          <li>
-            Create eye-catching, compelling content for social media and printed
-            flyers.
-          </li>
-          <li>Deep understanding of the audience.</li>
-          <li>Attention to detail to ensure engaging visuals.</li>
-        </ul>
+        <br />
+        Create eye-catching, compelling content for social media and printed
+        flyers.
+        <br />
+        Deep understanding of the audience.
+        <br />
+        Attention to detail to ensure engaging visuals.
+        <br />
         <br />
         <strong>UI Designer:</strong>
-        <ul>
-          <li>
-            Design beautiful and intuitive web experiences that bring joy to
-            users.
-          </li>
-          <li>Focus on responsive design and intuitive user experiences.</li>
-          <li>
-            Proficiency in wireframing and creating delightful web interfaces.
-          </li>
-        </ul>
+        <br />
+        Design beautiful and intuitive web experiences that bring joy to users.
+        <br />
+        Focus on responsive design and intuitive user experiences.
+        <br />
+        Proficiency in wireframing and creating delightful web interfaces.
       </>
     ),
   },
