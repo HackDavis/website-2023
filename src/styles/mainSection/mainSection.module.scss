@@ -231,6 +231,11 @@
   margin-bottom: 26px;
   white-space: nowrap;
   z-index: 1;
+  @include mrwd(500px) {
+    flex-direction: column;
+    row-gap: 18px;
+    align-items: end;
+  }
 }
 
 .yellowButton {
@@ -262,6 +267,9 @@
     padding: 11px 20px;
     font-size: 18px;
     margin-right: 18px;
+  }
+  @include mrwd(500px) {
+    margin-right: 0
   }
 }
 
