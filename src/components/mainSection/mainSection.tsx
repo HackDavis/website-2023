@@ -1,5 +1,6 @@
 import styles from '@/styles/mainSection/mainSection.module.scss';
-import { Heart, UpArrow } from '@/assets/mainSection/misc';
+import { Heart } from '@/assets/mainSection/misc';
+// import {  UpArrow } from '@/assets/mainSection/misc';
 import Cow from './cow';
 import WordCycle from './wordCycle';
 import Clouds from './clouds';
@@ -10,7 +11,7 @@ const MainSection = () => (
     <section className={styles.wrapper}>
       <div className={styles.mainAnimationSection}>
         <Cow />
-        <aside className={styles.starterPack}>
+        {/* <aside className={styles.starterPack}>
           <div className={styles.yellowCircle} />
           <span style={{ marginRight: 0 }} className={styles.links}>
             New Hacker? Get started with our{' '}
@@ -23,7 +24,7 @@ const MainSection = () => (
               <UpArrow />
             </a>
           </span>
-        </aside>
+        </aside> */}
         <div className={styles.landing}>
           <div className={styles.mainSection}>
             <h1 className={styles.tagline}>
@@ -62,14 +63,14 @@ const MainSection = () => (
           </div>
 
           <div className={styles.buttons}>
-            {/* <a
+            <a
               className={styles.yellowButton}
               href="https://hackdavis.typeform.com/hacker2023?utm_source=WEBSITE"
               target="_blank"
               rel="noreferrer"
             >
-              Register Now
-            </a> */}
+              Director Application
+            </a>
 
             <a href="mailto:team@hackdavis.io" className={styles.sponsorButton}>
               <div className={styles.heartButton}>
@@ -78,7 +79,7 @@ const MainSection = () => (
               Sponsor 2024
             </a>
           </div>
-          <div className={styles.applications}>
+          {/* <div className={styles.applications}>
             <div style={{ marginRight: 20 }} className={styles.links}>
               <div>
                 <span className={styles.text}>Register to </span>
@@ -105,7 +106,7 @@ const MainSection = () => (
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

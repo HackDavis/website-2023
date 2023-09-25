@@ -15,6 +15,7 @@
   padding-bottom: 27px;
   max-width: 544px;
   cursor: pointer;
+  column-gap: 200px;
   @include mrwd(991px) {
     font-size: 18px;
     line-height: 1.75;
